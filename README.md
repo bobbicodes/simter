@@ -3,6 +3,11 @@ Python/Tkinter item calculator for SimCity BuildIt.
 
 This GUI application is a utility with which to keep track of items necessary for building upgrades.
 
+## Dependencies
+
+simter runs via the `python-tk` library.
+On Ubuntu systems: `sudo apt install python-tk`
+
 All items produced in commercial buildings are displayed as buttons.
 Each time a button is clicked, a dictionary is modified containing keys for items needed, and printed to the screen.
 
