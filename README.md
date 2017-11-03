@@ -1,9 +1,6 @@
 # simter
 Python/Tkinter item calculator for SimCity BuildIt.
 
-I'm currently adding the pictures of the items which can be found here:
-http://simcity.wikia.com/wiki/List_of_items_in_SimCity_BuildIt
-
 This GUI application is a utility with which to keep track of items necessary for building upgrades.
 
 All items produced in commercial buildings are displayed as buttons.
