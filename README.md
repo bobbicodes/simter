@@ -1,7 +1,12 @@
 # simter
 Python/Tkinter item calculator for SimCity BuildIt.
 
-![](https://github.com/sdfwer124/simter/blob/master/simter.png?raw=true)
+![](https://github.com/porkostomus/simter/blob/master/simter.png?raw=true)
+
+## Dependencies
+
+simter runs via the `python-tk` library.
+On Ubuntu systems: `sudo apt install python-tk`
 
 This GUI application tracks your inventory and items needed for upgrades.
 Items are organized by store where they're produced.
