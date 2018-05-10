@@ -629,6 +629,7 @@ def click52():
     pprint.pprint(needed)
 
 root = tk.Tk()
+root.title('Simter')
 # create a frame and pack it
 frame1 = tk.Frame(root)
 frame1.pack(side=tk.TOP, fill=tk.X)
