@@ -1,7 +1,7 @@
 # simter
 Python/Tkinter item calculator for SimCity BuildIt.
 
-![](https://github.com/porkostomus/simter/blob/master/simter.png?raw=true)
+![](https://github.com/porkostomus/simter/blob/master/2018-05-09-204120_1366x768_scrot.png)
 
 ## Dependencies
 
