@@ -1,5 +1,5 @@
 # simter
-Python/Tkinter item calculator for SimCity BuildIt.
+Python/Tkinter Inventory and Production Management Tool
 
 ![](https://github.com/porkostomus/simter/blob/master/2018-05-09-204120_1366x768_scrot.png)
 
