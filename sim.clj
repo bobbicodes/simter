@@ -156,26 +156,25 @@
                :popcorn {:items {:microwave-oven 1
                                  :corn 2}
                          :time 27}}
-                         :home-appliances
-{:bbq-grill {:items {:metal 3
-                     :cooking-utensils 1}
-             :time 148}
- :refrigerator {:items {:plastic 2
-                        :chemicals 2
-                        :electrical-components 2}
-                :time 189}
- :lighting-system {:items {:chemicals 1
-                           :electrical-components 1
-                           :glass 1}
-                   :time 94}
- :tv {:items {:plastic 2
-              :glass 2
-              :electrical-components 2}
-      :time 135}
- :microwave-oven {:items {:metal 4
-                          :glass 1
-                          :electrical-components 1}
-                  :time 108}}})
+   :home-appliances {:bbq-grill {:items {:metal 3
+                                         :cooking-utensils 1}
+                                 :time 148}
+                     :refrigerator {:items {:plastic 2
+                                            :chemicals 2
+                                            :electrical-components 2}
+                                    :time 189}
+                     :lighting-system {:items {:chemicals 1
+                                               :electrical-components 1
+                                               :glass 1}
+                                       :time 94}
+                     :tv {:items {:plastic 2
+                                  :glass 2
+                                  :electrical-components 2}
+                          :time 135}
+                     :microwave-oven {:items {:metal 4
+                                              :glass 1
+                                              :electrical-components 1}
+                                      :time 108}}})
 
 (defn item [k]
   (some #(get-in stores [% k])
@@ -184,11 +183,19 @@
 (def prod
   [:beef :couch :couch :coffee :coffee :coffee :hammer :hammer :hammer :business-suits :popcorn :popcorn :popcorn :microwave-oven :microwave-oven :paint :paint :paint :tree-saplings :tree-saplings :business-suits])
 
-(map item prod)
+(defn items [l]
+  (reduce into []
+          (map
+           #(:items (item %)) l)))
 
-(into []
-      {:textiles 3, :drill 1, :glue 1})
+(defn n [item l]
+  (reduce + (map last
+                 (filter #(= item (first %))
+                         (items l)))))
 
-(reduce into []
-        (map
-         #(:items (item %)) prod))
+(def materials [:metal :wood :plastic :seeds :minerals :chemicals :textiles :sugar-and-spices :glass :animal-feed :electrical-components])
+
+(for [m materials] 
+  {m (n m prod)})
+
+(n :metal prod)
