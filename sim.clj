@@ -1,4 +1,5 @@
-(ns sim)
+(ns sim
+  (:require [clojure.pprint :as pprint]))
 
 (def building-supplies
   {:nails {:metal 2
@@ -173,11 +174,11 @@
    :green-smoothie {:vegetables 1
                     :seeds 6
                     :fruit-and-berries 1
-:tree-saplings 1
-:shovel 1
-:metal 1
-:wood 1
-:plastic 1
+                    :tree-saplings 1
+                    :shovel 1
+                    :metal 1
+                    :wood 1
+                    :plastic 1
                     :time 25.5}
    :bread-roll {:flour-bag 2
                 :seeds 2
@@ -190,19 +191,19 @@
                        :textiles 2
                        :fruit-and-berries 1
                        :tree-saplings 1
-:shovel 1
-:metal 1
-:wood 1
-:plastic 1
+                       :shovel 1
+                       :metal 1
+                       :wood 1
+                       :plastic 1
                        :cheese 1
                        :animal-feed 2
                        :time 76}
    :frozen-yogurt {:fruit-and-berries 1
                    :tree-saplings 1
-:shovel 1
-:metal 1
-:wood 1
-:plastic 1
+                   :shovel 1
+                   :metal 1
+                   :wood 1
+                   :plastic 1
                    :cream 1
                    :animal-feed 1
                    :sugar-and-spices 1
@@ -216,14 +217,14 @@
 (def fast-food
   {:ice-cream-sandwich {:bread-roll 1
                         :cream 2
-:animal-feed 4
-:flour-bag 2
-:seeds 2
-:textiles 2
+                        :animal-feed 4
+                        :flour-bag 2
+                        :seeds 2
+                        :textiles 2
                         :time 12.6}
    :pizza {:flour-bag 1
            :seeds 2
-:textiles 2
+           :textiles 2
            :cheese 1
            :beef 1
            :animal-feed 5
@@ -231,15 +232,15 @@
    :burgers {:beef 1
              :bread-roll 1
              :cream 4
-:animal-feed 4
-:flour-bag 2
-:seeds 2
-:textiles 2
+             :animal-feed 4
+             :flour-bag 2
+             :seeds 2
+             :textiles 2
              :bbq-grill 1
              :metal 5
-:cooking-utensils 1
-:wood 2
-:plastic 2
+             :cooking-utensils 1
+             :wood 2
+             :plastic 2
              :time 31.5}
    :cheese-fries {:vegetables 1
                   :seeds 2
@@ -248,27 +249,27 @@
                   :time 18}
    :lemonade-bottle {:fruit-and-berries 1
                      :tree-saplings 1
-:shovel 1
-:metal 1
-:wood 1
-:plastic 1
+                     :shovel 1
+                     :metal 1
+                     :wood 1
+                     :plastic 1
                      :glass 2
                      :sugar-and-spices 2
                      :time 54}
    :popcorn {:microwave-oven 1
              :metal 4
-:glass 1
-:electrical-components 1
+             :glass 1
+             :electrical-components 1
              :corn 2
              :minerals 1
-:seeds 4
+             :seeds 4
              :time 27}})
 
 (def home-appliances
   {:bbq-grill {:metal 5
                :cooking-utensils 1
-:wood 2
-:plastic 2
+               :wood 2
+               :plastic 2
                :time 148}
    :refrigerator {:plastic 2
                   :chemicals 2
@@ -287,7 +288,7 @@
                     :electrical-components 1
                     :time 108}})
 
-(def stores 
+(def stores
   [building-supplies hardware fashion furniture farmers-market gardening-supplies donut-shop fast-food home-appliances])
 
 (mapcat keys stores)
@@ -300,7 +301,7 @@
 (item :beef)
 
 (def prod
-  [:bread-roll :shovel :shovel :shovel :popcorn 
+  [:bread-roll :shovel :shovel :shovel :popcorn
    :business-suits
    :bricks :bricks :bricks :bricks :tv :flour-bag :flour-bag
    :burgers :burgers :burgers :garden-furniture :garden-furniture :garden-furniture :beef
@@ -334,6 +335,9 @@
                   (remove #(zero? (first (vals %)))
                           (parts (mapcat keys stores)))))
 
-(reverse (sort-by #(first (vals %))
-                  (remove #(zero? (first (vals %)))
-                          (parts materials))))
+(pprint/pprint
+ (zipmap ['building-supplies 'hardware 'fashion 'furniture 'farmers-market 'gardening-supplies 'donut-shop 'fast-food 'home-appliances]
+         (for [store (map parts (map keys stores))]
+           (reverse (sort-by #(first (vals %))
+                             (remove #(zero? (first (vals %)))
+                                     store))))))
