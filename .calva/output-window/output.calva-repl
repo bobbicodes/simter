@@ -135,3 +135,64 @@ clj꞉sim꞉> 
 clj꞉sim꞉> 
 {:textiles 2, :plastic 2, :glue 1}
 clj꞉sim꞉> 
+({:plastic 20} {:textiles 19} {:minerals 12} {:chemicals 11} {:metal 11} {:seeds 10} {:glass 5} {:animal-feed 3} {:wood 3} {:electrical-components 2} {:sugar-and-spices 0})
+clj꞉sim꞉> 
+({:bread-roll 9} {:flour-bag 7} {:beef 6} {:shovel 6} {:planks 6} {:bbq-grill 5} {:burgers 5} {:cheese 5} {:cream 4} {:paint 4} {:glue 4} {:bricks 4} {:ice-cream-sandwich 3} {:cherry-cheesecake 3} {:garden-furniture 3} {:tree-saplings 3} {:fruit-and-berries 3} {:watch 3} {:shoes 3} {:cheese-fries 2} {:corn 2} {:vegetables 2} {:microwave-oven 1} {:tv 1} {:popcorn 1} {:business-suits 1} {:measuring-tape 1})
+clj꞉sim꞉> 
+(:nails :planks :bricks :cement :glue :paint :hammer :measuring-tape :shovel :cooking-utensils :ladder :drill :cap :shoes :watch :business-suits :backpack :chairs :tables :home-textiles :cupboard :couch :beef :vegetables :flour-bag :fruit-and-berries :cream :corn :cheese :grass :tree-saplings :garden-furniture :fire-pit :lawn-mower :garden-gnomes :donuts :green-smoothie :bread-roll :cherry-cheesecake :frozen-yogurt :coffee :ice-cream-sandwich :pizza :burgers :cheese-fries :lemonade-bottle :popcorn :bbq-grill :refrigerator :lighting-system :tv :microwave-oven)
+clj꞉sim꞉> 
+(:electrical-components :animal-feed :glass :sugar-and-spices :textiles :chemicals :minerals :seeds :plastic :wood :metal :nails :planks :bricks :cement :glue :paint :hammer :measuring-tape :shovel :cooking-utensils :ladder :drill :cap :shoes :watch :business-suits :backpack :chairs :tables :home-textiles :cupboard :couch :beef :vegetables :flour-bag :fruit-and-berries :cream :corn :cheese :grass :tree-saplings :garden-furniture :fire-pit :lawn-mower :garden-gnomes :donuts :green-smoothie :bread-roll :cherry-cheesecake :frozen-yogurt :coffee :ice-cream-sandwich :pizza :burgers :cheese-fries :lemonade-bottle :popcorn :bbq-grill :refrigerator :lighting-system :tv :microwave-oven)
+clj꞉sim꞉> 
+({:plastic 20} {:textiles 19} {:minerals 12} {:chemicals 11} {:metal 11} {:seeds 10} {:glass 5} {:animal-feed 3} {:wood 3} {:electrical-components 2})
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:59:20
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:66:14
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:66:14
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :wood sim /home/bob/simter/sim.clj:73:12
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :wood sim /home/bob/simter/sim.clj:78:12
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:97:11
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :seeds sim /home/bob/simter/sim.clj:173:20
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate keys: :cream, :animal-feed, :flour-bag, :seeds, :textiles sim /home/bob/simter/sim.clj:217:24
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+({:metal 47} {:animal-feed 46} {:textiles 43} {:seeds 42} {:plastic 41} {:wood 25} {:chemicals 19} {:minerals 13} {:glass 6} {:electrical-components 3})
+clj꞉sim꞉> 

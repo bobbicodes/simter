@@ -59,31 +59,27 @@
    :business-suits {:textiles 3
                     :measuring-tape 1
                     :metal 1
-                    :plastic 1
+                    :plastic 2
                     :glue 1
-                    :plastic 1
                     :chemicals 2
                     :time 178}
    :backpack {:textiles 2
-              :plastic 2
+              :plastic 3
               :measuring-tape 1
               :metal 1
-              :plastic 1
               :time 127}})
 
 (def furniture
-  {:chairs {:wood 2
+  {:chairs {:wood 3
             :nails 1
             :hammer 1
             :metal 1
-            :wood 1
             :time 16}
    :tables {:planks 1
-            :wood 2
+            :wood 3
             :nails 2
             :hammer 1
             :metal 1
-            :wood 1
             :time 24}
    :home-textiles {:textiles 2
                    :measuring-tape 1
@@ -101,10 +97,9 @@
    :couch {:textiles 3
            :drill 1
            :metal 2
-           :plastic 2
+           :plastic 3
            :electrical-components 1
            :glue 1
-           :plastic 1
            :chemicals 2
            :time 120}})
 
@@ -176,9 +171,8 @@
             :sugar-and-spices 1
             :time 38.25}
    :green-smoothie {:vegetables 1
-                    :seeds 2
+                    :seeds 6
                     :fruit-and-berries 1
-                    :seeds 4
 :tree-saplings 1
 :shovel 1
 :metal 1
@@ -222,13 +216,8 @@
 (def fast-food
   {:ice-cream-sandwich {:bread-roll 1
                         :cream 2
-:animal-feed 2
+:animal-feed 4
 :flour-bag 2
-:seeds 2
-:textiles 2
-                        :cream 2
-                        :animal-feed 2
-                        :flour-bag 2
 :seeds 2
 :textiles 2
                         :time 12.6}
@@ -345,3 +334,6 @@
                   (remove #(zero? (first (vals %)))
                           (parts (mapcat keys stores)))))
 
+(reverse (sort-by #(first (vals %))
+                  (remove #(zero? (first (vals %)))
+                          (parts materials))))
