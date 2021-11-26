@@ -48,9 +48,8 @@
          :plastic 1
          :time 51}
    :shoes {:textiles 2
-           :plastic 1
+           :plastic 2
            :glue 1
-           :plastic 1
            :chemicals 2
            :time 63}
    :watch {:plastic 2

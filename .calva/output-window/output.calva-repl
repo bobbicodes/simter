@@ -133,3 +133,5 @@ clj꞉sim꞉> 
 
 clj꞉sim꞉> 
 clj꞉sim꞉> 
+{:textiles 2, :plastic 2, :glue 1}
+clj꞉sim꞉> 
