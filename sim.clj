@@ -44,10 +44,14 @@
 (def fashion
   {:cap {:textiles 2
          :measuring-tape 1
+         :metal 1
+         :plastic 1
          :time 51}
    :shoes {:textiles 2
            :plastic 1
            :glue 1
+           :plastic 1
+           :chemicals 2
            :time 63}
    :watch {:plastic 2
            :glass 1
@@ -55,32 +59,54 @@
            :time 76}
    :business-suits {:textiles 3
                     :measuring-tape 1
+                    :metal 1
+                    :plastic 1
                     :glue 1
+                    :plastic 1
+                    :chemicals 2
                     :time 178}
    :backpack {:textiles 2
               :plastic 2
               :measuring-tape 1
+              :metal 1
+              :plastic 1
               :time 127}})
 
 (def furniture
   {:chairs {:wood 2
             :nails 1
             :hammer 1
+            :metal 1
+            :wood 1
             :time 16}
    :tables {:planks 1
+            :wood 2
             :nails 2
             :hammer 1
+            :metal 1
+            :wood 1
             :time 24}
    :home-textiles {:textiles 2
                    :measuring-tape 1
+                   :metal 1
+                   :plastic 1
                    :time 60}
    :cupboard {:planks 2
+              :wood 2
               :glass 2
               :paint 1
+              :metal 2
+              :minerals 1
+              :chemicals 2
               :time 36}
    :couch {:textiles 3
            :drill 1
+           :metal 2
+           :plastic 2
+           :electrical-components 1
            :glue 1
+           :plastic 1
+           :chemicals 2
            :time 120}})
 
 (def farmers-market
@@ -91,8 +117,12 @@
    :flour-bag {:seeds 2
                :textiles 2
                :time 24}
-   :fruit-and-berries {:seeds 2
+   :fruit-and-berries {:seeds 4
                        :tree-saplings 1
+                       :shovel 1
+                       :metal 1
+                       :wood 1
+                       :plastic 1
                        :time 72}
    :cream {:animal-feed 1
            :time 60}
@@ -105,75 +135,152 @@
 (def gardening-supplies
   {:grass {:seeds 1
            :shovel 1
+           :metal 1
+           :wood 1
+           :plastic 1
            :time 24}
    :tree-saplings {:seeds 2
                    :shovel 1
+                   :metal 1
+                   :wood 1
+                   :plastic 1
                    :time 72}
    :garden-furniture {:planks 2
+                      :wood 2
                       :plastic 2
                       :textiles 2
                       :time 108}
    :fire-pit {:bricks 2
+              :minerals 2
               :shovel 1
+              :metal 1
+              :wood 1
+              :plastic 1
               :cement 2
               :time 202}
-   :lawn-mower {:metal 3
+   :lawn-mower {:metal 5
                 :paint 1
+                :minerals 1
+                :chemicals 2
                 :electrical-components 1
                 :time 96}
    :garden-gnomes {:cement 2
                    :glue 1
+                   :plastic 1
+                   :chemicals 2
                    :time 72}})
 
 (def donut-shop
   {:donuts {:flour-bag 1
+            :seeds 2
+            :textiles 2
             :sugar-and-spices 1
             :time 38.25}
    :green-smoothie {:vegetables 1
+                    :seeds 2
                     :fruit-and-berries 1
+                    :seeds 4
+:tree-saplings 1
+:shovel 1
+:metal 1
+:wood 1
+:plastic 1
                     :time 25.5}
    :bread-roll {:flour-bag 2
+                :seeds 2
+                :textiles 2
                 :cream 1
+                :animal-feed 1
                 :time 51}
    :cherry-cheesecake {:flour-bag 1
+                       :seeds 2
+                       :textiles 2
                        :fruit-and-berries 1
+                       :tree-saplings 1
+:shovel 1
+:metal 1
+:wood 1
+:plastic 1
                        :cheese 1
+                       :animal-feed 2
                        :time 76}
    :frozen-yogurt {:fruit-and-berries 1
+                   :tree-saplings 1
+:shovel 1
+:metal 1
+:wood 1
+:plastic 1
                    :cream 1
+                   :animal-feed 1
                    :sugar-and-spices 1
                    :time 204}
    :coffee {:cream 1
+            :animal-feed 1
             :seeds 2
             :sugar-and-spices 1
             :time 51}})
 
 (def fast-food
   {:ice-cream-sandwich {:bread-roll 1
-                        :cream 1
+                        :cream 2
+:animal-feed 2
+:flour-bag 2
+:seeds 2
+:textiles 2
+                        :cream 2
+                        :animal-feed 2
+                        :flour-bag 2
+:seeds 2
+:textiles 2
                         :time 12.6}
    :pizza {:flour-bag 1
+           :seeds 2
+:textiles 2
            :cheese 1
            :beef 1
+           :animal-feed 5
            :time 21.6}
    :burgers {:beef 1
              :bread-roll 1
+             :cream 4
+:animal-feed 4
+:flour-bag 2
+:seeds 2
+:textiles 2
              :bbq-grill 1
+             :metal 5
+:cooking-utensils 1
+:wood 2
+:plastic 2
              :time 31.5}
    :cheese-fries {:vegetables 1
+                  :seeds 2
                   :cheese 1
+                  :animal-feed 2
                   :time 18}
    :lemonade-bottle {:fruit-and-berries 1
+                     :tree-saplings 1
+:shovel 1
+:metal 1
+:wood 1
+:plastic 1
                      :glass 2
                      :sugar-and-spices 2
                      :time 54}
    :popcorn {:microwave-oven 1
+             :metal 4
+:glass 1
+:electrical-components 1
              :corn 2
+             :minerals 1
+:seeds 4
              :time 27}})
 
 (def home-appliances
-  {:bbq-grill {:metal 3
+  {:bbq-grill {:metal 5
                :cooking-utensils 1
+:wood 2
+:plastic 2
                :time 148}
    :refrigerator {:plastic 2
                   :chemicals 2
@@ -205,14 +312,15 @@
 (item :beef)
 
 (def prod
-  [:bricks :tv :tv :tv
-   :paint :paint :paint :paint :paint :paint :tree-saplings :tree-saplings :tree-saplings
-   :backpack :backpack :backpack :backpack :backpack :cheese-fries :cheese-fries :lemonade-bottle
-   :shoes :shoes :shoes :cement :cement :cement
-   :ice-cream-sandwich :ice-cream-sandwich :ice-cream-sandwich :watch :watch :watch :couch :couch :lemonade-bottle
-   :couch :couch :business-suits
-   :backpack :backpack :backpack :pizza :pizza :cement :cement :cement :cement
-   :cream :cooking-utensils :cooking-utensils])
+  [:bread-roll :shovel :shovel :shovel :popcorn 
+   :business-suits
+   :bricks :bricks :bricks :bricks :tv :flour-bag :flour-bag
+   :burgers :burgers :burgers :garden-furniture :garden-furniture :garden-furniture :beef
+   :paint :paint :paint :paint :tree-saplings :tree-saplings :tree-saplings
+   :burgers :burgers :cherry-cheesecake :cherry-cheesecake :cherry-cheesecake
+   :cheese-fries :cheese-fries
+   :shoes :shoes :shoes
+   :ice-cream-sandwich :ice-cream-sandwich :ice-cream-sandwich :watch :watch :watch])
 
 (defn items [l]
   (mapcat #(seq (item %)) l))
@@ -237,3 +345,4 @@
 (reverse (sort-by #(first (vals %))
                   (remove #(zero? (first (vals %)))
                           (parts (mapcat keys stores)))))
+

@@ -121,3 +121,15 @@ clj꞉sim꞉> 
 clj꞉sim꞉> 
 ({:measuring-tape 9} {:backpack 8} {:glue 8} {:cement 7} {:paint 6} {:cheese 4} {:cream 4} {:couch 4} {:drill 4} {:tv 3} {:ice-cream-sandwich 3} {:bread-roll 3} {:tree-saplings 3} {:watch 3} {:shoes 3} {:shovel 3} {:lemonade-bottle 2} {:cheese-fries 2} {:pizza 2} {:fruit-and-berries 2} {:flour-bag 2} {:vegetables 2} {:beef 2} {:cooking-utensils 2} {:business-suits 1} {:bricks 1})
 clj꞉sim꞉> 
+#'sim/prod
+clj꞉sim꞉> 
+({:plastic 20} {:textiles 19} {:minerals 12} {:chemicals 11} {:metal 11} {:seeds 10} {:glass 5} {:animal-feed 3} {:wood 3} {:electrical-components 2} {:sugar-and-spices 0})
+clj꞉sim꞉> 
+({:bread-roll 9} {:flour-bag 7} {:beef 6} {:shovel 6} {:planks 6} {:bbq-grill 5} {:burgers 5} {:cheese 5} {:cream 4} {:paint 4} {:glue 4} {:bricks 4} {:ice-cream-sandwich 3} {:cherry-cheesecake 3} {:garden-furniture 3} {:tree-saplings 3} {:fruit-and-berries 3} {:watch 3} {:shoes 3} {:cheese-fries 2} {:corn 2} {:vegetables 2} {:microwave-oven 1} {:tv 1} {:popcorn 1} {:business-suits 1} {:measuring-tape 1})
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:50:11
+; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
+
+clj꞉sim꞉> 
+clj꞉sim꞉> 
