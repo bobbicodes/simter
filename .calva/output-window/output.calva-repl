@@ -5,7 +5,7 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
-; Starting Jack-in Terminal: bb --nrepl-server 43699
+; Starting Jack-in Terminal: bb --nrepl-server 42855
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS: 
@@ -19,237 +19,400 @@ clj꞉user꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉user꞉> 
 ; Evaluating file: sim.clj
-({:measuring-tape 9} {:backpack 8} {:glue 8} {:cement 7} {:paint 6} {:drill 4} {:cheese 4} {:cream 4} {:couch 4} {:tree-saplings 3} {:ice-cream-sandwich 3} {:shovel 3} {:tv 3} {:watch 3} {:shoes 3} {:bread-roll 3} {:lemonade-bottle 2} {:cheese-fries 2} {:pizza 2} {:cooking-utensils 2} {:fruit-and-berries 2} {:flour-bag 2} {:vegetables 2} {:beef 2} {:business-suits 1} {:bricks 1})
-clj꞉sim꞉> 
-{:items {:animal-feed 3, :beef 1}, :time 120}
-clj꞉sim꞉> 
-{:items {:animal-feed 3, :beef 1}, :time 120}
-clj꞉sim꞉> 
-{:beef {:animal-feed 3, :time 120}, :vegetables {:seeds 2, :time 16}, :flour-bag {:seeds 2, :textiles 2, :time 24}, :fruit-and-berries {:seeds 2, :tree-saplings 1, :time 72}, :cream {:animal-feed 1, :time 60}, :corn {:minerals 1, :seeds 4, :time 48}, :cheese {:animal-feed 2, :time 84}}
-clj꞉sim꞉> 
-{:animal-feed 3, :time 120}
-clj꞉sim꞉> 
-#'sim/item
-clj꞉sim꞉> 
-; clojure.lang.ArityException: Wrong number of args (1) passed to: sci.impl.fns/fun/arity-0--1234 sim /home/bob/simter/sim.clj:2:10
-clj꞉sim꞉> 
-#'sim/stores
-clj꞉sim꞉> 
-#'sim/item
-clj꞉sim꞉> 
-; clojure.lang.ArityException: Wrong number of args (1) passed to: sci.impl.fns/fun/arity-0--1234 sim /home/bob/simter/sim.clj:2:10
-clj꞉sim꞉> 
-{:animal-feed 3, :time 120}
-clj꞉sim꞉> 
-(nil nil nil nil {:animal-feed 3, :time 120} nil nil nil nil)
-clj꞉sim꞉> 
-{:animal-feed 3, :time 120}
-clj꞉sim꞉> 
-#'sim/item
-clj꞉sim꞉> 
-{:animal-feed 3, :time 120, :beef 1}
-clj꞉sim꞉> 
-#'sim/item
-clj꞉sim꞉> 
-{:animal-feed 3, :beef 1}
-clj꞉sim꞉> 
-{:animal-feed 3, :time 120}
-clj꞉sim꞉> 
-{:animal-feed 3, :time 120}
-clj꞉sim꞉> 
-{:animal-feed 3, :beef 1}
-clj꞉sim꞉> 
-{:animal-feed 3, :beef 1}
-clj꞉sim꞉> 
-#object[clojure.core$comp$fn__5826 0x5e06296b "clojure.core$comp$fn__5826@5e06296b"]
-clj꞉sim꞉> 
-([:animal-feed 3] [:beef 1])
-clj꞉sim꞉> 
-#'sim/items
-clj꞉sim꞉> 
-; java.lang.IllegalArgumentException: Don't know how to create ISeq from: clojure.lang.Keyword sim /home/bob/simter/sim.clj:2:3
-clj꞉sim꞉> 
-([:animal-feed 3] [:beef 1])
-clj꞉sim꞉> 
-([:animal-feed 3] [:beef 1])
-clj꞉sim꞉> 
-#'sim/items
-clj꞉sim꞉> 
-([:minerals 2] [:bricks 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:vegetables 1] [:cheese 1] [:cheese-fries 1] [:vegetables 1] [:cheese 1] [:cheese-fries 1] [:fruit-and-berries 1] [:glass 2] [:sugar-and-spices 2] [:lemonade-bottle 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:fruit-and-berries 1] [:glass 2] [:sugar-and-spices 2] [:lemonade-bottle 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:measuring-tape 1] [:glue 1] [:business-suits 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:flour-bag 1] [:cheese 1] [:beef 1] [:pizza 1] [:flour-bag 1] [:cheese 1] [:beef 1] [:pizza 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:animal-feed 1] [:cream 1] [:metal 2] [:wood 2] [:plastic 2] [:cooking-utensils 1] [:metal 2] [:wood 2] [:plastic 2] [:cooking-utensils 1])
-clj꞉sim꞉> 
-([:minerals 2] [:bricks 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:vegetables 1] [:cheese 1] [:cheese-fries 1] [:vegetables 1] [:cheese 1] [:cheese-fries 1] [:fruit-and-berries 1] [:glass 2] [:sugar-and-spices 2] [:lemonade-bottle 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:fruit-and-berries 1] [:glass 2] [:sugar-and-spices 2] [:lemonade-bottle 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:measuring-tape 1] [:glue 1] [:business-suits 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:flour-bag 1] [:cheese 1] [:beef 1] [:pizza 1] [:flour-bag 1] [:cheese 1] [:beef 1] [:pizza 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:animal-feed 1] [:cream 1] [:metal 2] [:wood 2] [:plastic 2] [:cooking-utensils 1] [:metal 2] [:wood 2] [:plastic 2] [:cooking-utensils 1])
-clj꞉sim꞉> 
-#'sim/n
-clj꞉sim꞉> 
-#'sim/materials
-clj꞉sim꞉> 
-({:textiles 37} {:plastic 35} {:chemicals 22} {:minerals 22} {:metal 16} {:glass 13} {:electrical-components 6} {:seeds 6} {:sugar-and-spices 4} {:wood 4} {:animal-feed 1})
-clj꞉sim꞉> 
-#'sim/parts
-clj꞉sim꞉> 
-; java.lang.ClassCastException: clojure.lang.PersistentArrayMap cannot be cast to java.util.Map$Entry sim /home/bob/simter/sim.clj:3:34
-clj꞉sim꞉> 
-([:minerals 2] [:bricks 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:vegetables 1] [:cheese 1] [:cheese-fries 1] [:vegetables 1] [:cheese 1] [:cheese-fries 1] [:fruit-and-berries 1] [:glass 2] [:sugar-and-spices 2] [:lemonade-bottle 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:fruit-and-berries 1] [:glass 2] [:sugar-and-spices 2] [:lemonade-bottle 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:measuring-tape 1] [:glue 1] [:business-suits 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:flour-bag 1] [:cheese 1] [:beef 1] [:pizza 1] [:flour-bag 1] [:cheese 1] [:beef 1] [:pizza 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:animal-feed 1] [:cream 1] [:metal 2] [:wood 2] [:plastic 2] [:cooking-utensils 1] [:metal 2] [:wood 2] [:plastic 2] [:cooking-utensils 1])
-clj꞉sim꞉> 
-({:textiles 37} {:plastic 35} {:chemicals 22} {:minerals 22} {:metal 16} {:glass 13} {:electrical-components 6} {:seeds 6} {:sugar-and-spices 4} {:wood 4} {:animal-feed 1})
-clj꞉sim꞉> 
-({:textiles 37} {:plastic 35} {:chemicals 22} {:minerals 22} {:metal 16} {:glass 13} {:electrical-components 6} {:seeds 6} {:sugar-and-spices 4} {:wood 4} {:animal-feed 1})
-clj꞉sim꞉> 
-16
-clj꞉sim꞉> 
-16
-clj꞉sim꞉> 
-[{:nails {:metal 2, :time 4}, :planks {:wood 2, :time 24}, :bricks {:minerals 2, :time 16}, :cement {:minerals 2, :chemicals 1, :time 40}, :glue {:plastic 1, :chemicals 2, :time 48}, :paint {:metal 2, :minerals 1, :chemicals 2, :time 48}} {:hammer {:metal 1, :wood 1, :time 11.2}, :measuring-tape {:metal 1, :plastic 1, :time 16}, :shovel {:metal 1, :wood 1, :plastic 1, :time 24}, :cooking-utensils {:metal 2, :wood 2, :plastic 2, :time 36}, :ladder {:metal 2, :planks 2, :time 48}, :drill {:metal 2, :plastic 2, :electrical-components 1, :time 96}} {:cap {:textiles 2, :measuring-tape 1, :time 51}, :shoes {:textiles 2, :plastic 1, :glue 1, :time 63}, :watch {:plastic 2, :glass 1, :chemicals 1, :time 76}, :business-suits {:textiles 3, :measuring-tape 1, :glue 1, :time 178}, :backpack {:textiles 2, :plastic 2, :measuring-tape 1, :time 127}} {:chairs {:wood 2, :nails 1, :hammer 1, :time 16}, :tables {:planks 1, :nails 2, :hammer 1, :time 24}, :home-textiles {:textiles 2, :measuring-tape 1, :time 60}, :cupboard {:planks 2, :glass 2, :paint 1, :time 36}, :couch {:textiles 3, :drill 1, :glue 1, :time 120}} {:beef {:animal-feed 3, :time 120}, :vegetables {:seeds 2, :time 16}, :flour-bag {:seeds 2, :textiles 2, :time 24}, :fruit-and-berries {:seeds 2, :tree-saplings 1, :time 72}, :cream {:animal-feed 1, :time 60}, :corn {:minerals 1, :seeds 4, :time 48}, :cheese {:animal-feed 2, :time 84}} {:grass {:seeds 1, :shovel 1, :time 24}, :tree-saplings {:seeds 2, :shovel 1, :time 72}, :garden-furniture {:planks 2, :plastic 2, :textiles 2, :time 108}, :fire-pit {:bricks 2, :shovel 1, :cement 2, :time 202}, :lawn-mower {:metal 3, :paint 1, :electrical-components 1, :time 96}, :garden-gnomes {:cement 2, :glue 1, :time 72}} {:donuts {:flour-bag 1, :sugar-and-spices 1, :time 38.25}, :green-smoothie {:vegetables 1, :fruit-and-berries 1, :time 25.5}, :bread-roll {:flour-bag 2, :cream 1, :time 51}, :cherry-cheesecake {:flour-bag 1, :fruit-and-berries 1, :cheese 1, :time 76}, :frozen-yogurt {:fruit-and-berries 1, :cream 1, :sugar-and-spices 1, :time 204}, :coffee {:cream 1, :seeds 2, :sugar-and-spices 1, :time 51}} {:ice-cream-sandwich {:bread-roll 1, :cream 1, :time 12.6}, :pizza {:flour-bag 1, :cheese 1, :beef 1, :time 21.6}, :burgers {:beef 1, :bread-roll 1, :bbq-grill 1, :time 31.5}, :cheese-fries {:vegetables 1, :cheese 1, :time 18}, :lemonade-bottle {:fruit-and-berries 1, :glass 2, :sugar-and-spices 2, :time 54}, :popcorn {:microwave-oven 1, :corn 2, :time 27}} {:bbq-grill {:metal 3, :cooking-utensils 1, :time 148}, :refrigerator {:plastic 2, :chemicals 2, :electrical-components 2, :time 189}, :lighting-system {:chemicals 1, :electrical-components 1, :glass 1, :time 94}, :tv {:plastic 2, :glass 2, :electrical-components 2, :time 135}, :microwave-oven {:metal 4, :glass 1, :electrical-components 1, :time 108}}]
-clj꞉sim꞉> 
-#'sim/stores
-clj꞉sim꞉> 
-#'sim/item
-clj꞉sim꞉> 
-{:animal-feed 3, :beef 1}
-clj꞉sim꞉> 
-#'sim/items
-clj꞉sim꞉> 
-([:minerals 2] [:bricks 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:plastic 2] [:glass 2] [:electrical-components 2] [:tv 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:metal 2] [:minerals 1] [:chemicals 2] [:paint 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:seeds 2] [:shovel 1] [:tree-saplings 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:vegetables 1] [:cheese 1] [:cheese-fries 1] [:vegetables 1] [:cheese 1] [:cheese-fries 1] [:fruit-and-berries 1] [:glass 2] [:sugar-and-spices 2] [:lemonade-bottle 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:textiles 2] [:plastic 1] [:glue 1] [:shoes 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:bread-roll 1] [:cream 1] [:ice-cream-sandwich 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:plastic 2] [:glass 1] [:chemicals 1] [:watch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:fruit-and-berries 1] [:glass 2] [:sugar-and-spices 2] [:lemonade-bottle 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:drill 1] [:glue 1] [:couch 1] [:textiles 3] [:measuring-tape 1] [:glue 1] [:business-suits 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:textiles 2] [:plastic 2] [:measuring-tape 1] [:backpack 1] [:flour-bag 1] [:cheese 1] [:beef 1] [:pizza 1] [:flour-bag 1] [:cheese 1] [:beef 1] [:pizza 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:minerals 2] [:chemicals 1] [:cement 1] [:animal-feed 1] [:cream 1] [:metal 2] [:wood 2] [:plastic 2] [:cooking-utensils 1] [:metal 2] [:wood 2] [:plastic 2] [:cooking-utensils 1])
-clj꞉sim꞉> 
-[{:nails {:metal 2, :time 4}, :planks {:wood 2, :time 24}, :bricks {:minerals 2, :time 16}, :cement {:minerals 2, :chemicals 1, :time 40}, :glue {:plastic 1, :chemicals 2, :time 48}, :paint {:metal 2, :minerals 1, :chemicals 2, :time 48}} {:hammer {:metal 1, :wood 1, :time 11.2}, :measuring-tape {:metal 1, :plastic 1, :time 16}, :shovel {:metal 1, :wood 1, :plastic 1, :time 24}, :cooking-utensils {:metal 2, :wood 2, :plastic 2, :time 36}, :ladder {:metal 2, :planks 2, :time 48}, :drill {:metal 2, :plastic 2, :electrical-components 1, :time 96}} {:cap {:textiles 2, :measuring-tape 1, :time 51}, :shoes {:textiles 2, :plastic 1, :glue 1, :time 63}, :watch {:plastic 2, :glass 1, :chemicals 1, :time 76}, :business-suits {:textiles 3, :measuring-tape 1, :glue 1, :time 178}, :backpack {:textiles 2, :plastic 2, :measuring-tape 1, :time 127}} {:chairs {:wood 2, :nails 1, :hammer 1, :time 16}, :tables {:planks 1, :nails 2, :hammer 1, :time 24}, :home-textiles {:textiles 2, :measuring-tape 1, :time 60}, :cupboard {:planks 2, :glass 2, :paint 1, :time 36}, :couch {:textiles 3, :drill 1, :glue 1, :time 120}} {:beef {:animal-feed 3, :time 120}, :vegetables {:seeds 2, :time 16}, :flour-bag {:seeds 2, :textiles 2, :time 24}, :fruit-and-berries {:seeds 2, :tree-saplings 1, :time 72}, :cream {:animal-feed 1, :time 60}, :corn {:minerals 1, :seeds 4, :time 48}, :cheese {:animal-feed 2, :time 84}} {:grass {:seeds 1, :shovel 1, :time 24}, :tree-saplings {:seeds 2, :shovel 1, :time 72}, :garden-furniture {:planks 2, :plastic 2, :textiles 2, :time 108}, :fire-pit {:bricks 2, :shovel 1, :cement 2, :time 202}, :lawn-mower {:metal 3, :paint 1, :electrical-components 1, :time 96}, :garden-gnomes {:cement 2, :glue 1, :time 72}} {:donuts {:flour-bag 1, :sugar-and-spices 1, :time 38.25}, :green-smoothie {:vegetables 1, :fruit-and-berries 1, :time 25.5}, :bread-roll {:flour-bag 2, :cream 1, :time 51}, :cherry-cheesecake {:flour-bag 1, :fruit-and-berries 1, :cheese 1, :time 76}, :frozen-yogurt {:fruit-and-berries 1, :cream 1, :sugar-and-spices 1, :time 204}, :coffee {:cream 1, :seeds 2, :sugar-and-spices 1, :time 51}} {:ice-cream-sandwich {:bread-roll 1, :cream 1, :time 12.6}, :pizza {:flour-bag 1, :cheese 1, :beef 1, :time 21.6}, :burgers {:beef 1, :bread-roll 1, :bbq-grill 1, :time 31.5}, :cheese-fries {:vegetables 1, :cheese 1, :time 18}, :lemonade-bottle {:fruit-and-berries 1, :glass 2, :sugar-and-spices 2, :time 54}, :popcorn {:microwave-oven 1, :corn 2, :time 27}} {:bbq-grill {:metal 3, :cooking-utensils 1, :time 148}, :refrigerator {:plastic 2, :chemicals 2, :electrical-components 2, :time 189}, :lighting-system {:chemicals 1, :electrical-components 1, :glass 1, :time 94}, :tv {:plastic 2, :glass 2, :electrical-components 2, :time 135}, :microwave-oven {:metal 4, :glass 1, :electrical-components 1, :time 108}}]
-clj꞉sim꞉> 
-#'sim/stores
-clj꞉sim꞉> 
-((:nails :planks :bricks :cement :glue :paint) (:hammer :measuring-tape :shovel :cooking-utensils :ladder :drill) (:cap :shoes :watch :business-suits :backpack) (:chairs :tables :home-textiles :cupboard :couch) (:beef :vegetables :flour-bag :fruit-and-berries :cream :corn :cheese) (:grass :tree-saplings :garden-furniture :fire-pit :lawn-mower :garden-gnomes) (:donuts :green-smoothie :bread-roll :cherry-cheesecake :frozen-yogurt :coffee) (:ice-cream-sandwich :pizza :burgers :cheese-fries :lemonade-bottle :popcorn) (:bbq-grill :refrigerator :lighting-system :tv :microwave-oven))
-clj꞉sim꞉> 
-(:nails :planks :bricks :cement :glue :paint :hammer :measuring-tape :shovel :cooking-utensils :ladder :drill :cap :shoes :watch :business-suits :backpack :chairs :tables :home-textiles :cupboard :couch :beef :vegetables :flour-bag :fruit-and-berries :cream :corn :cheese :grass :tree-saplings :garden-furniture :fire-pit :lawn-mower :garden-gnomes :donuts :green-smoothie :bread-roll :cherry-cheesecake :frozen-yogurt :coffee :ice-cream-sandwich :pizza :burgers :cheese-fries :lemonade-bottle :popcorn :bbq-grill :refrigerator :lighting-system :tv :microwave-oven)
-clj꞉sim꞉> 
-({:measuring-tape 9} {:backpack 8} {:glue 8} {:cement 7} {:paint 6} {:cheese 4} {:cream 4} {:couch 4} {:drill 4} {:tv 3} {:ice-cream-sandwich 3} {:bread-roll 3} {:tree-saplings 3} {:watch 3} {:shoes 3} {:shovel 3} {:lemonade-bottle 2} {:cheese-fries 2} {:pizza 2} {:fruit-and-berries 2} {:flour-bag 2} {:vegetables 2} {:beef 2} {:cooking-utensils 2} {:business-suits 1} {:bricks 1})
-clj꞉sim꞉> 
-#'sim/prod
-clj꞉sim꞉> 
-({:plastic 20} {:textiles 19} {:minerals 12} {:chemicals 11} {:metal 11} {:seeds 10} {:glass 5} {:animal-feed 3} {:wood 3} {:electrical-components 2} {:sugar-and-spices 0})
-clj꞉sim꞉> 
-({:bread-roll 9} {:flour-bag 7} {:beef 6} {:shovel 6} {:planks 6} {:bbq-grill 5} {:burgers 5} {:cheese 5} {:cream 4} {:paint 4} {:glue 4} {:bricks 4} {:ice-cream-sandwich 3} {:cherry-cheesecake 3} {:garden-furniture 3} {:tree-saplings 3} {:fruit-and-berries 3} {:watch 3} {:shoes 3} {:cheese-fries 2} {:corn 2} {:vegetables 2} {:microwave-oven 1} {:tv 1} {:popcorn 1} {:business-suits 1} {:measuring-tape 1})
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:50:11
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-{:textiles 2, :plastic 2, :glue 1}
-clj꞉sim꞉> 
-({:plastic 20} {:textiles 19} {:minerals 12} {:chemicals 11} {:metal 11} {:seeds 10} {:glass 5} {:animal-feed 3} {:wood 3} {:electrical-components 2} {:sugar-and-spices 0})
-clj꞉sim꞉> 
-({:bread-roll 9} {:flour-bag 7} {:beef 6} {:shovel 6} {:planks 6} {:bbq-grill 5} {:burgers 5} {:cheese 5} {:cream 4} {:paint 4} {:glue 4} {:bricks 4} {:ice-cream-sandwich 3} {:cherry-cheesecake 3} {:garden-furniture 3} {:tree-saplings 3} {:fruit-and-berries 3} {:watch 3} {:shoes 3} {:cheese-fries 2} {:corn 2} {:vegetables 2} {:microwave-oven 1} {:tv 1} {:popcorn 1} {:business-suits 1} {:measuring-tape 1})
-clj꞉sim꞉> 
-(:nails :planks :bricks :cement :glue :paint :hammer :measuring-tape :shovel :cooking-utensils :ladder :drill :cap :shoes :watch :business-suits :backpack :chairs :tables :home-textiles :cupboard :couch :beef :vegetables :flour-bag :fruit-and-berries :cream :corn :cheese :grass :tree-saplings :garden-furniture :fire-pit :lawn-mower :garden-gnomes :donuts :green-smoothie :bread-roll :cherry-cheesecake :frozen-yogurt :coffee :ice-cream-sandwich :pizza :burgers :cheese-fries :lemonade-bottle :popcorn :bbq-grill :refrigerator :lighting-system :tv :microwave-oven)
-clj꞉sim꞉> 
-(:electrical-components :animal-feed :glass :sugar-and-spices :textiles :chemicals :minerals :seeds :plastic :wood :metal :nails :planks :bricks :cement :glue :paint :hammer :measuring-tape :shovel :cooking-utensils :ladder :drill :cap :shoes :watch :business-suits :backpack :chairs :tables :home-textiles :cupboard :couch :beef :vegetables :flour-bag :fruit-and-berries :cream :corn :cheese :grass :tree-saplings :garden-furniture :fire-pit :lawn-mower :garden-gnomes :donuts :green-smoothie :bread-roll :cherry-cheesecake :frozen-yogurt :coffee :ice-cream-sandwich :pizza :burgers :cheese-fries :lemonade-bottle :popcorn :bbq-grill :refrigerator :lighting-system :tv :microwave-oven)
-clj꞉sim꞉> 
-({:plastic 20} {:textiles 19} {:minerals 12} {:chemicals 11} {:metal 11} {:seeds 10} {:glass 5} {:animal-feed 3} {:wood 3} {:electrical-components 2})
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:59:20
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:66:14
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:66:14
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :wood sim /home/bob/simter/sim.clj:73:12
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :wood sim /home/bob/simter/sim.clj:78:12
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :plastic sim /home/bob/simter/sim.clj:97:11
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate key: :seeds sim /home/bob/simter/sim.clj:173:20
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-; clojure.lang.ExceptionInfo: Map literal contains duplicate keys: :cream, :animal-feed, :flour-bag, :seeds, :textiles sim /home/bob/simter/sim.clj:217:24
-; Evaluation of file sim.clj failed: class clojure.lang.ExceptionInfo
-
-clj꞉sim꞉> 
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-({:metal 47} {:animal-feed 46} {:textiles 43} {:seeds 42} {:plastic 41} {:wood 25} {:chemicals 19} {:minerals 13} {:glass 6} {:electrical-components 3})
-clj꞉sim꞉> 
-({:metal 47} {:animal-feed 46} {:textiles 43} {:seeds 42} {:plastic 41} {:wood 25} {:chemicals 19} {:minerals 13} {:glass 6} {:electrical-components 3} {:sugar-and-spices 0})
-clj꞉sim꞉> 
-({:cream 27} {:flour-bag 23} {:bread-roll 9} {:shovel 9} {:tree-saplings 6} {:beef 6} {:planks 6} {:bbq-grill 5} {:burgers 5} {:cheese 5} {:cooking-utensils 5} {:paint 4} {:glue 4} {:bricks 4} {:ice-cream-sandwich 3} {:cherry-cheesecake 3} {:garden-furniture 3} {:fruit-and-berries 3} {:watch 3} {:shoes 3} {:cheese-fries 2} {:corn 2} {:vegetables 2} {:microwave-oven 1} {:tv 1} {:popcorn 1} {:business-suits 1} {:measuring-tape 1})
-clj꞉sim꞉> 
-(:nails :planks :bricks :cement :glue :paint :hammer :measuring-tape :shovel :cooking-utensils :ladder :drill :cap :shoes :watch :business-suits :backpack :chairs :tables :home-textiles :cupboard :couch :beef :vegetables :flour-bag :fruit-and-berries :cream :corn :cheese :grass :tree-saplings :garden-furniture :fire-pit :lawn-mower :garden-gnomes :donuts :green-smoothie :bread-roll :cherry-cheesecake :frozen-yogurt :coffee :ice-cream-sandwich :pizza :burgers :cheese-fries :lemonade-bottle :popcorn :bbq-grill :refrigerator :lighting-system :tv :microwave-oven)
-clj꞉sim꞉> 
-[{:nails {:metal 2, :time 4}, :planks {:wood 2, :time 24}, :bricks {:minerals 2, :time 16}, :cement {:minerals 2, :chemicals 1, :time 40}, :glue {:plastic 1, :chemicals 2, :time 48}, :paint {:metal 2, :minerals 1, :chemicals 2, :time 48}} {:hammer {:metal 1, :wood 1, :time 11.2}, :measuring-tape {:metal 1, :plastic 1, :time 16}, :shovel {:metal 1, :wood 1, :plastic 1, :time 24}, :cooking-utensils {:metal 2, :wood 2, :plastic 2, :time 36}, :ladder {:metal 2, :planks 2, :time 48}, :drill {:metal 2, :plastic 2, :electrical-components 1, :time 96}} {:cap {:textiles 2, :measuring-tape 1, :metal 1, :plastic 1, :time 51}, :shoes {:textiles 2, :plastic 2, :glue 1, :chemicals 2, :time 63}, :watch {:plastic 2, :glass 1, :chemicals 1, :time 76}, :business-suits {:textiles 3, :measuring-tape 1, :metal 1, :plastic 2, :glue 1, :chemicals 2, :time 178}, :backpack {:textiles 2, :plastic 3, :measuring-tape 1, :metal 1, :time 127}} {:chairs {:wood 3, :nails 1, :hammer 1, :metal 1, :time 16}, :tables {:planks 1, :wood 3, :nails 2, :hammer 1, :metal 1, :time 24}, :home-textiles {:textiles 2, :measuring-tape 1, :metal 1, :plastic 1, :time 60}, :cupboard {:planks 2, :wood 2, :glass 2, :paint 1, :metal 2, :minerals 1, :chemicals 2, :time 36}, :couch {:textiles 3, :drill 1, :metal 2, :plastic 3, :electrical-components 1, :glue 1, :chemicals 2, :time 120}} {:beef {:animal-feed 3, :time 120}, :vegetables {:seeds 2, :time 16}, :flour-bag {:seeds 2, :textiles 2, :time 24}, :fruit-and-berries {:seeds 4, :tree-saplings 1, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 72}, :cream {:animal-feed 1, :time 60}, :corn {:minerals 1, :seeds 4, :time 48}, :cheese {:animal-feed 2, :time 84}} {:grass {:seeds 1, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 24}, :tree-saplings {:seeds 2, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 72}, :garden-furniture {:planks 2, :wood 2, :plastic 2, :textiles 2, :time 108}, :fire-pit {:bricks 2, :minerals 2, :shovel 1, :metal 1, :wood 1, :plastic 1, :cement 2, :time 202}, :lawn-mower {:metal 5, :paint 1, :minerals 1, :chemicals 2, :electrical-components 1, :time 96}, :garden-gnomes {:cement 2, :glue 1, :plastic 1, :chemicals 2, :time 72}} {:donuts {:flour-bag 1, :seeds 2, :textiles 2, :sugar-and-spices 1, :time 38.25}, :green-smoothie {:metal 1, :seeds 6, :time 25.5, :plastic 1, :wood 1, :shovel 1, :fruit-and-berries 1, :vegetables 1, :tree-saplings 1}, :bread-roll {:flour-bag 2, :seeds 2, :textiles 2, :cream 1, :animal-feed 1, :time 51}, :cherry-cheesecake {:metal 1, :flour-bag 1, :seeds 2, :time 76, :cheese 1, :plastic 1, :wood 1, :animal-feed 2, :shovel 1, :fruit-and-berries 1, :tree-saplings 1, :textiles 2}, :frozen-yogurt {:metal 1, :cream 1, :time 204, :plastic 1, :sugar-and-spices 1, :wood 1, :animal-feed 1, :shovel 1, :fruit-and-berries 1, :tree-saplings 1}, :coffee {:cream 1, :animal-feed 1, :seeds 2, :sugar-and-spices 1, :time 51}} {:ice-cream-sandwich {:bread-roll 1, :cream 2, :animal-feed 4, :flour-bag 2, :seeds 2, :textiles 2, :time 12.6}, :pizza {:flour-bag 1, :seeds 2, :textiles 2, :cheese 1, :beef 1, :animal-feed 5, :time 21.6}, :burgers {:metal 5, :flour-bag 2, :cream 4, :beef 1, :bread-roll 1, :cooking-utensils 1, :seeds 2, :time 31.5, :bbq-grill 1, :plastic 2, :wood 2, :animal-feed 4, :textiles 2}, :cheese-fries {:vegetables 1, :seeds 2, :cheese 1, :animal-feed 2, :time 18}, :lemonade-bottle {:metal 1, :time 54, :plastic 1, :sugar-and-spices 2, :glass 2, :wood 1, :shovel 1, :fruit-and-berries 1, :tree-saplings 1}, :popcorn {:microwave-oven 1, :metal 4, :glass 1, :electrical-components 1, :corn 2, :minerals 1, :seeds 4, :time 27}} {:bbq-grill {:metal 5, :cooking-utensils 1, :wood 2, :plastic 2, :time 148}, :refrigerator {:plastic 2, :chemicals 2, :electrical-components 2, :time 189}, :lighting-system {:chemicals 1, :electrical-components 1, :glass 1, :time 94}, :tv {:plastic 2, :glass 2, :electrical-components 2, :time 135}, :microwave-oven {:metal 4, :glass 1, :electrical-components 1, :time 108}}]
-clj꞉sim꞉> 
-; : clojure.lang.PersistentArrayMap cannot be cast to java.util.Map$Entry sim 
-clj꞉sim꞉> 
-[{:nails {:metal 2, :time 4}, :planks {:wood 2, :time 24}, :bricks {:minerals 2, :time 16}, :cement {:minerals 2, :chemicals 1, :time 40}, :glue {:plastic 1, :chemicals 2, :time 48}, :paint {:metal 2, :minerals 1, :chemicals 2, :time 48}} {:hammer {:metal 1, :wood 1, :time 11.2}, :measuring-tape {:metal 1, :plastic 1, :time 16}, :shovel {:metal 1, :wood 1, :plastic 1, :time 24}, :cooking-utensils {:metal 2, :wood 2, :plastic 2, :time 36}, :ladder {:metal 2, :planks 2, :time 48}, :drill {:metal 2, :plastic 2, :electrical-components 1, :time 96}} {:cap {:textiles 2, :measuring-tape 1, :metal 1, :plastic 1, :time 51}, :shoes {:textiles 2, :plastic 2, :glue 1, :chemicals 2, :time 63}, :watch {:plastic 2, :glass 1, :chemicals 1, :time 76}, :business-suits {:textiles 3, :measuring-tape 1, :metal 1, :plastic 2, :glue 1, :chemicals 2, :time 178}, :backpack {:textiles 2, :plastic 3, :measuring-tape 1, :metal 1, :time 127}} {:chairs {:wood 3, :nails 1, :hammer 1, :metal 1, :time 16}, :tables {:planks 1, :wood 3, :nails 2, :hammer 1, :metal 1, :time 24}, :home-textiles {:textiles 2, :measuring-tape 1, :metal 1, :plastic 1, :time 60}, :cupboard {:planks 2, :wood 2, :glass 2, :paint 1, :metal 2, :minerals 1, :chemicals 2, :time 36}, :couch {:textiles 3, :drill 1, :metal 2, :plastic 3, :electrical-components 1, :glue 1, :chemicals 2, :time 120}} {:beef {:animal-feed 3, :time 120}, :vegetables {:seeds 2, :time 16}, :flour-bag {:seeds 2, :textiles 2, :time 24}, :fruit-and-berries {:seeds 4, :tree-saplings 1, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 72}, :cream {:animal-feed 1, :time 60}, :corn {:minerals 1, :seeds 4, :time 48}, :cheese {:animal-feed 2, :time 84}} {:grass {:seeds 1, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 24}, :tree-saplings {:seeds 2, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 72}, :garden-furniture {:planks 2, :wood 2, :plastic 2, :textiles 2, :time 108}, :fire-pit {:bricks 2, :minerals 2, :shovel 1, :metal 1, :wood 1, :plastic 1, :cement 2, :time 202}, :lawn-mower {:metal 5, :paint 1, :minerals 1, :chemicals 2, :electrical-components 1, :time 96}, :garden-gnomes {:cement 2, :glue 1, :plastic 1, :chemicals 2, :time 72}} {:donuts {:flour-bag 1, :seeds 2, :textiles 2, :sugar-and-spices 1, :time 38.25}, :green-smoothie {:metal 1, :seeds 6, :time 25.5, :plastic 1, :wood 1, :shovel 1, :fruit-and-berries 1, :vegetables 1, :tree-saplings 1}, :bread-roll {:flour-bag 2, :seeds 2, :textiles 2, :cream 1, :animal-feed 1, :time 51}, :cherry-cheesecake {:metal 1, :flour-bag 1, :seeds 2, :time 76, :cheese 1, :plastic 1, :wood 1, :animal-feed 2, :shovel 1, :fruit-and-berries 1, :tree-saplings 1, :textiles 2}, :frozen-yogurt {:metal 1, :cream 1, :time 204, :plastic 1, :sugar-and-spices 1, :wood 1, :animal-feed 1, :shovel 1, :fruit-and-berries 1, :tree-saplings 1}, :coffee {:cream 1, :animal-feed 1, :seeds 2, :sugar-and-spices 1, :time 51}} {:ice-cream-sandwich {:bread-roll 1, :cream 2, :animal-feed 4, :flour-bag 2, :seeds 2, :textiles 2, :time 12.6}, :pizza {:flour-bag 1, :seeds 2, :textiles 2, :cheese 1, :beef 1, :animal-feed 5, :time 21.6}, :burgers {:metal 5, :flour-bag 2, :cream 4, :beef 1, :bread-roll 1, :cooking-utensils 1, :seeds 2, :time 31.5, :bbq-grill 1, :plastic 2, :wood 2, :animal-feed 4, :textiles 2}, :cheese-fries {:vegetables 1, :seeds 2, :cheese 1, :animal-feed 2, :time 18}, :lemonade-bottle {:metal 1, :time 54, :plastic 1, :sugar-and-spices 2, :glass 2, :wood 1, :shovel 1, :fruit-and-berries 1, :tree-saplings 1}, :popcorn {:microwave-oven 1, :metal 4, :glass 1, :electrical-components 1, :corn 2, :minerals 1, :seeds 4, :time 27}} {:bbq-grill {:metal 5, :cooking-utensils 1, :wood 2, :plastic 2, :time 148}, :refrigerator {:plastic 2, :chemicals 2, :electrical-components 2, :time 189}, :lighting-system {:chemicals 1, :electrical-components 1, :glass 1, :time 94}, :tv {:plastic 2, :glass 2, :electrical-components 2, :time 135}, :microwave-oven {:metal 4, :glass 1, :electrical-components 1, :time 108}}]
-clj꞉sim꞉> 
-[{:nails {:metal 2, :time 4}, :planks {:wood 2, :time 24}, :bricks {:minerals 2, :time 16}, :cement {:minerals 2, :chemicals 1, :time 40}, :glue {:plastic 1, :chemicals 2, :time 48}, :paint {:metal 2, :minerals 1, :chemicals 2, :time 48}} {:hammer {:metal 1, :wood 1, :time 11.2}, :measuring-tape {:metal 1, :plastic 1, :time 16}, :shovel {:metal 1, :wood 1, :plastic 1, :time 24}, :cooking-utensils {:metal 2, :wood 2, :plastic 2, :time 36}, :ladder {:metal 2, :planks 2, :time 48}, :drill {:metal 2, :plastic 2, :electrical-components 1, :time 96}} {:cap {:textiles 2, :measuring-tape 1, :metal 1, :plastic 1, :time 51}, :shoes {:textiles 2, :plastic 2, :glue 1, :chemicals 2, :time 63}, :watch {:plastic 2, :glass 1, :chemicals 1, :time 76}, :business-suits {:textiles 3, :measuring-tape 1, :metal 1, :plastic 2, :glue 1, :chemicals 2, :time 178}, :backpack {:textiles 2, :plastic 3, :measuring-tape 1, :metal 1, :time 127}} {:chairs {:wood 3, :nails 1, :hammer 1, :metal 1, :time 16}, :tables {:planks 1, :wood 3, :nails 2, :hammer 1, :metal 1, :time 24}, :home-textiles {:textiles 2, :measuring-tape 1, :metal 1, :plastic 1, :time 60}, :cupboard {:planks 2, :wood 2, :glass 2, :paint 1, :metal 2, :minerals 1, :chemicals 2, :time 36}, :couch {:textiles 3, :drill 1, :metal 2, :plastic 3, :electrical-components 1, :glue 1, :chemicals 2, :time 120}} {:beef {:animal-feed 3, :time 120}, :vegetables {:seeds 2, :time 16}, :flour-bag {:seeds 2, :textiles 2, :time 24}, :fruit-and-berries {:seeds 4, :tree-saplings 1, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 72}, :cream {:animal-feed 1, :time 60}, :corn {:minerals 1, :seeds 4, :time 48}, :cheese {:animal-feed 2, :time 84}} {:grass {:seeds 1, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 24}, :tree-saplings {:seeds 2, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 72}, :garden-furniture {:planks 2, :wood 2, :plastic 2, :textiles 2, :time 108}, :fire-pit {:bricks 2, :minerals 2, :shovel 1, :metal 1, :wood 1, :plastic 1, :cement 2, :time 202}, :lawn-mower {:metal 5, :paint 1, :minerals 1, :chemicals 2, :electrical-components 1, :time 96}, :garden-gnomes {:cement 2, :glue 1, :plastic 1, :chemicals 2, :time 72}} {:donuts {:flour-bag 1, :seeds 2, :textiles 2, :sugar-and-spices 1, :time 38.25}, :green-smoothie {:metal 1, :seeds 6, :time 25.5, :plastic 1, :wood 1, :shovel 1, :fruit-and-berries 1, :vegetables 1, :tree-saplings 1}, :bread-roll {:flour-bag 2, :seeds 2, :textiles 2, :cream 1, :animal-feed 1, :time 51}, :cherry-cheesecake {:metal 1, :flour-bag 1, :seeds 2, :time 76, :cheese 1, :plastic 1, :wood 1, :animal-feed 2, :shovel 1, :fruit-and-berries 1, :tree-saplings 1, :textiles 2}, :frozen-yogurt {:metal 1, :cream 1, :time 204, :plastic 1, :sugar-and-spices 1, :wood 1, :animal-feed 1, :shovel 1, :fruit-and-berries 1, :tree-saplings 1}, :coffee {:cream 1, :animal-feed 1, :seeds 2, :sugar-and-spices 1, :time 51}} {:ice-cream-sandwich {:bread-roll 1, :cream 2, :animal-feed 4, :flour-bag 2, :seeds 2, :textiles 2, :time 12.6}, :pizza {:flour-bag 1, :seeds 2, :textiles 2, :cheese 1, :beef 1, :animal-feed 5, :time 21.6}, :burgers {:metal 5, :flour-bag 2, :cream 4, :beef 1, :bread-roll 1, :cooking-utensils 1, :seeds 2, :time 31.5, :bbq-grill 1, :plastic 2, :wood 2, :animal-feed 4, :textiles 2}, :cheese-fries {:vegetables 1, :seeds 2, :cheese 1, :animal-feed 2, :time 18}, :lemonade-bottle {:metal 1, :time 54, :plastic 1, :sugar-and-spices 2, :glass 2, :wood 1, :shovel 1, :fruit-and-berries 1, :tree-saplings 1}, :popcorn {:microwave-oven 1, :metal 4, :glass 1, :electrical-components 1, :corn 2, :minerals 1, :seeds 4, :time 27}} {:bbq-grill {:metal 5, :cooking-utensils 1, :wood 2, :plastic 2, :time 148}, :refrigerator {:plastic 2, :chemicals 2, :electrical-components 2, :time 189}, :lighting-system {:chemicals 1, :electrical-components 1, :glass 1, :time 94}, :tv {:plastic 2, :glass 2, :electrical-components 2, :time 135}, :microwave-oven {:metal 4, :glass 1, :electrical-components 1, :time 108}}]
-clj꞉sim꞉> 
-((:nails :planks :bricks :cement :glue :paint) (:hammer :measuring-tape :shovel :cooking-utensils :ladder :drill) (:cap :shoes :watch :business-suits :backpack) (:chairs :tables :home-textiles :cupboard :couch) (:beef :vegetables :flour-bag :fruit-and-berries :cream :corn :cheese) (:grass :tree-saplings :garden-furniture :fire-pit :lawn-mower :garden-gnomes) (:donuts :green-smoothie :bread-roll :cherry-cheesecake :frozen-yogurt :coffee) (:ice-cream-sandwich :pizza :burgers :cheese-fries :lemonade-bottle :popcorn) (:bbq-grill :refrigerator :lighting-system :tv :microwave-oven))
-clj꞉sim꞉> 
-(({:nails 0} {:planks 6} {:bricks 4} {:cement 0} {:glue 4} {:paint 4}) ({:hammer 0} {:measuring-tape 1} {:shovel 9} {:cooking-utensils 5} {:ladder 0} {:drill 0}) ({:cap 0} {:shoes 3} {:watch 3} {:business-suits 1} {:backpack 0}) ({:chairs 0} {:tables 0} {:home-textiles 0} {:cupboard 0} {:couch 0}) ({:beef 6} {:vegetables 2} {:flour-bag 23} {:fruit-and-berries 3} {:cream 27} {:corn 2} {:cheese 5}) ({:grass 0} {:tree-saplings 6} {:garden-furniture 3} {:fire-pit 0} {:lawn-mower 0} {:garden-gnomes 0}) ({:donuts 0} {:green-smoothie 0} {:bread-roll 9} {:cherry-cheesecake 3} {:frozen-yogurt 0} {:coffee 0}) ({:ice-cream-sandwich 3} {:pizza 0} {:burgers 5} {:cheese-fries 2} {:lemonade-bottle 0} {:popcorn 1}) ({:bbq-grill 5} {:refrigerator 0} {:lighting-system 0} {:tv 1} {:microwave-oven 1}))
-clj꞉sim꞉> 
-(({:planks 6} {:paint 4} {:glue 4} {:bricks 4}) ({:shovel 9} {:cooking-utensils 5} {:measuring-tape 1}) ({:watch 3} {:shoes 3} {:business-suits 1}) () ({:cream 27} {:flour-bag 23} {:beef 6} {:cheese 5} {:fruit-and-berries 3} {:corn 2} {:vegetables 2}) ({:tree-saplings 6} {:garden-furniture 3}) ({:bread-roll 9} {:cherry-cheesecake 3}) ({:burgers 5} {:ice-cream-sandwich 3} {:cheese-fries 2} {:popcorn 1}) ({:bbq-grill 5} {:microwave-oven 1} {:tv 1}))
-clj꞉sim꞉> 
-(({:planks 6} {:paint 4} {:glue 4} {:bricks 4}) ({:shovel 9} {:cooking-utensils 5} {:measuring-tape 1}) ({:watch 3} {:shoes 3} {:business-suits 1}) () ({:cream 27} {:flour-bag 23} {:beef 6} {:cheese 5} {:fruit-and-berries 3} {:corn 2} {:vegetables 2}) ({:tree-saplings 6} {:garden-furniture 3}) ({:bread-roll 9} {:cherry-cheesecake 3}) ({:burgers 5} {:ice-cream-sandwich 3} {:cheese-fries 2} {:popcorn 1}) ({:bbq-grill 5} {:microwave-oven 1} {:tv 1}))
-clj꞉sim꞉> 
-(({:nails 0} {:planks 6} {:bricks 4} {:cement 0} {:glue 4} {:paint 4}) ({:hammer 0} {:measuring-tape 1} {:shovel 9} {:cooking-utensils 5} {:ladder 0} {:drill 0}) ({:cap 0} {:shoes 3} {:watch 3} {:business-suits 1} {:backpack 0}) ({:chairs 0} {:tables 0} {:home-textiles 0} {:cupboard 0} {:couch 0}) ({:beef 6} {:vegetables 2} {:flour-bag 23} {:fruit-and-berries 3} {:cream 27} {:corn 2} {:cheese 5}) ({:grass 0} {:tree-saplings 6} {:garden-furniture 3} {:fire-pit 0} {:lawn-mower 0} {:garden-gnomes 0}) ({:donuts 0} {:green-smoothie 0} {:bread-roll 9} {:cherry-cheesecake 3} {:frozen-yogurt 0} {:coffee 0}) ({:ice-cream-sandwich 3} {:pizza 0} {:burgers 5} {:cheese-fries 2} {:lemonade-bottle 0} {:popcorn 1}) ({:bbq-grill 5} {:refrigerator 0} {:lighting-system 0} {:tv 1} {:microwave-oven 1}))
-clj꞉sim꞉> 
-{:nails {:metal 2, :time 4}, :planks {:wood 2, :time 24}, :bricks {:minerals 2, :time 16}, :cement {:minerals 2, :chemicals 1, :time 40}, :glue {:plastic 1, :chemicals 2, :time 48}, :paint {:metal 2, :minerals 1, :chemicals 2, :time 48}}
-clj꞉sim꞉> 
-; java.lang.ClassCastException: clojure.lang.PersistentArrayMap cannot be cast to clojure.lang.Named sim /home/bob/simter/sim.clj:1:1
-clj꞉sim꞉> 
-{}
-clj꞉sim꞉> 
-(({:planks 6} {:paint 4} {:glue 4} {:bricks 4}) ({:shovel 9} {:cooking-utensils 5} {:measuring-tape 1}) ({:watch 3} {:shoes 3} {:business-suits 1}) () ({:cream 27} {:flour-bag 23} {:beef 6} {:cheese 5} {:fruit-and-berries 3} {:corn 2} {:vegetables 2}) ({:tree-saplings 6} {:garden-furniture 3}) ({:bread-roll 9} {:cherry-cheesecake 3}) ({:burgers 5} {:ice-cream-sandwich 3} {:cheese-fries 2} {:popcorn 1}) ({:bbq-grill 5} {:microwave-oven 1} {:tv 1}))
-clj꞉sim꞉> 
-{{:hammer {:metal 1, :wood 1, :time 11.2}, :measuring-tape {:metal 1, :plastic 1, :time 16}, :shovel {:metal 1, :wood 1, :plastic 1, :time 24}, :cooking-utensils {:metal 2, :wood 2, :plastic 2, :time 36}, :ladder {:metal 2, :planks 2, :time 48}, :drill {:metal 2, :plastic 2, :electrical-components 1, :time 96}} ({:shovel 9} {:cooking-utensils 5} {:measuring-tape 1}), {:cap {:textiles 2, :measuring-tape 1, :metal 1, :plastic 1, :time 51}, :shoes {:textiles 2, :plastic 2, :glue 1, :chemicals 2, :time 63}, :watch {:plastic 2, :glass 1, :chemicals 1, :time 76}, :business-suits {:textiles 3, :measuring-tape 1, :metal 1, :plastic 2, :glue 1, :chemicals 2, :time 178}, :backpack {:textiles 2, :plastic 3, :measuring-tape 1, :metal 1, :time 127}} ({:watch 3} {:shoes 3} {:business-suits 1}), {:nails {:metal 2, :time 4}, :planks {:wood 2, :time 24}, :bricks {:minerals 2, :time 16}, :cement {:minerals 2, :chemicals 1, :time 40}, :glue {:plastic 1, :chemicals 2, :time 48}, :paint {:metal 2, :minerals 1, :chemicals 2, :time 48}} ({:planks 6} {:paint 4} {:glue 4} {:bricks 4}), {:donuts {:flour-bag 1, :seeds 2, :textiles 2, :sugar-and-spices 1, :time 38.25}, :green-smoothie {:metal 1, :seeds 6, :time 25.5, :plastic 1, :wood 1, :shovel 1, :fruit-and-berries 1, :vegetables 1, :tree-saplings 1}, :bread-roll {:flour-bag 2, :seeds 2, :textiles 2, :cream 1, :animal-feed 1, :time 51}, :cherry-cheesecake {:metal 1, :flour-bag 1, :seeds 2, :time 76, :cheese 1, :plastic 1, :wood 1, :animal-feed 2, :shovel 1, :fruit-and-berries 1, :tree-saplings 1, :textiles 2}, :frozen-yogurt {:metal 1, :cream 1, :time 204, :plastic 1, :sugar-and-spices 1, :wood 1, :animal-feed 1, :shovel 1, :fruit-and-berries 1, :tree-saplings 1}, :coffee {:cream 1, :animal-feed 1, :seeds 2, :sugar-and-spices 1, :time 51}} ({:bread-roll 9} {:cherry-cheesecake 3}), {:beef {:animal-feed 3, :time 120}, :vegetables {:seeds 2, :time 16}, :flour-bag {:seeds 2, :textiles 2, :time 24}, :fruit-and-berries {:seeds 4, :tree-saplings 1, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 72}, :cream {:animal-feed 1, :time 60}, :corn {:minerals 1, :seeds 4, :time 48}, :cheese {:animal-feed 2, :time 84}} ({:cream 27} {:flour-bag 23} {:beef 6} {:cheese 5} {:fruit-and-berries 3} {:corn 2} {:vegetables 2}), {:ice-cream-sandwich {:bread-roll 1, :cream 2, :animal-feed 4, :flour-bag 2, :seeds 2, :textiles 2, :time 12.6}, :pizza {:flour-bag 1, :seeds 2, :textiles 2, :cheese 1, :beef 1, :animal-feed 5, :time 21.6}, :burgers {:metal 5, :flour-bag 2, :cream 4, :beef 1, :bread-roll 1, :cooking-utensils 1, :seeds 2, :time 31.5, :bbq-grill 1, :plastic 2, :wood 2, :animal-feed 4, :textiles 2}, :cheese-fries {:vegetables 1, :seeds 2, :cheese 1, :animal-feed 2, :time 18}, :lemonade-bottle {:metal 1, :time 54, :plastic 1, :sugar-and-spices 2, :glass 2, :wood 1, :shovel 1, :fruit-and-berries 1, :tree-saplings 1}, :popcorn {:microwave-oven 1, :metal 4, :glass 1, :electrical-components 1, :corn 2, :minerals 1, :seeds 4, :time 27}} ({:burgers 5} {:ice-cream-sandwich 3} {:cheese-fries 2} {:popcorn 1}), {:bbq-grill {:metal 5, :cooking-utensils 1, :wood 2, :plastic 2, :time 148}, :refrigerator {:plastic 2, :chemicals 2, :electrical-components 2, :time 189}, :lighting-system {:chemicals 1, :electrical-components 1, :glass 1, :time 94}, :tv {:plastic 2, :glass 2, :electrical-components 2, :time 135}, :microwave-oven {:metal 4, :glass 1, :electrical-components 1, :time 108}} ({:bbq-grill 5} {:microwave-oven 1} {:tv 1}), {:grass {:seeds 1, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 24}, :tree-saplings {:seeds 2, :shovel 1, :metal 1, :wood 1, :plastic 1, :time 72}, :garden-furniture {:planks 2, :wood 2, :plastic 2, :textiles 2, :time 108}, :fire-pit {:bricks 2, :minerals 2, :shovel 1, :metal 1, :wood 1, :plastic 1, :cement 2, :time 202}, :lawn-mower {:metal 5, :paint 1, :minerals 1, :chemicals 2, :electrical-components 1, :time 96}, :garden-gnomes {:cement 2, :glue 1, :plastic 1, :chemicals 2, :time 72}} ({:tree-saplings 6} {:garden-furniture 3}), {:chairs {:wood 3, :nails 1, :hammer 1, :metal 1, :time 16}, :tables {:planks 1, :wood 3, :nails 2, :hammer 1, :metal 1, :time 24}, :home-textiles {:textiles 2, :measuring-tape 1, :metal 1, :plastic 1, :time 60}, :cupboard {:planks 2, :wood 2, :glass 2, :paint 1, :metal 2, :minerals 1, :chemicals 2, :time 36}, :couch {:textiles 3, :drill 1, :metal 2, :plastic 3, :electrical-components 1, :glue 1, :chemicals 2, :time 120}} ()}
-clj꞉sim꞉> 
-{donut-shop ({:bread-roll 9} {:cherry-cheesecake 3}), building-supplies ({:planks 6} {:paint 4} {:glue 4} {:bricks 4}), furniture (), farmers-market ({:cream 27} {:flour-bag 23} {:beef 6} {:cheese 5} {:fruit-and-berries 3} {:corn 2} {:vegetables 2}), fashion ({:watch 3} {:shoes 3} {:business-suits 1}), home-appliances ({:bbq-grill 5} {:microwave-oven 1} {:tv 1}), hardware ({:shovel 9} {:cooking-utensils 5} {:measuring-tape 1}), fast-food ({:burgers 5} {:ice-cream-sandwich 3} {:cheese-fries 2} {:popcorn 1}), gardening-supplies ({:tree-saplings 6} {:garden-furniture 3})}
-clj꞉sim꞉> 
+{:donut-shop {:bread-roll 4},
+ :building-supplies {:planks 14, :glue 11},
+ :furniture {:couch 6},
+ :fashion {:shoes 5},
+ :farmers-market {:cream 16, :flour-bag 8, :beef 4},
+ :home-appliances {:bbq-grill 4},
+ :hardware {:drill 6, :cooking-utensils 4},
+ :fast-food {:burgers 4},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:textiles 50}
+  {:plastic 50}
+  {:metal 32}
+  {:chemicals 22}
+  {:wood 22}
+  {:animal-feed 16}
+  {:seeds 8}
+  {:electrical-components 6}
+  {:glass 0}
+  {:sugar-and-spices 0}
+  {:minerals 0})}
 nil
 clj꞉sim꞉> 
-{donut-shop ({:bread-roll 9} {:cherry-cheesecake 3}),
- building-supplies ({:planks 6} {:paint 4} {:glue 4} {:bricks 4}),
- furniture (),
- farmers-market
- ({:cream 27}
-  {:flour-bag 23}
-  {:beef 6}
-  {:cheese 5}
-  {:fruit-and-berries 3}
-  {:corn 2}
-  {:vegetables 2}),
- fashion ({:watch 3} {:shoes 3} {:business-suits 1}),
- home-appliances ({:bbq-grill 5} {:microwave-oven 1} {:tv 1}),
- hardware ({:shovel 9} {:cooking-utensils 5} {:measuring-tape 1}),
- fast-food
- ({:burgers 5} {:ice-cream-sandwich 3} {:cheese-fries 2} {:popcorn 1}),
- gardening-supplies ({:tree-saplings 6} {:garden-furniture 3})}
+; Evaluating file: sim.clj
+{:donut-shop {:bread-roll 4},
+ :building-supplies {:planks 14, :glue 11},
+ :furniture {:couch 6},
+ :fashion {:shoes 5},
+ :farmers-market {:cream 16, :flour-bag 8, :beef 4},
+ :home-appliances {:tv 5, :bbq-grill 4},
+ :hardware {:drill 6, :cooking-utensils 4},
+ :fast-food {:burgers 4},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:plastic 60}
+  {:textiles 50}
+  {:metal 32}
+  {:chemicals 22}
+  {:wood 22}
+  {:electrical-components 16}
+  {:animal-feed 16}
+  {:glass 10}
+  {:seeds 8}
+  {:sugar-and-spices 0}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:donuts 5, :bread-roll 4},
+ :building-supplies {:planks 14, :glue 11},
+ :furniture {:couch 6},
+ :fashion {:shoes 5},
+ :farmers-market {:cream 16, :flour-bag 13, :beef 4},
+ :home-appliances {:tv 5, :bbq-grill 4},
+ :hardware {:drill 6, :cooking-utensils 4},
+ :fast-food {:burgers 4},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:textiles 60}
+  {:plastic 60}
+  {:metal 32}
+  {:chemicals 22}
+  {:wood 22}
+  {:seeds 18}
+  {:electrical-components 16}
+  {:animal-feed 16}
+  {:glass 10}
+  {:sugar-and-spices 5}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+({:textiles 60}
+ {:plastic 60}
+ {:metal 32}
+ {:chemicals 22}
+ {:wood 22}
+ {:seeds 18}
+ {:electrical-components 16}
+ {:animal-feed 16}
+ {:glass 10}
+ {:sugar-and-spices 5}
+ {:minerals 0})
+
+clj꞉sim꞉> 
+({:metal 32}
+ {:wood 22}
+ {:plastic 60}
+ {:seeds 18}
+ {:minerals 0}
+ {:chemicals 22}
+ {:textiles 60}
+ {:sugar-and-spices 5}
+ {:glass 10}
+ {:animal-feed 16}
+ {:electrical-components 16})
+
+clj꞉sim꞉> 
+((32) (22) (60) (18) (0) (22) (60) (5) (10) (16) (16))
+
+clj꞉sim꞉> 
+(32 22 60 18 0 22 60 5 10 16 16)
+
+clj꞉sim꞉> 
+261
+
+clj꞉sim꞉> 
+{:donut-shop {:donuts 5, :bread-roll 4},
+ :building-supplies {:planks 14, :glue 11},
+ :furniture {:couch 6},
+ :fashion {:shoes 5},
+ :farmers-market {:cream 16, :flour-bag 13, :beef 4},
+ :home-appliances {:tv 5, :bbq-grill 4},
+ :hardware {:drill 6, :cooking-utensils 4},
+ :fast-food {:burgers 4},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:textiles 60}
+  {:plastic 60}
+  {:metal 32}
+  {:chemicals 22}
+  {:wood 22}
+  {:seeds 18}
+  {:electrical-components 16}
+  {:animal-feed 16}
+  {:glass 10}
+  {:sugar-and-spices 5}
+  {:minerals 0})}
+nil
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:donuts 5, :bread-roll 3},
+ :building-supplies {:planks 14, :glue 11},
+ :furniture {:couch 6},
+ :fashion {:shoes 5},
+ :farmers-market {:cream 12, :flour-bag 11, :beef 3},
+ :home-appliances {:tv 5, :bbq-grill 3},
+ :hardware {:drill 6, :cooking-utensils 3},
+ :fast-food {:burgers 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:textiles 58}
+  {:plastic 58}
+  {:metal 27}
+  {:chemicals 22}
+  {:wood 20}
+  {:electrical-components 16}
+  {:seeds 16}
+  {:animal-feed 12}
+  {:glass 10}
+  {:sugar-and-spices 5}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:donuts 5, :bread-roll 3},
+ :building-supplies {:planks 14, :glue 11},
+ :furniture {:couch 6},
+ :fashion {:shoes 5},
+ :farmers-market {:flour-bag 11, :cream 6},
+ :home-appliances {:tv 5},
+ :hardware {:drill 6},
+ :fast-food {:ice-cream-sandwich 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:textiles 58}
+  {:plastic 52}
+  {:chemicals 22}
+  {:electrical-components 16}
+  {:seeds 16}
+  {:wood 14}
+  {:animal-feed 12}
+  {:metal 12}
+  {:glass 10}
+  {:sugar-and-spices 5}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:donuts 5, :bread-roll 3},
+ :building-supplies {:planks 14, :glue 11},
+ :furniture {:couch 6},
+ :fashion {:shoes 5},
+ :farmers-market {:cream 12, :flour-bag 11, :beef 3},
+ :home-appliances {:tv 5, :bbq-grill 3},
+ :hardware {:drill 6, :cooking-utensils 3},
+ :fast-food {:burgers 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:textiles 58}
+  {:plastic 58}
+  {:metal 27}
+  {:chemicals 22}
+  {:wood 20}
+  {:electrical-components 16}
+  {:seeds 16}
+  {:animal-feed 12}
+  {:glass 10}
+  {:sugar-and-spices 5}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+4900
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:donuts 5, :bread-roll 3},
+ :building-supplies {:planks 14, :glue 11},
+ :furniture {:couch 6},
+ :fashion {:shoes 5},
+ :farmers-market {:flour-bag 11, :cream 6},
+ :home-appliances {:tv 5},
+ :hardware {:drill 6},
+ :fast-food {:ice-cream-sandwich 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:textiles 58}
+  {:plastic 52}
+  {:chemicals 22}
+  {:electrical-components 16}
+  {:seeds 16}
+  {:wood 14}
+  {:animal-feed 12}
+  {:metal 12}
+  {:glass 10}
+  {:sugar-and-spices 5}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:donuts 5, :bread-roll 3},
+ :building-supplies {:planks 14, :glue 6},
+ :furniture {:couch 6},
+ :fashion {:watch 6},
+ :farmers-market {:flour-bag 11, :cream 6},
+ :home-appliances {:tv 5},
+ :hardware {:drill 6},
+ :fast-food {:ice-cream-sandwich 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:plastic 54}
+  {:textiles 48}
+  {:chemicals 18}
+  {:electrical-components 16}
+  {:glass 16}
+  {:seeds 16}
+  {:wood 14}
+  {:animal-feed 12}
+  {:metal 12}
+  {:sugar-and-spices 5}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:donuts 5, :bread-roll 3},
+ :building-supplies {:planks 14, :glue 6},
+ :furniture {:couch 6},
+ :fashion {:watch 5},
+ :farmers-market {:flour-bag 11, :cream 6},
+ :home-appliances {:tv 5},
+ :hardware {:drill 6},
+ :fast-food {:ice-cream-sandwich 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:plastic 52}
+  {:textiles 48}
+  {:chemicals 17}
+  {:electrical-components 16}
+  {:seeds 16}
+  {:glass 15}
+  {:wood 14}
+  {:animal-feed 12}
+  {:metal 12}
+  {:sugar-and-spices 5}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:bread-roll 3},
+ :building-supplies {:planks 14, :glue 6},
+ :furniture {:couch 6},
+ :fashion {:watch 5},
+ :farmers-market {:cream 6, :flour-bag 6},
+ :home-appliances {:tv 5},
+ :hardware {:drill 6},
+ :fast-food {:ice-cream-sandwich 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:plastic 52}
+  {:textiles 38}
+  {:chemicals 17}
+  {:electrical-components 16}
+  {:glass 15}
+  {:wood 14}
+  {:animal-feed 12}
+  {:metal 12}
+  {:seeds 6}
+  {:sugar-and-spices 0}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:bread-roll 3},
+ :building-supplies {:planks 14},
+ :furniture {},
+ :fashion {:watch 5},
+ :farmers-market {:cream 6, :flour-bag 6},
+ :home-appliances {:tv 5},
+ :hardware {},
+ :fast-food {:ice-cream-sandwich 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:plastic 34}
+  {:textiles 20}
+  {:glass 15}
+  {:wood 14}
+  {:animal-feed 12}
+  {:electrical-components 10}
+  {:seeds 6}
+  {:chemicals 5}
+  {:sugar-and-spices 0}
+  {:minerals 0}
+  {:metal 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:bread-roll 3},
+ :building-supplies {:planks 14, :nails 6},
+ :furniture {:chairs 6},
+ :fashion {:watch 5},
+ :farmers-market {:cream 6, :flour-bag 6},
+ :home-appliances {:tv 5},
+ :hardware {:hammer 6},
+ :fast-food {:ice-cream-sandwich 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:plastic 34}
+  {:wood 32}
+  {:textiles 20}
+  {:glass 15}
+  {:animal-feed 12}
+  {:electrical-components 10}
+  {:seeds 6}
+  {:metal 6}
+  {:chemicals 5}
+  {:sugar-and-spices 0}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:bread-roll 3},
+ :building-supplies {:planks 14, :nails 6},
+ :furniture {:chairs 6},
+ :fashion {:watch 5},
+ :farmers-market {:cream 6, :flour-bag 6},
+ :home-appliances {:tv 6},
+ :hardware {:hammer 6},
+ :fast-food {:ice-cream-sandwich 3},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:plastic 36}
+  {:wood 32}
+  {:textiles 20}
+  {:glass 17}
+  {:electrical-components 12}
+  {:animal-feed 12}
+  {:seeds 6}
+  {:metal 6}
+  {:chemicals 5}
+  {:sugar-and-spices 0}
+  {:minerals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:donuts 5},
+ :building-supplies {:planks 14, :nails 6},
+ :furniture {:chairs 6},
+ :fashion {:watch 5},
+ :farmers-market {:flour-bag 5},
+ :home-appliances {:tv 6},
+ :hardware {:hammer 6},
+ :fast-food {},
+ :gardening-supplies {:garden-furniture 7},
+ :materials
+ ({:plastic 36}
+  {:wood 32}
+  {:textiles 24}
+  {:glass 17}
+  {:electrical-components 12}
+  {:seeds 10}
+  {:metal 6}
+  {:sugar-and-spices 5}
+  {:chemicals 5}
+  {:animal-feed 0}
+  {:minerals 0})}
 nil
 clj꞉sim꞉> 

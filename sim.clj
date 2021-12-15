@@ -146,12 +146,13 @@
                       :textiles 2
                       :time 108}
    :fire-pit {:bricks 2
-              :minerals 2
+              :minerals 6
               :shovel 1
               :metal 1
               :wood 1
               :plastic 1
               :cement 2
+              :chemicals 2
               :time 202}
    :lawn-mower {:metal 5
                 :paint 1
@@ -160,9 +161,10 @@
                 :electrical-components 1
                 :time 96}
    :garden-gnomes {:cement 2
+                   :minerals 4
+                   :chemicals 4
                    :glue 1
                    :plastic 1
-                   :chemicals 2
                    :time 72}})
 
 (def donut-shop
@@ -300,16 +302,14 @@
 
 (item :beef)
 
-(def prod
-  [:bread-roll :shovel :shovel :shovel :popcorn
-   :business-suits
-   :bricks :bricks :bricks :bricks :tv :flour-bag :flour-bag
-   :burgers :burgers :burgers :garden-furniture :garden-furniture :garden-furniture :beef
-   :paint :paint :paint :paint :tree-saplings :tree-saplings :tree-saplings
-   :burgers :burgers :cherry-cheesecake :cherry-cheesecake :cherry-cheesecake
-   :cheese-fries :cheese-fries
-   :shoes :shoes :shoes
-   :ice-cream-sandwich :ice-cream-sandwich :ice-cream-sandwich :watch :watch :watch])
+(def prod 
+  [:chairs :chairs :chairs :chairs :chairs :chairs
+   :watch :watch :watch :watch :watch
+   :garden-furniture  :garden-furniture  :garden-furniture  :garden-furniture  :garden-furniture  :garden-furniture  :garden-furniture
+   :tv :tv :tv :tv :tv :tv
+   :donuts :donuts :donuts :donuts :donuts])
+
+(* 980 5)
 
 (defn items [l]
   (mapcat #(seq (item %)) l))
@@ -327,17 +327,22 @@
                   (for [m materials]
                     {m (n m prod)})))
 
+(reduce +
+(map #(first (vals %))
+(for [m materials]
+                    {m (n m prod)})))
+
 (defn parts [l]
   (for [m l]
     {m (n m prod)}))
 
-(reverse (sort-by #(first (vals %))
-                  (remove #(zero? (first (vals %)))
-                          (parts (mapcat keys stores)))))
-
 (pprint/pprint
- (zipmap ['building-supplies 'hardware 'fashion 'furniture 'farmers-market 'gardening-supplies 'donut-shop 'fast-food 'home-appliances]
-         (for [store (map parts (map keys stores))]
-           (reverse (sort-by #(first (vals %))
-                             (remove #(zero? (first (vals %)))
-                                     store))))))
+ (assoc
+  (zipmap [:building-supplies :hardware :fashion :furniture :farmers-market :gardening-supplies :donut-shop :fast-food :home-appliances]
+          (for [store (map parts (map keys stores))]
+            (into {} (reverse (sort-by #(first (vals %))
+                                       (remove #(zero? (first (vals %)))
+                                               store))))))
+  :materials (reverse (sort-by #(first (vals %))
+                               (for [m materials]
+                                 {m (n m prod)})))))
