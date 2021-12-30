@@ -80,7 +80,7 @@
             :wood 3
             :nails 2
             :hammer 1
-            :metal 1
+            :metal 5
             :time 24}
    :home-textiles {:textiles 2
                    :measuring-tape 1
@@ -300,16 +300,57 @@
       (assoc k 1)
       (dissoc :time)))
 
-(item :beef)
+(def orders
+  (merge-with +
+              {:lighting-system 5}
+              {:cap   2 :paint 3}
+              {:lighting-system 5 :paint           5  :hammer          6 :coffee          5}
+              {:home-textiles 3 :shovel        4 :planks        5}
+              {:planks 5 :cap    4 :pizza  3 :cement 3}
+              {:flour-bag        2 :green-smoothie   3 :beef             2 :microwave-oven   2 :garden-furniture 2}
+              {:green-smoothie 2 :burgers        2 :flour-bag      1}
+              {:paint      6 :coffee     5 :bread-roll 5}
+              {:shovel 5 :planks 6 :glue   4}
+              {:donuts           4
+               :hammer           6
+               :couch            4
+               :garden-furniture 3
+               :nails            9}
+              {:ladder   3
+               :tv       3
+               :cupboard 3}))
 
-(def prod 
-  [:chairs :chairs :chairs :chairs :chairs :chairs
-   :watch :watch :watch :watch :watch
-   :garden-furniture  :garden-furniture  :garden-furniture  :garden-furniture  :garden-furniture  :garden-furniture  :garden-furniture
-   :tv :tv :tv :tv :tv :tv
-   :donuts :donuts :donuts :donuts :donuts])
+(def inventory
+  {:lighting-system  5
+   :cap              3
+   :paint            4
+   :hammer           6
+   :coffee           5
+   :home-textiles    1
+   :shovel           5 
+   :planks           3
+   :pizza            3
+   :cement           3
+   :green-smoothie   3
+   :beef             2
+   :microwave-oven   3
+   :garden-furniture 2
+   :burgers          2 
+   :bread-roll       3
+   :glue             5
+   :donuts           2
+   :couch            5
+   :ladder           1
+   :tv               3
+   :cupboard         3})
 
-(* 980 5)
+(def prod
+  (flatten
+   (map (fn [x] (apply #(repeat %2 %)   x))
+         (merge-with - orders inventory)
+        )))
+
+orders
 
 (defn items [l]
   (mapcat #(seq (item %)) l))
@@ -346,3 +387,5 @@
   :materials (reverse (sort-by #(first (vals %))
                                (for [m materials]
                                  {m (n m prod)})))))
+
+(+ 50 50 30 30)
