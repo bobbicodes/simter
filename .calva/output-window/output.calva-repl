@@ -3179,3 +3179,2486 @@ clj꞉sim꞉> 
   {:glass 5})}
 160
 clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 5, :bread-roll 4, :green-smoothie 2, :donuts 2},
+ :building-supplies
+ {:planks 23, :paint 10, :nails 9, :cement 4, :glue 2},
+ :furniture {:home-textiles 2},
+ :fashion {:cap 3, :watch 2},
+ :farmers-market
+ {:flour-bag 13, :cream 9, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware {:shovel 6, :hammer 6, :measuring-tape 5, :ladder 2},
+ :fast-food {},
+ :gardening-supplies
+ {:garden-furniture 3, :garden-gnomes 2, :tree-saplings 2},
+ :materials
+ ({:metal 59}
+  {:wood 44}
+  {:seeds 40}
+  {:chemicals 35}
+  {:textiles 34}
+  {:plastic 23}
+  {:minerals 18}
+  {:animal-feed 9}
+  {:glass 7}
+  {:sugar-and-spices 7}
+  {:electrical-components 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :bread-roll 5, :green-smoothie 2, :donuts 2},
+ :building-supplies
+ {:planks 22, :paint 10, :nails 9, :cement 4, :glue 2},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3, :watch 2},
+ :farmers-market
+ {:cream 18,
+  :flour-bag 14,
+  :fruit-and-berries 4,
+  :vegetables 2,
+  :beef 2},
+ :home-appliances {:lighting-system 5, :bbq-grill 2},
+ :hardware
+ {:measuring-tape 8,
+  :shovel 7,
+  :cooking-utensils 2,
+  :ladder 1,
+  :hammer 1},
+ :fast-food {:lemonade-bottle 2, :burgers 2},
+ :gardening-supplies
+ {:tree-saplings 4, :garden-furniture 3, :garden-gnomes 2},
+ :materials
+ ({:metal 66}
+  {:wood 46}
+  {:seeds 44}
+  {:textiles 40}
+  {:chemicals 35}
+  {:plastic 31}
+  {:animal-feed 18}
+  {:minerals 18}
+  {:sugar-and-spices 13}
+  {:glass 11}
+  {:electrical-components 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :bread-roll 3, :green-smoothie 2, :donuts 2},
+ :building-supplies
+ {:planks 22, :paint 10, :nails 9, :cement 4, :glue 2},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3, :watch 2},
+ :farmers-market
+ {:cream 10, :flour-bag 10, :fruit-and-berries 4, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware {:measuring-tape 8, :shovel 7, :ladder 1, :hammer 1},
+ :fast-food {:lemonade-bottle 2},
+ :gardening-supplies
+ {:tree-saplings 4, :garden-furniture 3, :garden-gnomes 2},
+ :materials
+ ({:metal 56}
+  {:wood 42}
+  {:seeds 40}
+  {:textiles 36}
+  {:chemicals 35}
+  {:plastic 27}
+  {:minerals 18}
+  {:sugar-and-spices 13}
+  {:glass 11}
+  {:animal-feed 10}
+  {:electrical-components 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :bread-roll 3, :green-smoothie 2, :donuts 2},
+ :building-supplies
+ {:planks 16, :paint 10, :nails 9, :glue 7, :cement 4},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3, :watch 2},
+ :farmers-market
+ {:cream 10, :flour-bag 10, :fruit-and-berries 4, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware
+ {:measuring-tape 8,
+  :shovel 4,
+  :ladder 1,
+  :cooking-utensils 1,
+  :hammer 1},
+ :fast-food {:lemonade-bottle 2},
+ :gardening-supplies
+ {:tree-saplings 4, :garden-furniture 3, :garden-gnomes 2},
+ :materials
+ ({:metal 55}
+  {:chemicals 45}
+  {:seeds 40}
+  {:textiles 36}
+  {:plastic 31}
+  {:wood 29}
+  {:minerals 18}
+  {:sugar-and-spices 13}
+  {:glass 11}
+  {:animal-feed 10}
+  {:electrical-components 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :bread-roll 3, :green-smoothie 2, :donuts 2},
+ :building-supplies
+ {:planks 16, :paint 10, :nails 9, :glue 7, :cement 4},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3, :watch 2},
+ :farmers-market
+ {:cream 10, :flour-bag 10, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware
+ {:measuring-tape 8,
+  :shovel 2,
+  :ladder 1,
+  :cooking-utensils 1,
+  :hammer 1},
+ :fast-food {},
+ :gardening-supplies
+ {:garden-furniture 3, :garden-gnomes 2, :tree-saplings 2},
+ :materials
+ ({:metal 53}
+  {:chemicals 45}
+  {:seeds 40}
+  {:textiles 36}
+  {:plastic 29}
+  {:wood 27}
+  {:minerals 18}
+  {:animal-feed 10}
+  {:sugar-and-spices 9}
+  {:glass 7}
+  {:electrical-components 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :green-smoothie 2, :donuts 2, :bread-roll 1},
+ :building-supplies {:planks 16, :paint 10, :nails 9, :glue 5},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3},
+ :farmers-market
+ {:cream 8, :flour-bag 6, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware
+ {:measuring-tape 8,
+  :shovel 2,
+  :ladder 1,
+  :cooking-utensils 1,
+  :hammer 1},
+ :fast-food {},
+ :gardening-supplies {:garden-furniture 3, :tree-saplings 2},
+ :materials
+ ({:metal 53}
+  {:seeds 36}
+  {:chemicals 35}
+  {:textiles 32}
+  {:wood 27}
+  {:plastic 23}
+  {:minerals 10}
+  {:sugar-and-spices 9}
+  {:animal-feed 8}
+  {:electrical-components 5}
+  {:glass 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :green-smoothie 2, :donuts 2, :bread-roll 1},
+ :building-supplies {:planks 16, :paint 10, :nails 9, :glue 5},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3},
+ :farmers-market
+ {:cream 8, :flour-bag 6, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware
+ {:measuring-tape 8,
+  :shovel 2,
+  :ladder 1,
+  :cooking-utensils 1,
+  :hammer 1},
+ :fast-food {},
+ :gardening-supplies {:garden-furniture 3, :tree-saplings 2},
+ :materials
+ ({:metal 53}
+  {:seeds 36}
+  {:chemicals 35}
+  {:textiles 32}
+  {:wood 27}
+  {:plastic 23}
+  {:minerals 10}
+  {:sugar-and-spices 9}
+  {:animal-feed 8}
+  {:electrical-components 5}
+  {:glass 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :green-smoothie 2, :donuts 2, :bread-roll 1},
+ :building-supplies {:planks 16, :paint 10, :nails 9, :glue 5},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3},
+ :farmers-market
+ {:cream 8, :flour-bag 6, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware
+ {:measuring-tape 8,
+  :shovel 2,
+  :ladder 1,
+  :cooking-utensils 1,
+  :hammer 1},
+ :fast-food {},
+ :gardening-supplies {:garden-furniture 3, :tree-saplings 2},
+ :materials
+ ({:metal 53}
+  {:seeds 36}
+  {:chemicals 35}
+  {:textiles 32}
+  {:wood 27}
+  {:plastic 23}
+  {:minerals 10}
+  {:sugar-and-spices 9}
+  {:animal-feed 8}
+  {:electrical-components 5}
+  {:glass 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :green-smoothie 2, :donuts 2, :bread-roll 1},
+ :building-supplies {:planks 16, :paint 10, :nails 9},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3},
+ :farmers-market
+ {:cream 8, :flour-bag 6, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware
+ {:measuring-tape 8,
+  :shovel 2,
+  :ladder 1,
+  :cooking-utensils 1,
+  :hammer 1},
+ :fast-food {},
+ :gardening-supplies {:garden-furniture 3, :tree-saplings 2},
+ :materials
+ ({:metal 53}
+  {:seeds 36}
+  {:textiles 32}
+  {:wood 27}
+  {:chemicals 25}
+  {:plastic 18}
+  {:minerals 10}
+  {:sugar-and-spices 9}
+  {:animal-feed 8}
+  {:electrical-components 5}
+  {:glass 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :green-smoothie 2, :donuts 2, :bread-roll 1},
+ :building-supplies {:planks 16, :paint 10, :nails 9},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3},
+ :farmers-market
+ {:cream 8, :flour-bag 6, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 5},
+ :hardware
+ {:measuring-tape 8,
+  :shovel 6,
+  :ladder 1,
+  :cooking-utensils 1,
+  :hammer 1},
+ :fast-food {},
+ :gardening-supplies {:garden-furniture 3, :tree-saplings 2},
+ :materials
+ ({:metal 57}
+  {:seeds 36}
+  {:textiles 32}
+  {:wood 31}
+  {:chemicals 25}
+  {:plastic 22}
+  {:minerals 10}
+  {:sugar-and-spices 9}
+  {:animal-feed 8}
+  {:electrical-components 5}
+  {:glass 5})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 13, :green-smoothie 2, :donuts 2, :bread-roll 1},
+ :building-supplies {:planks 16, :paint 10, :nails 9},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 3},
+ :farmers-market
+ {:cream 14, :flour-bag 6, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 5, :tv 4},
+ :hardware {:hammer 9, :measuring-tape 8, :shovel 6, :ladder 1},
+ :fast-food {},
+ :gardening-supplies {:garden-furniture 3, :tree-saplings 2},
+ :materials
+ ({:metal 63}
+  {:seeds 48}
+  {:wood 37}
+  {:textiles 32}
+  {:plastic 28}
+  {:chemicals 25}
+  {:sugar-and-spices 15}
+  {:animal-feed 14}
+  {:electrical-components 13}
+  {:glass 13}
+  {:minerals 10})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 13, :green-smoothie 2, :donuts 2, :bread-roll 1},
+ :building-supplies {:planks 16, :paint 10, :nails 9},
+ :furniture {:home-textiles 5},
+ :fashion {:cap 9, :backpack 7},
+ :farmers-market
+ {:cream 14, :flour-bag 6, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:tv 4},
+ :hardware {:measuring-tape 21, :hammer 9, :shovel 6, :ladder 1},
+ :fast-food {},
+ :gardening-supplies {:garden-furniture 3, :tree-saplings 2},
+ :materials
+ ({:metal 76}
+  {:textiles 58}
+  {:plastic 55}
+  {:seeds 48}
+  {:wood 37}
+  {:chemicals 20}
+  {:sugar-and-spices 15}
+  {:animal-feed 14}
+  {:minerals 10}
+  {:electrical-components 8}
+  {:glass 8})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 10, :green-smoothie 2, :donuts 2, :bread-roll 1},
+ :building-supplies
+ {:planks 21, :paint 13, :nails 9, :glue 2, :cement 2},
+ :furniture {:home-textiles 10, :cupboard 3},
+ :fashion {:watch 9, :cap 9, :backpack 7},
+ :farmers-market
+ {:cream 11, :flour-bag 6, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:tv 1},
+ :hardware {:measuring-tape 26, :hammer 12, :shovel 6, :ladder 2},
+ :fast-food {},
+ :gardening-supplies
+ {:garden-furniture 3, :tree-saplings 2, :garden-gnomes 1},
+ :materials
+ ({:metal 92}
+  {:plastic 74}
+  {:textiles 68}
+  {:seeds 42}
+  {:chemicals 41}
+  {:wood 40}
+  {:glass 17}
+  {:minerals 17}
+  {:sugar-and-spices 12}
+  {:animal-feed 11}
+  {:electrical-components 2})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 12, :bread-roll 3, :green-smoothie 2, :donuts 2},
+ :building-supplies
+ {:planks 23, :paint 12, :cement 2, :nails 2, :glue 1},
+ :furniture {:home-textiles 10, :cupboard 3},
+ :fashion {:watch 9, :cap 8, :backpack 7},
+ :farmers-market
+ {:cream 15, :flour-bag 10, :fruit-and-berries 2, :vegetables 2},
+ :home-appliances {:lighting-system 4, :tv 1},
+ :hardware {:measuring-tape 25, :hammer 12, :shovel 5, :ladder 2},
+ :fast-food {},
+ :gardening-supplies
+ {:garden-furniture 2, :tree-saplings 2, :garden-gnomes 1},
+ :materials
+ ({:metal 74}
+  {:plastic 69}
+  {:textiles 68}
+  {:seeds 50}
+  {:wood 45}
+  {:chemicals 41}
+  {:glass 21}
+  {:minerals 16}
+  {:animal-feed 15}
+  {:sugar-and-spices 14}
+  {:electrical-components 6})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 12, :donuts 6, :bread-roll 3, :green-smoothie 2},
+ :building-supplies
+ {:planks 24, :paint 12, :nails 6, :cement 5, :glue 1},
+ :furniture {:home-textiles 10, :chairs 4, :cupboard 3},
+ :fashion {:watch 9, :backpack 7, :cap 4},
+ :farmers-market
+ {:cream 15,
+  :flour-bag 14,
+  :fruit-and-berries 7,
+  :vegetables 4,
+  :cheese 2},
+ :home-appliances {:lighting-system 4, :tv 1},
+ :hardware {:measuring-tape 21, :hammer 20, :shovel 10, :ladder 2},
+ :fast-food {:cheese-fries 2},
+ :gardening-supplies
+ {:tree-saplings 7, :garden-furniture 5, :garden-gnomes 1},
+ :materials
+ ({:metal 83}
+  {:seeds 82}
+  {:plastic 76}
+  {:textiles 74}
+  {:wood 62}
+  {:chemicals 44}
+  {:minerals 22}
+  {:glass 21}
+  {:animal-feed 19}
+  {:sugar-and-spices 18}
+  {:electrical-components 6})}
+160
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 12, :donuts 6, :bread-roll 2},
+ :building-supplies {:planks 22, :paint 10, :nails 4, :cement 3},
+ :furniture {:home-textiles 6, :chairs 4, :cupboard 3},
+ :fashion {:watch 8, :cap 6, :backpack 4},
+ :farmers-market
+ {:flour-bag 15,
+  :cream 14,
+  :fruit-and-berries 6,
+  :cheese 5,
+  :beef 3,
+  :vegetables 2},
+ :home-appliances {:lighting-system 1},
+ :hardware {:hammer 18, :measuring-tape 16, :shovel 6, :ladder 2},
+ :fast-food {:pizza 3, :cheese-fries 2, :lemonade-bottle 1},
+ :gardening-supplies {:tree-saplings 6, :garden-furniture 4},
+ :materials
+ ({:seeds 74}
+  {:textiles 66}
+  {:metal 64}
+  {:plastic 54}
+  {:wood 54}
+  {:animal-feed 33}
+  {:chemicals 32}
+  {:sugar-and-spices 20}
+  {:glass 17}
+  {:minerals 16}
+  {:electrical-components 1})}
+160
+clj꞉sim꞉> 
+{:tv 4,
+ :flour-bag 2,
+ :beef 2,
+ :lemonade-bottle 2,
+ :bread-roll 5,
+ :glue 1,
+ :coffee 16,
+ :garden-gnomes 1,
+ :cap 8,
+ :microwave-oven 2,
+ :nails 9,
+ :home-textiles 12,
+ :chairs 4,
+ :shovel 4,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 14,
+ :planks 5,
+ :hammer 27,
+ :watch 9,
+ :garden-furniture 8,
+ :couch 4,
+ :backpack 7,
+ :donuts 8,
+ :green-smoothie 3,
+ :lighting-system 5,
+ :cheese-fries 2}
+
+clj꞉sim꞉> 
+(:tv
+ :beef
+ :lemonade-bottle
+ :bread-roll
+ :glue
+ :coffee
+ :garden-gnomes
+ :cap
+ :microwave-oven
+ :nails
+ :home-textiles
+ :shovel
+ :pizza
+ :paint
+ :planks
+ :hammer
+ :watch
+ :garden-furniture
+ :couch
+ :ladder
+ :backpack
+ :donuts
+ :green-smoothie
+ :lighting-system
+ :cupboard
+ :cement)
+
+clj꞉sim꞉> 
+(:tv
+ :flour-bag
+ :beef
+ :lemonade-bottle
+ :bread-roll
+ :glue
+ :coffee
+ :garden-gnomes
+ :cap
+ :microwave-oven
+ :nails
+ :home-textiles
+ :chairs
+ :shovel
+ :fruit-and-berries
+ :pizza
+ :paint
+ :planks
+ :hammer
+ :watch
+ :garden-furniture
+ :couch
+ :backpack
+ :donuts
+ :green-smoothie
+ :lighting-system
+ :cheese-fries)
+
+clj꞉sim꞉> 
+#{:tv
+  :beef
+  :lemonade-bottle
+  :bread-roll
+  :glue
+  :coffee
+  :garden-gnomes
+  :cap
+  :microwave-oven
+  :nails
+  :home-textiles
+  :shovel
+  :pizza
+  :paint
+  :planks
+  :hammer
+  :watch
+  :garden-furniture
+  :couch
+  :ladder
+  :backpack
+  :donuts
+  :green-smoothie
+  :lighting-system
+  :cupboard
+  :cement}
+
+clj꞉sim꞉> 
+nil
+
+clj꞉sim꞉> 
+#{:flour-bag :chairs :fruit-and-berries :cheese-fries}
+
+clj꞉sim꞉> 
+#{:ladder :cupboard :cement}
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 12, :donuts 6, :bread-roll 2},
+ :building-supplies {:planks 12, :paint 7, :nails 4},
+ :furniture {:home-textiles 6, :chairs 4},
+ :fashion {:watch 8, :cap 6, :backpack 4},
+ :farmers-market
+ {:flour-bag 15,
+  :cream 14,
+  :fruit-and-berries 6,
+  :cheese 5,
+  :beef 3,
+  :vegetables 2},
+ :home-appliances {:lighting-system 1},
+ :hardware {:hammer 18, :measuring-tape 16, :shovel 6},
+ :fast-food {:pizza 3, :cheese-fries 2, :lemonade-bottle 1},
+ :gardening-supplies {:tree-saplings 6, :garden-furniture 4},
+ :materials
+ ({:seeds 74}
+  {:textiles 66}
+  {:plastic 54}
+  {:metal 54}
+  {:wood 48}
+  {:animal-feed 33}
+  {:chemicals 23}
+  {:sugar-and-spices 20}
+  {:glass 11}
+  {:minerals 7}
+  {:electrical-components 1})}
+160
+clj꞉sim꞉> 
+{:tv 4,
+ :flour-bag 2,
+ :beef 2,
+ :lemonade-bottle 2,
+ :bread-roll 5,
+ :glue 1,
+ :coffee 16,
+ :garden-gnomes 1,
+ :cap 8,
+ :microwave-oven 2,
+ :nails 9,
+ :home-textiles 12,
+ :chairs 4,
+ :shovel 4,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 14,
+ :planks 5,
+ :hammer 27,
+ :watch 9,
+ :garden-furniture 8,
+ :couch 4,
+ :backpack 7,
+ :donuts 8,
+ :green-smoothie 3,
+ :lighting-system 5,
+ :cheese-fries 2}
+
+clj꞉sim꞉> 
+([:backpack 7]
+ [:beef 2]
+ [:bread-roll 5]
+ [:cap 8]
+ [:chairs 4]
+ [:cheese-fries 2]
+ [:coffee 16]
+ [:couch 4]
+ [:donuts 8]
+ [:flour-bag 2]
+ [:fruit-and-berries 5]
+ [:garden-furniture 8]
+ [:garden-gnomes 1]
+ [:glue 1]
+ [:green-smoothie 3]
+ [:hammer 27]
+ [:home-textiles 12]
+ [:lemonade-bottle 2]
+ [:lighting-system 5]
+ [:microwave-oven 2]
+ [:nails 9]
+ [:paint 14]
+ [:pizza 3]
+ [:planks 5]
+ [:shovel 4]
+ [:tv 4]
+ [:watch 9])
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :donuts 6, :bread-roll 2},
+ :building-supplies
+ {:planks 14, :cement 8, :bricks 6, :nails 4, :paint 2},
+ :furniture {:home-textiles 6, :chairs 4},
+ :fashion {:watch 10, :cap 6, :backpack 4},
+ :farmers-market
+ {:flour-bag 17,
+  :cream 9,
+  :fruit-and-berries 6,
+  :cheese 5,
+  :beef 3,
+  :vegetables 2},
+ :home-appliances {:lighting-system 4},
+ :hardware {:measuring-tape 16, :hammer 12, :shovel 9},
+ :fast-food {:pizza 3, :cheese-fries 2, :lemonade-bottle 1},
+ :gardening-supplies
+ {:tree-saplings 6, :garden-furniture 4, :fire-pit 3},
+ :materials
+ ({:textiles 70}
+  {:seeds 68}
+  {:plastic 61}
+  {:wood 49}
+  {:metal 41}
+  {:animal-feed 28}
+  {:chemicals 26}
+  {:minerals 24}
+  {:glass 16}
+  {:sugar-and-spices 15}
+  {:electrical-components 4})}
+160
+clj꞉sim꞉> 
+{:tv 0,
+ :flour-bag 4,
+ :beef 0,
+ :lemonade-bottle 1,
+ :bread-roll 2,
+ :glue 0,
+ :coffee 7,
+ :fire-pit 3,
+ :garden-gnomes 0,
+ :cap 6,
+ :microwave-oven 0,
+ :nails -2,
+ :home-textiles 6,
+ :chairs 4,
+ :shovel -1,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 2,
+ :planks 6,
+ :hammer 8,
+ :watch 10,
+ :garden-furniture 4,
+ :couch 0,
+ :backpack 4,
+ :donuts 6,
+ :green-smoothie 0,
+ :lighting-system 4,
+ :cheese-fries 2,
+ :cement 2}
+
+clj꞉sim꞉> 
+{:tv 0,
+ :flour-bag 4,
+ :beef 0,
+ :lemonade-bottle 1,
+ :bread-roll 2,
+ :glue 0,
+ :coffee 7,
+ :fire-pit 3,
+ :garden-gnomes 0,
+ :cap 6,
+ :microwave-oven 0,
+ :nails -2,
+ :home-textiles 6,
+ :chairs 4,
+ :shovel -1,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 2,
+ :planks 6,
+ :hammer 8,
+ :watch 10,
+ :garden-furniture 4,
+ :couch 0,
+ :backpack 4,
+ :donuts 6,
+ :green-smoothie 0,
+ :lighting-system 4,
+ :cheese-fries 2,
+ :cement 2}
+
+clj꞉sim꞉> 
+; : clojure.lang.MapEntry cannot be cast to java.lang.Number sim 
+clj꞉sim꞉> 
+; : clojure.lang.MapEntry cannot be cast to java.lang.Number sim 
+clj꞉sim꞉> 
+; java.lang.ClassCastException: clojure.lang.Keyword cannot be cast to java.util.Map$Entry sim /home/bob/simter/sim.clj:1:16
+clj꞉sim꞉> 
+{:tv 0,
+ :flour-bag 4,
+ :beef 0,
+ :lemonade-bottle 1,
+ :bread-roll 2,
+ :glue 0,
+ :coffee 7,
+ :fire-pit 3,
+ :garden-gnomes 0,
+ :cap 6,
+ :microwave-oven 0,
+ :nails -2,
+ :home-textiles 6,
+ :chairs 4,
+ :shovel -1,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 2,
+ :planks 6,
+ :hammer 8,
+ :watch 10,
+ :garden-furniture 4,
+ :couch 0,
+ :backpack 4,
+ :donuts 6,
+ :green-smoothie 0,
+ :lighting-system 4,
+ :cheese-fries 2,
+ :cement 2}
+
+clj꞉sim꞉> 
+([:tv 0]
+ [:flour-bag 4]
+ [:beef 0]
+ [:lemonade-bottle 1]
+ [:bread-roll 2]
+ [:glue 0]
+ [:coffee 7]
+ [:fire-pit 3]
+ [:garden-gnomes 0]
+ [:cap 6]
+ [:microwave-oven 0]
+ [:nails -2]
+ [:home-textiles 6]
+ [:chairs 4]
+ [:shovel -1]
+ [:fruit-and-berries 5]
+ [:pizza 3]
+ [:paint 2]
+ [:planks 6]
+ [:hammer 8]
+ [:watch 10]
+ [:garden-furniture 4]
+ [:couch 0]
+ [:backpack 4]
+ [:donuts 6]
+ [:green-smoothie 0]
+ [:lighting-system 4]
+ [:cheese-fries 2]
+ [:cement 2])
+
+clj꞉sim꞉> 
+([:flour-bag 4]
+ [:lemonade-bottle 1]
+ [:bread-roll 2]
+ [:coffee 7]
+ [:fire-pit 3]
+ [:cap 6]
+ [:home-textiles 6]
+ [:chairs 4]
+ [:fruit-and-berries 5]
+ [:pizza 3]
+ [:paint 2]
+ [:planks 6]
+ [:hammer 8]
+ [:watch 10]
+ [:garden-furniture 4]
+ [:backpack 4]
+ [:donuts 6]
+ [:lighting-system 4]
+ [:cheese-fries 2]
+ [:cement 2])
+
+clj꞉sim꞉> 
+; java.lang.IllegalArgumentException: No value supplied for key: clojure.lang.LazySeq@a411e990 sim /home/bob/simter/sim.clj:1:1
+clj꞉sim꞉> 
+{:flour-bag 4,
+ :lemonade-bottle 1,
+ :bread-roll 2,
+ :coffee 7,
+ :fire-pit 3,
+ :cap 6,
+ :home-textiles 6,
+ :chairs 4,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 2,
+ :planks 6,
+ :hammer 8,
+ :watch 10,
+ :garden-furniture 4,
+ :backpack 4,
+ :donuts 6,
+ :lighting-system 4,
+ :cheese-fries 2,
+ :cement 2}
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :donuts 6, :bread-roll 2},
+ :building-supplies
+ {:planks 14, :cement 8, :bricks 6, :nails 4, :paint 2},
+ :furniture {:home-textiles 6, :chairs 4},
+ :fashion {:watch 10, :cap 6, :backpack 4},
+ :farmers-market
+ {:flour-bag 17,
+  :cream 9,
+  :fruit-and-berries 6,
+  :cheese 5,
+  :beef 3,
+  :vegetables 2},
+ :home-appliances {:lighting-system 4},
+ :hardware {:measuring-tape 16, :hammer 12, :shovel 9},
+ :fast-food {:pizza 3, :cheese-fries 2, :lemonade-bottle 1},
+ :gardening-supplies
+ {:tree-saplings 6, :garden-furniture 4, :fire-pit 3},
+ :materials
+ ({:textiles 70}
+  {:seeds 68}
+  {:plastic 61}
+  {:wood 49}
+  {:metal 41}
+  {:animal-feed 28}
+  {:chemicals 26}
+  {:minerals 24}
+  {:glass 16}
+  {:sugar-and-spices 15}
+  {:electrical-components 4})}
+160
+clj꞉sim꞉> 
+(:flour-bag
+ :flour-bag
+ :flour-bag
+ :flour-bag
+ :lemonade-bottle
+ :bread-roll
+ :bread-roll
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :fire-pit
+ :fire-pit
+ :fire-pit
+ :cap
+ :cap
+ :cap
+ :cap
+ :cap
+ :cap
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :chairs
+ :chairs
+ :chairs
+ :chairs
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :pizza
+ :pizza
+ :pizza
+ :paint
+ :paint
+ :planks
+ :planks
+ :planks
+ :planks
+ :planks
+ :planks
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :backpack
+ :backpack
+ :backpack
+ :backpack
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :lighting-system
+ :lighting-system
+ :lighting-system
+ :lighting-system
+ :cheese-fries
+ :cheese-fries
+ :cement
+ :cement)
+
+clj꞉sim꞉> 
+#<SciVar@179cef34: 
+  (:flour-bag
+   :flour-bag
+   :flour-bag
+   :flour-bag
+   :lemonade-bottle
+   :bread-roll
+   :bread-roll
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :fire-pit
+   :fire-pit
+   :fire-pit
+   :cap
+   :cap
+   :cap
+   :cap
+   :cap
+   :cap
+   :home-textiles
+   :home-textiles
+   :home-textiles
+   :home-textiles
+   :home-textiles
+   :home-textiles
+   :chairs
+   :chairs
+   :chairs
+   :chairs
+   :fruit-and-berries
+   :fruit-and-berries
+   :fruit-and-berries
+   :fruit-and-berries
+   :fruit-and-berries
+   :pizza
+   :pizza
+   :pizza
+   :paint
+   :paint
+   :planks
+   :planks
+   :planks
+   :planks
+   :planks
+   :planks
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :garden-furniture
+   :garden-furniture
+   :garden-furniture
+   :garden-furniture
+   :backpack
+   :backpack
+   :backpack
+   :backpack
+   :donuts
+   :donuts
+   :donuts
+   :donuts
+   :donuts
+   :donuts
+   :lighting-system
+   :lighting-system
+   :lighting-system
+   :lighting-system
+   :cheese-fries
+   :cheese-fries
+   :cement
+   :cement)>
+
+clj꞉sim꞉> 
+(:flour-bag
+ :flour-bag
+ :flour-bag
+ :flour-bag
+ :lemonade-bottle
+ :bread-roll
+ :bread-roll
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :fire-pit
+ :fire-pit
+ :fire-pit
+ :cap
+ :cap
+ :cap
+ :cap
+ :cap
+ :cap
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :chairs
+ :chairs
+ :chairs
+ :chairs
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :pizza
+ :pizza
+ :pizza
+ :paint
+ :paint
+ :planks
+ :planks
+ :planks
+ :planks
+ :planks
+ :planks
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :backpack
+ :backpack
+ :backpack
+ :backpack
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :lighting-system
+ :lighting-system
+ :lighting-system
+ :lighting-system
+ :cheese-fries
+ :cheese-fries
+ :cement
+ :cement)
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :donuts 6, :bread-roll 2},
+ :building-supplies
+ {:planks 14, :cement 8, :paint 7, :bricks 6, :nails 4},
+ :furniture {:home-textiles 6, :chairs 4},
+ :fashion {:watch 10, :cap 6, :backpack 4},
+ :farmers-market
+ {:flour-bag 17,
+  :cream 9,
+  :fruit-and-berries 6,
+  :cheese 5,
+  :beef 3,
+  :vegetables 2},
+ :home-appliances {:lighting-system 4},
+ :hardware {:measuring-tape 16, :hammer 12, :shovel 9},
+ :fast-food {:pizza 3, :cheese-fries 2, :lemonade-bottle 1},
+ :gardening-supplies
+ {:tree-saplings 6, :garden-furniture 4, :fire-pit 3},
+ :materials
+ ({:textiles 70}
+  {:seeds 68}
+  {:plastic 61}
+  {:metal 51}
+  {:wood 49}
+  {:chemicals 36}
+  {:minerals 29}
+  {:animal-feed 28}
+  {:glass 16}
+  {:sugar-and-spices 15}
+  {:electrical-components 4})}
+160
+clj꞉sim꞉> 
+([:seeds 2]
+ [:textiles 2]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:flour-bag 1]
+ [:metal 1]
+ [:lemonade-bottle 1]
+ [:plastic 1]
+ [:sugar-and-spices 2]
+ [:glass 2]
+ [:wood 1]
+ [:shovel 1]
+ [:fruit-and-berries 1]
+ [:tree-saplings 1]
+ [:flour-bag 2]
+ [:seeds 2]
+ [:textiles 2]
+ [:cream 1]
+ [:animal-feed 1]
+ [:bread-roll 1]
+ [:flour-bag 2]
+ [:seeds 2]
+ [:textiles 2]
+ [:cream 1]
+ [:animal-feed 1]
+ [:bread-roll 1]
+ [:cream 1]
+ [:animal-feed 1]
+ [:seeds 2]
+ [:sugar-and-spices 1]
+ [:coffee 1]
+ [:cream 1]
+ [:animal-feed 1]
+ [:seeds 2]
+ [:sugar-and-spices 1]
+ [:coffee 1]
+ [:cream 1]
+ [:animal-feed 1]
+ [:seeds 2]
+ [:sugar-and-spices 1]
+ [:coffee 1]
+ [:cream 1]
+ [:animal-feed 1]
+ [:seeds 2]
+ [:sugar-and-spices 1]
+ [:coffee 1]
+ [:cream 1]
+ [:animal-feed 1]
+ [:seeds 2]
+ [:sugar-and-spices 1]
+ [:coffee 1]
+ [:cream 1]
+ [:animal-feed 1]
+ [:seeds 2]
+ [:sugar-and-spices 1]
+ [:coffee 1]
+ [:cream 1]
+ [:animal-feed 1]
+ [:seeds 2]
+ [:sugar-and-spices 1]
+ [:coffee 1]
+ [:metal 1]
+ [:minerals 6]
+ [:bricks 2]
+ [:chemicals 2]
+ [:fire-pit 1]
+ [:plastic 1]
+ [:wood 1]
+ [:shovel 1]
+ [:cement 2]
+ [:metal 1]
+ [:minerals 6]
+ [:bricks 2]
+ [:chemicals 2]
+ [:fire-pit 1]
+ [:plastic 1]
+ [:wood 1]
+ [:shovel 1]
+ [:cement 2]
+ [:metal 1]
+ [:minerals 6]
+ [:bricks 2]
+ [:chemicals 2]
+ [:fire-pit 1]
+ [:plastic 1]
+ [:wood 1]
+ [:shovel 1]
+ [:cement 2]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:cap 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:cap 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:cap 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:cap 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:cap 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:cap 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:home-textiles 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:home-textiles 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:home-textiles 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:home-textiles 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:home-textiles 1]
+ [:textiles 2]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:plastic 1]
+ [:home-textiles 1]
+ [:wood 3]
+ [:nails 1]
+ [:hammer 1]
+ [:metal 1]
+ [:chairs 1]
+ [:wood 3]
+ [:nails 1]
+ [:hammer 1]
+ [:metal 1]
+ [:chairs 1]
+ [:wood 3]
+ [:nails 1]
+ [:hammer 1]
+ [:metal 1]
+ [:chairs 1]
+ [:wood 3]
+ [:nails 1]
+ [:hammer 1]
+ [:metal 1]
+ [:chairs 1]
+ [:seeds 4]
+ [:tree-saplings 1]
+ [:shovel 1]
+ [:metal 1]
+ [:wood 1]
+ [:plastic 1]
+ [:fruit-and-berries 1]
+ [:seeds 4]
+ [:tree-saplings 1]
+ [:shovel 1]
+ [:metal 1]
+ [:wood 1]
+ [:plastic 1]
+ [:fruit-and-berries 1]
+ [:seeds 4]
+ [:tree-saplings 1]
+ [:shovel 1]
+ [:metal 1]
+ [:wood 1]
+ [:plastic 1]
+ [:fruit-and-berries 1]
+ [:seeds 4]
+ [:tree-saplings 1]
+ [:shovel 1]
+ [:metal 1]
+ [:wood 1]
+ [:plastic 1]
+ [:fruit-and-berries 1]
+ [:seeds 4]
+ [:tree-saplings 1]
+ [:shovel 1]
+ [:metal 1]
+ [:wood 1]
+ [:plastic 1]
+ [:fruit-and-berries 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:cheese 1]
+ [:beef 1]
+ [:animal-feed 5]
+ [:pizza 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:cheese 1]
+ [:beef 1]
+ [:animal-feed 5]
+ [:pizza 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:cheese 1]
+ [:beef 1]
+ [:animal-feed 5]
+ [:pizza 1]
+ [:metal 2]
+ [:minerals 1]
+ [:chemicals 2]
+ [:paint 1]
+ [:metal 2]
+ [:minerals 1]
+ [:chemicals 2]
+ [:paint 1]
+ [:metal 2]
+ [:minerals 1]
+ [:chemicals 2]
+ [:paint 1]
+ [:metal 2]
+ [:minerals 1]
+ [:chemicals 2]
+ [:paint 1]
+ [:metal 2]
+ [:minerals 1]
+ [:chemicals 2]
+ [:paint 1]
+ [:metal 2]
+ [:minerals 1]
+ [:chemicals 2]
+ [:paint 1]
+ [:metal 2]
+ [:minerals 1]
+ [:chemicals 2]
+ [:paint 1]
+ [:wood 2]
+ [:planks 1]
+ [:wood 2]
+ [:planks 1]
+ [:wood 2]
+ [:planks 1]
+ [:wood 2]
+ [:planks 1]
+ [:wood 2]
+ [:planks 1]
+ [:wood 2]
+ [:planks 1]
+ [:metal 1]
+ [:wood 1]
+ [:hammer 1]
+ [:metal 1]
+ [:wood 1]
+ [:hammer 1]
+ [:metal 1]
+ [:wood 1]
+ [:hammer 1]
+ [:metal 1]
+ [:wood 1]
+ [:hammer 1]
+ [:metal 1]
+ [:wood 1]
+ [:hammer 1]
+ [:metal 1]
+ [:wood 1]
+ [:hammer 1]
+ [:metal 1]
+ [:wood 1]
+ [:hammer 1]
+ [:metal 1]
+ [:wood 1]
+ [:hammer 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:plastic 2]
+ [:glass 1]
+ [:chemicals 1]
+ [:watch 1]
+ [:planks 2]
+ [:wood 2]
+ [:plastic 2]
+ [:textiles 2]
+ [:garden-furniture 1]
+ [:planks 2]
+ [:wood 2]
+ [:plastic 2]
+ [:textiles 2]
+ [:garden-furniture 1]
+ [:planks 2]
+ [:wood 2]
+ [:plastic 2]
+ [:textiles 2]
+ [:garden-furniture 1]
+ [:planks 2]
+ [:wood 2]
+ [:plastic 2]
+ [:textiles 2]
+ [:garden-furniture 1]
+ [:textiles 2]
+ [:plastic 3]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:backpack 1]
+ [:textiles 2]
+ [:plastic 3]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:backpack 1]
+ [:textiles 2]
+ [:plastic 3]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:backpack 1]
+ [:textiles 2]
+ [:plastic 3]
+ [:measuring-tape 1]
+ [:metal 1]
+ [:backpack 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:sugar-and-spices 1]
+ [:donuts 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:sugar-and-spices 1]
+ [:donuts 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:sugar-and-spices 1]
+ [:donuts 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:sugar-and-spices 1]
+ [:donuts 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:sugar-and-spices 1]
+ [:donuts 1]
+ [:flour-bag 1]
+ [:seeds 2]
+ [:textiles 2]
+ [:sugar-and-spices 1]
+ [:donuts 1]
+ [:chemicals 1]
+ [:electrical-components 1]
+ [:glass 1]
+ [:lighting-system 1]
+ [:chemicals 1]
+ [:electrical-components 1]
+ [:glass 1]
+ [:lighting-system 1]
+ [:chemicals 1]
+ [:electrical-components 1]
+ [:glass 1]
+ [:lighting-system 1]
+ [:chemicals 1]
+ [:electrical-components 1]
+ [:glass 1]
+ [:lighting-system 1]
+ [:vegetables 1]
+ [:seeds 2]
+ [:cheese 1]
+ [:animal-feed 2]
+ [:cheese-fries 1]
+ [:vegetables 1]
+ [:seeds 2]
+ [:cheese 1]
+ [:animal-feed 2]
+ [:cheese-fries 1]
+ [:minerals 2]
+ [:chemicals 1]
+ [:cement 1]
+ [:minerals 2]
+ [:chemicals 1]
+ [:cement 1])
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :donuts 6, :bread-roll 2}, :building-supplies {:planks 14, :paint 12, :cement 8, :bricks 6, :nails 4}, :furniture {:home-textiles 6, :chairs 4}, :fashion {:watch 10, :cap 5, :backpack 3}, :farmers-market {:flour-bag 17, :cream 9, :fruit-and-berries 6, :cheese 5, :beef 3, :vegetables 2}, :home-appliances {:lighting-system 4}, :hardware {:measuring-tape 14, :hammer 12, :shovel 9}, :fast-food {:pizza 3, :cheese-fries 2, :lemonade-bottle 1}, :gardening-supplies {:tree-saplings 6, :garden-furniture 4, :fire-pit 3}, :materials ({:seeds 68} {:textiles 66} {:metal 59} {:plastic 57} {:wood 49} {:chemicals 46} {:minerals 34} {:animal-feed 28} {:glass 16} {:sugar-and-spices 15} {:electrical-components 4})}
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 7, :donuts 6, :bread-roll 2},
+ :building-supplies
+ {:planks 14, :paint 12, :cement 8, :bricks 6, :nails 4},
+ :furniture {:home-textiles 6, :chairs 4},
+ :fashion {:watch 10, :cap 5, :backpack 3},
+ :farmers-market
+ {:flour-bag 17,
+  :cream 9,
+  :fruit-and-berries 6,
+  :cheese 5,
+  :beef 3,
+  :vegetables 2},
+ :home-appliances {:lighting-system 4},
+ :hardware {:measuring-tape 14, :hammer 12, :shovel 9},
+ :fast-food {:pizza 3, :cheese-fries 2, :lemonade-bottle 1},
+ :gardening-supplies
+ {:tree-saplings 6, :garden-furniture 4, :fire-pit 3},
+ :materials
+ ({:seeds 68}
+  {:textiles 66}
+  {:metal 59}
+  {:plastic 57}
+  {:wood 49}
+  {:chemicals 46}
+  {:minerals 34}
+  {:animal-feed 28}
+  {:glass 16}
+  {:sugar-and-spices 15}
+  {:electrical-components 4})}
+nil
+clj꞉sim꞉> 
+#<SciVar@49584a5e: 
+  {:tv 4,
+   :flour-bag 1,
+   :beef 2,
+   :lemonade-bottle 1,
+   :bread-roll 3,
+   :glue 1,
+   :coffee 4,
+   :garden-gnomes 1,
+   :cap 3,
+   :microwave-oven 2,
+   :nails 11,
+   :home-textiles 6,
+   :shovel 5,
+   :pizza 0,
+   :paint 2,
+   :planks 1,
+   :hammer 13,
+   :watch 1,
+   :garden-furniture 4,
+   :couch 4,
+   :backpack 4,
+   :donuts 2,
+   :green-smoothie 3,
+   :lighting-system 4}>
+
+clj꞉sim꞉> 
+([:backpack 4]
+ [:beef 2]
+ [:bread-roll 3]
+ [:cap 3]
+ [:coffee 4]
+ [:couch 4]
+ [:donuts 2]
+ [:flour-bag 1]
+ [:garden-furniture 4]
+ [:garden-gnomes 1]
+ [:glue 1]
+ [:green-smoothie 3]
+ [:hammer 13]
+ [:home-textiles 6]
+ [:lemonade-bottle 1]
+ [:lighting-system 4]
+ [:microwave-oven 2]
+ [:nails 11]
+ [:paint 2]
+ [:pizza 0]
+ [:planks 1]
+ [:shovel 5]
+ [:tv 4]
+ [:watch 1])
+
+clj꞉sim꞉> 
+{:tv 4,
+ :flour-bag 1,
+ :beef 2,
+ :lemonade-bottle 1,
+ :bread-roll 3,
+ :glue 1,
+ :coffee 4,
+ :garden-gnomes 1,
+ :cap 3,
+ :microwave-oven 2,
+ :nails 11,
+ :home-textiles 6,
+ :shovel 5,
+ :pizza 0,
+ :paint 2,
+ :planks 1,
+ :hammer 13,
+ :watch 1,
+ :garden-furniture 4,
+ :couch 4,
+ :backpack 4,
+ :donuts 2,
+ :green-smoothie 3,
+ :lighting-system 4}
+
+clj꞉sim꞉> 
+{:backpack 4,
+ :beef 2,
+ :bread-roll 3,
+ :cap 3,
+ :coffee 4,
+ :couch 4,
+ :donuts 2,
+ :flour-bag 1,
+ :garden-furniture 4,
+ :garden-gnomes 1,
+ :glue 1,
+ :green-smoothie 3,
+ :hammer 13,
+ :home-textiles 6,
+ :lemonade-bottle 1,
+ :lighting-system 4,
+ :microwave-oven 2,
+ :nails 11,
+ :paint 2,
+ :pizza 0,
+ :planks 1,
+ :shovel 5,
+ :tv 4,
+ :watch 1}
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 10, :donuts 6, :bread-roll 2},
+ :building-supplies
+ {:paint 12, :planks 11, :cement 8, :bricks 6, :nails 5},
+ :furniture {:home-textiles 5, :chairs 1},
+ :fashion {:watch 9, :cap 5, :backpack 3},
+ :farmers-market
+ {:flour-bag 16, :cream 12, :fruit-and-berries 6, :cheese 3, :beef 3},
+ :home-appliances {:lighting-system 4},
+ :hardware {:hammer 17, :measuring-tape 13, :shovel 12},
+ :fast-food {:pizza 3, :lemonade-bottle 1},
+ :gardening-supplies
+ {:tree-saplings 6, :garden-furniture 5, :fire-pit 3},
+ :materials
+ ({:metal 74}
+  {:seeds 68}
+  {:textiles 64}
+  {:plastic 59}
+  {:chemicals 45}
+  {:wood 43}
+  {:minerals 34}
+  {:animal-feed 27}
+  {:sugar-and-spices 18}
+  {:glass 15}
+  {:electrical-components 4})}
+nil
+clj꞉sim꞉> 
+(:flour-bag
+ :flour-bag
+ :flour-bag
+ :lemonade-bottle
+ :bread-roll
+ :bread-roll
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :fire-pit
+ :fire-pit
+ :fire-pit
+ :cap
+ :cap
+ :cap
+ :cap
+ :cap
+ :nails
+ :nails
+ :nails
+ :nails
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :chairs
+ :shovel
+ :shovel
+ :shovel
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :pizza
+ :pizza
+ :pizza
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :planks
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :backpack
+ :backpack
+ :backpack
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :lighting-system
+ :lighting-system
+ :lighting-system
+ :lighting-system
+ :cement
+ :cement)
+
+clj꞉sim꞉> 
+([:flour-bag 3]
+ [:lemonade-bottle 1]
+ [:bread-roll 2]
+ [:coffee 10]
+ [:fire-pit 3]
+ [:cap 5]
+ [:nails 4]
+ [:home-textiles 5]
+ [:chairs 1]
+ [:shovel 3]
+ [:fruit-and-berries 5]
+ [:pizza 3]
+ [:paint 12]
+ [:planks 1]
+ [:hammer 16]
+ [:watch 9]
+ [:garden-furniture 5]
+ [:backpack 3]
+ [:donuts 6]
+ [:lighting-system 4]
+ [:cement 2])
+
+clj꞉sim꞉> 
+{:tv 0,
+ :flour-bag 3,
+ :beef 0,
+ :lemonade-bottle 1,
+ :bread-roll 2,
+ :glue 0,
+ :coffee 10,
+ :fire-pit 3,
+ :garden-gnomes 0,
+ :cap 5,
+ :microwave-oven 0,
+ :nails 4,
+ :home-textiles 5,
+ :chairs 1,
+ :shovel 3,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 12,
+ :planks 1,
+ :hammer 16,
+ :watch 9,
+ :garden-furniture 5,
+ :couch 0,
+ :backpack 3,
+ :donuts 6,
+ :green-smoothie 0,
+ :lighting-system 4,
+ :cheese-fries 0,
+ :cement 2}
+
+clj꞉sim꞉> 
+{:tv 4,
+ :flour-bag 4,
+ :beef 2,
+ :lemonade-bottle 2,
+ :bread-roll 5,
+ :glue 1,
+ :coffee 11,
+ :fire-pit 3,
+ :garden-gnomes 1,
+ :cap 8,
+ :microwave-oven 2,
+ :nails 9,
+ :home-textiles 12,
+ :chairs 4,
+ :shovel 4,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 14,
+ :planks 7,
+ :hammer 21,
+ :watch 11,
+ :garden-furniture 8,
+ :couch 4,
+ :backpack 7,
+ :donuts 8,
+ :green-smoothie 3,
+ :cheese-fries 2,
+ :cement 2}
+
+clj꞉sim꞉> 
+{:tv 0,
+ :flour-bag 3,
+ :beef 0,
+ :lemonade-bottle 1,
+ :bread-roll 2,
+ :glue 0,
+ :coffee 10,
+ :fire-pit 3,
+ :garden-gnomes 0,
+ :cap 5,
+ :microwave-oven 0,
+ :nails 4,
+ :home-textiles 5,
+ :chairs 1,
+ :shovel 3,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 12,
+ :planks 1,
+ :hammer 16,
+ :watch 9,
+ :garden-furniture 5,
+ :couch 0,
+ :backpack 3,
+ :donuts 6,
+ :green-smoothie 0,
+ :lighting-system 4,
+ :cheese-fries 0,
+ :cement 2}
+
+clj꞉sim꞉> 
+; java.lang.NullPointerException sim /home/bob/simter/sim.clj:1:1
+clj꞉sim꞉> 
+-4
+
+clj꞉sim꞉> 
+{:tv 0,
+ :flour-bag 3,
+ :beef 0,
+ :lemonade-bottle 1,
+ :bread-roll 2,
+ :glue 0,
+ :coffee 10,
+ :fire-pit 3,
+ :garden-gnomes 0,
+ :cap 5,
+ :microwave-oven 0,
+ :nails 4,
+ :home-textiles 5,
+ :chairs 1,
+ :shovel 3,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 12,
+ :planks 1,
+ :hammer 16,
+ :watch 9,
+ :garden-furniture 5,
+ :couch 0,
+ :backpack 3,
+ :donuts 6,
+ :green-smoothie 0,
+ :lighting-system 4,
+ :cheese-fries 0,
+ :cement 2}
+
+clj꞉sim꞉> 
+(:flour-bag
+ :flour-bag
+ :flour-bag
+ :lemonade-bottle
+ :bread-roll
+ :bread-roll
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :fire-pit
+ :fire-pit
+ :fire-pit
+ :cap
+ :cap
+ :cap
+ :cap
+ :cap
+ :nails
+ :nails
+ :nails
+ :nails
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :chairs
+ :shovel
+ :shovel
+ :shovel
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :pizza
+ :pizza
+ :pizza
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :planks
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :backpack
+ :backpack
+ :backpack
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :lighting-system
+ :lighting-system
+ :lighting-system
+ :lighting-system
+ :cement
+ :cement)
+
+clj꞉sim꞉> 
+(:tv
+ :flour-bag
+ :beef
+ :lemonade-bottle
+ :bread-roll
+ :glue
+ :coffee
+ :fire-pit
+ :garden-gnomes
+ :cap
+ :microwave-oven
+ :nails
+ :home-textiles
+ :chairs
+ :shovel
+ :fruit-and-berries
+ :pizza
+ :paint
+ :planks
+ :hammer
+ :watch
+ :garden-furniture
+ :couch
+ :backpack
+ :donuts
+ :green-smoothie
+ :cheese-fries
+ :cement)
+
+clj꞉sim꞉> 
+{:tv 0,
+ :flour-bag 3,
+ :beef 0,
+ :lemonade-bottle 1,
+ :bread-roll 2,
+ :glue 0,
+ :coffee 10,
+ :fire-pit 3,
+ :garden-gnomes 0,
+ :cap 5,
+ :microwave-oven 0,
+ :nails 4,
+ :home-textiles 5,
+ :chairs 1,
+ :shovel 3,
+ :fruit-and-berries 5,
+ :pizza 3,
+ :paint 12,
+ :planks 1,
+ :hammer 16,
+ :watch 9,
+ :garden-furniture 5,
+ :couch 0,
+ :backpack 3,
+ :donuts 6,
+ :green-smoothie 0,
+ :cheese-fries 0,
+ :cement 2}
+
+clj꞉sim꞉> 
+#<SciVar@179cef34: 
+  (:flour-bag
+   :flour-bag
+   :flour-bag
+   :lemonade-bottle
+   :bread-roll
+   :bread-roll
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :coffee
+   :fire-pit
+   :fire-pit
+   :fire-pit
+   :cap
+   :cap
+   :cap
+   :cap
+   :cap
+   :nails
+   :nails
+   :nails
+   :nails
+   :home-textiles
+   :home-textiles
+   :home-textiles
+   :home-textiles
+   :home-textiles
+   :chairs
+   :shovel
+   :shovel
+   :shovel
+   :fruit-and-berries
+   :fruit-and-berries
+   :fruit-and-berries
+   :fruit-and-berries
+   :fruit-and-berries
+   :pizza
+   :pizza
+   :pizza
+   :paint
+   :paint
+   :paint
+   :paint
+   :paint
+   :paint
+   :paint
+   :paint
+   :paint
+   :paint
+   :paint
+   :paint
+   :planks
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :hammer
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :watch
+   :garden-furniture
+   :garden-furniture
+   :garden-furniture
+   :garden-furniture
+   :garden-furniture
+   :backpack
+   :backpack
+   :backpack
+   :donuts
+   :donuts
+   :donuts
+   :donuts
+   :donuts
+   :donuts
+   :cement
+   :cement)>
+
+clj꞉sim꞉> 
+(:flour-bag
+ :flour-bag
+ :flour-bag
+ :lemonade-bottle
+ :bread-roll
+ :bread-roll
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :coffee
+ :fire-pit
+ :fire-pit
+ :fire-pit
+ :cap
+ :cap
+ :cap
+ :cap
+ :cap
+ :nails
+ :nails
+ :nails
+ :nails
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :home-textiles
+ :chairs
+ :shovel
+ :shovel
+ :shovel
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :fruit-and-berries
+ :pizza
+ :pizza
+ :pizza
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :paint
+ :planks
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :hammer
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :watch
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :garden-furniture
+ :backpack
+ :backpack
+ :backpack
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :donuts
+ :cement
+ :cement)
+
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:donut-shop {:coffee 10, :donuts 6, :bread-roll 2},
+ :building-supplies
+ {:paint 12, :planks 11, :cement 8, :bricks 6, :nails 5},
+ :furniture {:home-textiles 5, :chairs 1},
+ :fashion {:watch 9, :cap 5, :backpack 3},
+ :farmers-market
+ {:flour-bag 16, :cream 12, :fruit-and-berries 6, :cheese 3, :beef 3},
+ :home-appliances {},
+ :hardware {:hammer 17, :measuring-tape 13, :shovel 12},
+ :fast-food {:pizza 3, :lemonade-bottle 1},
+ :gardening-supplies
+ {:tree-saplings 6, :garden-furniture 5, :fire-pit 3},
+ :materials
+ ({:metal 74}
+  {:seeds 68}
+  {:textiles 64}
+  {:plastic 59}
+  {:wood 43}
+  {:chemicals 41}
+  {:minerals 34}
+  {:animal-feed 27}
+  {:sugar-and-spices 18}
+  {:glass 11}
+  {:electrical-components 0})}
+nil
+clj꞉sim꞉> 

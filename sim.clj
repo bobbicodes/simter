@@ -1,5 +1,6 @@
 (ns sim
-  (:require [clojure.pprint :as pprint]))
+  (:require [clojure.pprint :as pprint]
+            [clojure.set :as set]))
 
 (def building-supplies
   {:nails {:metal 2
@@ -302,60 +303,57 @@
 
 (def orders
   (merge-with +
-              {:lighting-system 5}
-              {:cap   2 :paint 3}
-              {:lighting-system 5 :paint           5  :hammer          6 :coffee          5}
-              {:home-textiles 3 :shovel        4 :planks        5}
-              {:planks 5 :cap    4 :pizza  3 :cement 3}
-              {:flour-bag        2 :green-smoothie   3 :beef             2 :microwave-oven   2 :garden-furniture 2}
-              {:green-smoothie 2 :burgers        2 :flour-bag      1}
-              {:paint      6 :coffee     5 :bread-roll 5}
-              {:shovel 5 :planks 6 :glue   4}
-              {:donuts           4
-               :hammer           6
-               :couch            4
-               :garden-furniture 3
-               :nails            9}
-              {:ladder   3
-               :tv       3
-               :cupboard 3}))
+              {:paint 5}              ;ship
+              {:cap  6 :backpack 7}  ; omega
+              {:cap  2 :paint 3}      ; omega
+              {:flour-bag 2 :cement 2 :watch 2 :fire-pit 3 :planks 2} ; residential
+              {:home-textiles 3 :shovel 4 :planks 5}   ; residential
+              {:chairs 4 :fruit-and-berries 5}        ; residential
+              {:hammer 4 :garden-furniture 3 :pizza 3 :cheese-fries 2 :donuts 4}  ; residential    
+              {:watch 9 :home-textiles 9}  ; residential    
+              {:paint 6 :coffee 5 :bread-roll 5}     ; tokyo
+              {:tv 4 :hammer 8 :coffee 6}      ; tokyo
+              {:donuts 4 :hammer 6 :couch 4 :garden-furniture 3 :nails 9} ;paris 
+              {:glue 1 :hammer 3 :garden-gnomes 1 :lemonade-bottle 2} ;tokyo
+              {:flour-bag 2 :green-smoothie  3 :beef 2 :microwave-oven 2 :garden-furniture 2} ; old town
+              ))
 
 (def inventory
-  {:lighting-system  5
-   :cap              3
-   :paint            4
-   :hammer           6
-   :coffee           5
-   :home-textiles    1
-   :shovel           5 
-   :planks           3
-   :pizza            3
-   :cement           3
-   :green-smoothie   3
-   :beef             2
-   :microwave-oven   3
-   :garden-furniture 2
-   :burgers          2 
-   :bread-roll       3
-   :glue             5
-   :donuts           2
-   :couch            5
-   :ladder           1
-   :tv               3
-   :cupboard         3})
+  {:backpack          4,
+   :beef              2,
+   :bread-roll        3
+   :cap               3
+   :chairs            3
+   :cheese-fries      2
+   :coffee            1
+   :couch             4
+   :donuts            2
+   :flour-bag         1
+   :fruit-and-berries 0
+   :garden-furniture  3
+   :garden-gnomes     1
+   :glue              1
+   :green-smoothie    3,
+   :hammer            5
+   :home-textiles     7
+   :lemonade-bottle   1
+   :lighting-system   4,
+   :microwave-oven    2,
+   :nails             5
+   :paint             2
+   :pizza             0,
+   :planks            6
+   :shovel            1
+   :tv                4
+   :watch             2})
 
 (def prod
   (flatten
-   (map (fn [x] (apply #(repeat %2 %)   x))
-         (merge-with - orders inventory)
-        )))
-
-orders
+   (map (fn [x] (apply #(repeat %2 %) x))
+        (select-keys (merge-with - orders inventory) (keys orders)))))
 
 (defn items [l]
   (mapcat #(seq (item %)) l))
-
-(items prod)
 
 (defn n [item l]
   (reduce + (map last
@@ -387,5 +385,3 @@ orders
   :materials (reverse (sort-by #(first (vals %))
                                (for [m materials]
                                  {m (n m prod)})))))
-
-(+ 50 50 30 30)
