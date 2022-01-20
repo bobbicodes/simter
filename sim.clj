@@ -301,51 +301,35 @@
       (assoc k 1)
       (dissoc :time)))
 
+(def upgrades
+  [;{:watch 5 :donuts 5 :chairs 5 :garden-furniture 5} ;cash
+   {:tables 1}
+   {:ladder 1} ;metal 20
+   {:cap 1} ;metal 1 wood 1 chem 1
+   {:corn 1 :chairs 1} ;seeds 1
+   {:chairs 1} ;sug 1
+   {:watch 2}
+   {:backpack 1 :chairs 1} ; min 1
+;omega
+   {:shovel 3 :ice-cream-sandwich 4}
+   {:bricks 1 :cheese 1 :green-smoothie 2}])
+
 (def orders
-  (merge-with +
-              {:paint 5}              ;ship
-              {:cap  6 :backpack 7}  ; omega
-              {:cap  2 :paint 3}      ; omega
-              {:flour-bag 2 :cement 2 :watch 2 :fire-pit 3 :planks 2} ; residential
-              {:home-textiles 3 :shovel 4 :planks 5}   ; residential
-              {:chairs 4 :fruit-and-berries 5}        ; residential
-              {:hammer 4 :garden-furniture 3 :pizza 3 :cheese-fries 2 :donuts 4}  ; residential    
-              {:watch 9 :home-textiles 9}  ; residential    
-              {:paint 6 :coffee 5 :bread-roll 5}     ; tokyo
-              {:tv 4 :hammer 8 :coffee 6}      ; tokyo
-              {:donuts 4 :hammer 6 :couch 4 :garden-furniture 3 :nails 9} ;paris 
-              {:glue 1 :hammer 3 :garden-gnomes 1 :lemonade-bottle 2} ;tokyo
-              {:flour-bag 2 :green-smoothie  3 :beef 2 :microwave-oven 2 :garden-furniture 2} ; old town
-              ))
+  (apply merge-with + upgrades))
 
 (def inventory
-  {:backpack          4,
-   :beef              2,
-   :bread-roll        3
-   :cap               3
-   :chairs            3
-   :cheese-fries      2
-   :coffee            1
-   :couch             4
-   :donuts            2
-   :flour-bag         1
-   :fruit-and-berries 0
-   :garden-furniture  3
-   :garden-gnomes     1
-   :glue              1
-   :green-smoothie    3,
-   :hammer            5
-   :home-textiles     7
-   :lemonade-bottle   1
-   :lighting-system   4,
-   :microwave-oven    2,
-   :nails             5
-   :paint             2
-   :pizza             0,
-   :planks            6
-   :shovel            1
-   :tv                4
-   :watch             2})
+  {:backpack          0   :beef              0   :bread-roll        0
+   :bricks            1
+   :cap               0   :chairs            0   :cheese            1
+   :cheese-fries      0
+   :coffee            0   :couch             0   :donuts            0
+   :flour-bag         0   :fruit-and-berries 0   :garden-furniture  0
+   :garden-gnomes     0   :glue              0   :green-smoothie    2
+   :hammer            0   :home-textiles     0   :ice-cream-sandwich 4
+   :ladder            0   :lemonade-bottle   0   :lighting-system   0
+   :microwave-oven    0   :nails             0   :paint             0
+   :pizza             0   :planks            0   :shovel            3
+   :tv                0   :watch             0})
 
 (def prod
   (flatten
@@ -367,21 +351,22 @@
                     {m (n m prod)})))
 
 (reduce +
-(map #(first (vals %))
-(for [m materials]
-                    {m (n m prod)})))
+        (map #(first (vals %))
+             (for [m materials]
+               {m (n m prod)})))
 
 (defn parts [l]
   (for [m l]
     {m (n m prod)}))
 
-(pprint/pprint
- (assoc
-  (zipmap [:building-supplies :hardware :fashion :furniture :farmers-market :gardening-supplies :donut-shop :fast-food :home-appliances]
-          (for [store (map parts (map keys stores))]
-            (into {} (reverse (sort-by #(first (vals %))
-                                       (remove #(zero? (first (vals %)))
-                                               store))))))
-  :materials (reverse (sort-by #(first (vals %))
-                               (for [m materials]
-                                 {m (n m prod)})))))
+
+
+{:stores
+ (for [store (map parts (map keys stores))]
+   (into {} (reverse (sort-by #(first (vals %))
+                              (remove #(zero? (first (vals %)))
+                                      store)))))
+ :factories
+ (reverse (sort-by #(first (vals %))
+                   (for [m materials]
+                     {m (n m prod)})))}
