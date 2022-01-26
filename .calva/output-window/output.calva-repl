@@ -5,7 +5,7 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
-; Starting Jack-in Terminal: bb --nrepl-server 53871
+; Starting Jack-in Terminal: bb --nrepl-server 60007
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS: 
@@ -19,170 +19,4779 @@ clj꞉user꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉user꞉> 
 ; Evaluating file: sim.clj
-({:planks 10} {} {} {} {:flour-bag 5} {:garden-furniture 5} {:donuts 5} {} {})
+{:stores
+ ({:planks 39, :nails 34, :paint 21, :cement 10, :bricks 10, :glue 3}
+  {:shovel 19, :measuring-tape 19, :hammer 8, :ladder 5}
+  {:business-suits 3, :cap 3}
+  {:cupboard 8, :home-textiles 3, :chairs 3}
+  {:flour-bag 30,
+   :vegetables 21,
+   :cream 12,
+   :fruit-and-berries 11,
+   :cheese 9,
+   :corn 8,
+   :beef 3}
+  {:tree-saplings 13, :lawn-mower 5, :fire-pit 5, :garden-furniture 3}
+  {:bread-roll 11,
+   :green-smoothie 6,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:cheese-fries 3, :pizza 3, :popcorn 2}
+  {:microwave-oven 9, :tv 7, :lighting-system 3}),
+ :factories
+ ({:metal 211}
+  {:seeds 144}
+  {:wood 69}
+  {:textiles 65}
+  {:chemicals 61}
+  {:plastic 61}
+  {:minerals 57}
+  {:glass 42}
+  {:animal-feed 39}
+  {:electrical-components 31}
+  {:sugar-and-spices 4})}
+nil
+clj꞉sim꞉> 
+(:tv :flour-bag :cherry-cheesecake :bread-roll :business-suits :cheese :fire-pit :popcorn :cap :microwave-oven :nails :home-textiles :chairs :shovel :fruit-and-berries :pizza :paint :planks :frozen-yogurt :vegetables :hammer :garden-furniture :ladder :tree-saplings :donuts :green-smoothie :measuring-tape :lighting-system :cheese-fries :corn :cupboard :lawn-mower)
+clj꞉sim꞉> 
+; : contains? not supported on type: clojure.lang.Keyword sim 
+clj꞉sim꞉> 
+; : contains? not supported on type: clojure.lang.Keyword sim 
+clj꞉sim꞉> 
+; : contains? not supported on type: clojure.lang.APersistentMap$KeySeq sim 
+clj꞉sim꞉> 
+true
+clj꞉sim꞉> 
+true
+clj꞉sim꞉> 
+false
+clj꞉sim꞉> 
+false
+clj꞉sim꞉> 
+{:stores
+ ({:planks 39, :nails 34, :paint 21, :cement 10, :bricks 10, :glue 3}
+  {:shovel 19, :measuring-tape 19, :hammer 8, :ladder 5}
+  {:business-suits 3, :cap 3}
+  {:cupboard 8, :home-textiles 3, :chairs 3}
+  {:flour-bag 30,
+   :vegetables 21,
+   :cream 12,
+   :fruit-and-berries 11,
+   :cheese 9,
+   :corn 8,
+   :beef 3}
+  {:tree-saplings 13, :lawn-mower 5, :fire-pit 5, :garden-furniture 3}
+  {:bread-roll 11,
+   :green-smoothie 6,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:cheese-fries 3, :pizza 3, :popcorn 2}
+  {:microwave-oven 9, :tv 7, :lighting-system 3}),
+ :factories
+ ({:metal 211/4}
+  {:seeds 36}
+  {:wood 69/4}
+  {:textiles 65/4}
+  {:chemicals 61/4}
+  {:plastic 61/4}
+  {:minerals 57/4}
+  {:glass 21/2}
+  {:animal-feed 39/4}
+  {:electrical-components 31/4}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+{:stores
+ ({:planks 39, :nails 34, :paint 21, :cement 10, :bricks 10, :glue 3}
+  {:shovel 19, :measuring-tape 19, :hammer 8, :ladder 5}
+  {:business-suits 3, :cap 3}
+  {:cupboard 8, :home-textiles 3, :chairs 3}
+  {:flour-bag 30,
+   :vegetables 21,
+   :cream 12,
+   :fruit-and-berries 11,
+   :cheese 9,
+   :corn 8,
+   :beef 3}
+  {:tree-saplings 13, :lawn-mower 5, :fire-pit 5, :garden-furniture 3}
+  {:bread-roll 11,
+   :green-smoothie 6,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:cheese-fries 3, :pizza 3, :popcorn 2}
+  {:microwave-oven 9, :tv 7, :lighting-system 3}),
+ :factories
+ ({:metal 52.75}
+  {:seeds 36.0}
+  {:wood 17.25}
+  {:textiles 16.25}
+  {:chemicals 15.25}
+  {:plastic 15.25}
+  {:minerals 14.25}
+  {:glass 10.5}
+  {:animal-feed 9.75}
+  {:electrical-components 7.75}
+  {:sugar-and-spices 1.0})}
+nil
+clj꞉sim꞉> 
+; : Could not resolve symbol: js/Math sim c:\Users\porko\Documents\GitHub\simter\sim.clj:10:34
+clj꞉sim꞉> 
+{:stores
+ ({:planks 39, :nails 34, :paint 21, :cement 10, :bricks 10, :glue 3}
+  {:shovel 19, :measuring-tape 19, :hammer 8, :ladder 5}
+  {:business-suits 3, :cap 3}
+  {:cupboard 8, :home-textiles 3, :chairs 3}
+  {:flour-bag 30,
+   :vegetables 21,
+   :cream 12,
+   :fruit-and-berries 11,
+   :cheese 9,
+   :corn 8,
+   :beef 3}
+  {:tree-saplings 13, :lawn-mower 5, :fire-pit 5, :garden-furniture 3}
+  {:bread-roll 11,
+   :green-smoothie 6,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:cheese-fries 3, :pizza 3, :popcorn 2}
+  {:microwave-oven 9, :tv 7, :lighting-system 3}),
+ :factories
+ ({:metal 53}
+  {:seeds 36}
+  {:wood 17}
+  {:textiles 16}
+  {:chemicals 15}
+  {:plastic 15}
+  {:minerals 14}
+  {:glass 11}
+  {:animal-feed 10}
+  {:electrical-components 8}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+{:stores
+ ({:planks 39, :nails 34, :paint 21, :cement 10, :bricks 10, :glue 3}
+  {:shovel 19, :measuring-tape 19, :hammer 8, :ladder 5}
+  {:business-suits 3, :cap 3}
+  {:cupboard 8, :home-textiles 3, :chairs 3}
+  {:flour-bag 30,
+   :vegetables 21,
+   :cream 12,
+   :fruit-and-berries 11,
+   :cheese 9,
+   :corn 8,
+   :beef 3}
+  {:tree-saplings 13, :lawn-mower 5, :fire-pit 5, :garden-furniture 3}
+  {:bread-roll 11,
+   :green-smoothie 6,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:cheese-fries 3, :pizza 3, :popcorn 2}
+  {:microwave-oven 9, :tv 7, :lighting-system 3}),
+ :factories
+ ({:metal 19}
+  {:seeds 13}
+  {:textiles 6}
+  {:chemicals 6}
+  {:plastic 6}
+  {:wood 6}
+  {:minerals 5}
+  {:animal-feed 4}
+  {:glass 4}
+  {:electrical-components 3}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+{:stores
+ ({:planks 39, :nails 34, :paint 21, :cement 10, :bricks 10, :glue 3}
+  {:shovel 19, :measuring-tape 19, :hammer 8, :ladder 5}
+  {:business-suits 3, :cap 3}
+  {:cupboard 8, :home-textiles 3, :chairs 3}
+  {:flour-bag 30,
+   :vegetables 21,
+   :cream 12,
+   :fruit-and-berries 11,
+   :cheese 9,
+   :corn 8,
+   :beef 3}
+  {:tree-saplings 13, :lawn-mower 5, :fire-pit 5, :garden-furniture 3}
+  {:bread-roll 11,
+   :green-smoothie 6,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:cheese-fries 3, :pizza 3, :popcorn 2}
+  {:microwave-oven 9, :tv 7, :lighting-system 3}),
+ :factories
+ ({:metal 42}
+  {:seeds 29}
+  {:wood 14}
+  {:textiles 13}
+  {:chemicals 12}
+  {:plastic 12}
+  {:minerals 11}
+  {:animal-feed 8}
+  {:glass 8}
+  {:electrical-components 6}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+{:stores
+ ({:planks 39, :nails 34, :paint 21, :cement 10, :bricks 10, :glue 3}
+  {:shovel 19, :measuring-tape 19, :hammer 8, :ladder 5}
+  {:business-suits 3, :cap 3}
+  {:cupboard 8, :home-textiles 3, :chairs 3}
+  {:flour-bag 30,
+   :vegetables 21,
+   :cream 12,
+   :fruit-and-berries 11,
+   :cheese 9,
+   :corn 8,
+   :beef 3}
+  {:tree-saplings 13, :lawn-mower 5, :fire-pit 5, :garden-furniture 3}
+  {:bread-roll 11,
+   :green-smoothie 6,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:cheese-fries 3, :pizza 3, :popcorn 2}
+  {:microwave-oven 9, :tv 7, :lighting-system 3}),
+ :factories
+ ({:metal 42}
+  {:seeds 29}
+  {:wood 14}
+  {:textiles 13}
+  {:chemicals 12}
+  {:plastic 12}
+  {:minerals 11}
+  {:animal-feed 8}
+  {:glass 8}
+  {:electrical-components 6}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+300
+clj꞉sim꞉> 
+625/4
+clj꞉sim꞉> 
+156.25
+clj꞉sim꞉> 
+300
+clj꞉sim꞉> 
+4625/28
+clj꞉sim꞉> 
+165.17857142857142
+clj꞉sim꞉> 
+156.25
+clj꞉sim꞉> 
+false
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-({:planks 10, :nails 5} {:hammer 5} {} {:chairs 5} {:flour-bag 5} {:garden-furniture 5} {:donuts 5} {} {})
+{:stores
+ ({:planks 33, :nails 24, :paint 21, :cement 14, :bricks 10, :glue 3}
+  {:measuring-tape 22, :shovel 16, :ladder 5, :hammer 5}
+  {:watch 7, :backpack 6, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 31,
+   :cheese 18,
+   :vegetables 18,
+   :beef 12,
+   :corn 8,
+   :cream 8,
+   :fruit-and-berries 8}
+  {:tree-saplings 10, :lawn-mower 5, :fire-pit 5}
+  {:bread-roll 7,
+   :green-smoothie 3,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:pizza 12, :cheese-fries 3, :popcorn 2}
+  {:microwave-oven 7, :tv 7}),
+ :factories
+ ({:metal 37}
+  {:seeds 27}
+  {:animal-feed 16}
+  {:plastic 16}
+  {:textiles 15}
+  {:chemicals 14}
+  {:minerals 13}
+  {:wood 10}
+  {:glass 9}
+  {:electrical-components 5}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-({:planks 10, :nails 5} {:hammer 5} {:watch 5} {:chairs 5} {:flour-bag 5} {:garden-furniture 5} {:donuts 5} {} {})
-clj꞉sim꞉> 
-({:wood 25} {:textiles 20} {:plastic 20} {:seeds 10} {:glass 5} {:sugar-and-spices 5} {:chemicals 5} {:metal 5} {:electrical-components 0} {:animal-feed 0} {:minerals 0})
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-({:planks 10, :nails 5} {:hammer 5} {:watch 5} {:chairs 5} {:flour-bag 29} {:garden-furniture 5} {:donuts 5} {} {})
-clj꞉sim꞉> 
-({:textiles 68} {:seeds 58} {:wood 25} {:plastic 20} {:glass 5} {:sugar-and-spices 5} {:chemicals 5} {:metal 5} {:electrical-components 0} {:animal-feed 0} {:minerals 0})
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-({:planks 10, :nails 5} {:hammer 5} {:watch 5} {:chairs 5} {:flour-bag 17} {:garden-furniture 5} {:donuts 5} {} {})
-clj꞉sim꞉> 
-({:textiles 44} {:seeds 34} {:wood 25} {:plastic 20} {:glass 5} {:sugar-and-spices 5} {:chemicals 5} {:metal 5} {:electrical-components 0} {:animal-feed 0} {:minerals 0})
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-({:planks 10, :nails 5} {:hammer 5} {:watch 5} {:chairs 5} {:flour-bag 5} {:garden-furniture 5} {:donuts 5} {} {})
-clj꞉sim꞉> 
-({:wood 25} {:textiles 20} {:plastic 20} {:seeds 10} {:glass 5} {:sugar-and-spices 5} {:chemicals 5} {:metal 5} {:electrical-components 0} {:animal-feed 0} {:minerals 0})
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-({:nails 14, :planks 5, :paint 2, :cement 2, :bricks 2} {:measuring-tape 5, :shovel 3, :ladder 1, :hammer 1} {:cap 1} {:cupboard 1} {:vegetables 6, :fruit-and-berries 3, :cheese 1, :flour-bag 1} {:tree-saplings 3} {:green-smoothie 3, :donuts 1} {} {})
-clj꞉sim꞉> 
-({:metal 43} {:seeds 26} {:minerals 10} {:plastic 8} {:wood 8} {:chemicals 6} {:textiles 4} {:animal-feed 2} {:glass 2} {:sugar-and-spices 1} {:electrical-components 0})
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-({:nails 16, :planks 5, :paint 2, :cement 2, :bricks 2} {:measuring-tape 5, :shovel 4, :ladder 1, :hammer 1} {:cap 1} {:cupboard 1} {:vegetables 6, :fruit-and-berries 3, :cheese 1, :flour-bag 1} {:tree-saplings 3, :grass 1} {:green-smoothie 3, :donuts 1} {} {})
-clj꞉sim꞉> 
-({:metal 48} {:seeds 27} {:minerals 10} {:plastic 9} {:wood 9} {:chemicals 6} {:textiles 4} {:animal-feed 2} {:glass 2} {:sugar-and-spices 1} {:electrical-components 0})
-clj꞉sim꞉> 
-{:metal 48, :electrical-components 0, :minerals 10, :seeds 27, :chemicals 6, :plastic 9, :sugar-and-spices 1, :glass 2, :wood 9, :animal-feed 2, :textiles 4}
-clj꞉sim꞉> 
-({:metal 48} {:seeds 27} {:minerals 10} {:plastic 9} {:wood 9} {:chemicals 6} {:textiles 4} {:animal-feed 2} {:glass 2} {:sugar-and-spices 1} {:electrical-components 0})
-clj꞉sim꞉> 
-; Evaluating file: sim.clj
-({:nails 16, :planks 5, :paint 2, :cement 2, :bricks 2} {:measuring-tape 5, :shovel 4, :ladder 1, :hammer 1} {:cap 1} {:cupboard 1} {:vegetables 6, :fruit-and-berries 3, :cheese 1, :flour-bag 1} {:tree-saplings 3, :grass 1} {:green-smoothie 3, :donuts 1} {} {})
-clj꞉sim꞉> 
-({:metal 48} {:seeds 27} {:minerals 10} {:plastic 9} {:wood 9} {:chemicals 6} {:textiles 4} {:animal-feed 2} {:glass 2} {:sugar-and-spices 1} {:electrical-components 0})
+{:stores
+ ({:planks 33, :nails 24, :paint 21, :cement 14, :bricks 10, :glue 3}
+  {:measuring-tape 22, :shovel 16, :ladder 5, :hammer 5}
+  {:watch 7, :backpack 6, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 20,
+   :vegetables 18,
+   :corn 8,
+   :cream 8,
+   :fruit-and-berries 8,
+   :cheese 7,
+   :beef 1}
+  {:tree-saplings 10, :lawn-mower 5, :fire-pit 5}
+  {:bread-roll 7,
+   :green-smoothie 3,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:cheese-fries 3, :popcorn 2, :pizza 1}
+  {:microwave-oven 7, :tv 7}),
+ :factories
+ ({:metal 37}
+  {:seeds 23}
+  {:plastic 16}
+  {:chemicals 14}
+  {:minerals 13}
+  {:textiles 11}
+  {:wood 10}
+  {:glass 9}
+  {:electrical-components 5}
+  {:animal-feed 5}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-({:nails 14, :planks 4, :paint 2, :cement 2, :bricks 2} {:measuring-tape 5, :shovel 4, :ladder 1, :hammer 1} {:cap 1} {:cupboard 1} {:vegetables 5, :fruit-and-berries 3, :cheese 1} {:tree-saplings 3, :grass 1} {:green-smoothie 3} {} {})
+{:stores
+ ({:planks 33, :nails 24, :paint 21, :cement 14, :bricks 10, :glue 3}
+  {:measuring-tape 22, :shovel 16, :ladder 5, :hammer 5}
+  {:watch 7, :backpack 6, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 20,
+   :vegetables 15,
+   :corn 8,
+   :cream 8,
+   :fruit-and-berries 8,
+   :cheese 4,
+   :beef 1}
+  {:tree-saplings 10, :lawn-mower 5, :fire-pit 5}
+  {:bread-roll 7,
+   :green-smoothie 3,
+   :donuts 3,
+   :frozen-yogurt 1,
+   :cherry-cheesecake 1}
+  {:popcorn 2, :pizza 1}
+  {:microwave-oven 7, :tv 7}),
+ :factories
+ ({:metal 37}
+  {:seeds 22}
+  {:plastic 16}
+  {:chemicals 14}
+  {:minerals 13}
+  {:textiles 11}
+  {:wood 10}
+  {:glass 9}
+  {:electrical-components 5}
+  {:animal-feed 4}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 14, :planks 4, :paint 2, :cement 2, :bricks 2} {:measuring-tape 5, :shovel 4, :ladder 1, :hammer 1} {:cap 1} {:cupboard 1} {:vegetables 5, :fruit-and-berries 3, :cheese 1} {:tree-saplings 3, :grass 1} {:green-smoothie 3} {} {}), :factories ({:metal 44} {:seeds 23} {:minerals 10} {:plastic 9} {:wood 7} {:chemicals 6} {:animal-feed 2} {:glass 2} {:textiles 2} {:electrical-components 0} {:sugar-and-spices 0})}
+{:stores
+ ({:planks 33, :nails 24, :paint 21, :cement 14, :bricks 10, :glue 3}
+  {:measuring-tape 22, :shovel 15, :ladder 5, :hammer 5}
+  {:watch 7, :backpack 6, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 19,
+   :vegetables 15,
+   :corn 8,
+   :cream 8,
+   :fruit-and-berries 7,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 9, :lawn-mower 5, :fire-pit 5}
+  {:bread-roll 7, :green-smoothie 3, :donuts 3, :frozen-yogurt 1}
+  {:popcorn 2, :pizza 1}
+  {:microwave-oven 7, :tv 7}),
+ :factories
+ ({:metal 37}
+  {:seeds 21}
+  {:plastic 16}
+  {:chemicals 14}
+  {:minerals 13}
+  {:textiles 10}
+  {:wood 10}
+  {:glass 9}
+  {:electrical-components 5}
+  {:animal-feed 3}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 18, :paint 2, :cement 2, :planks 2, :bricks 1} {:shovel 5, :measuring-tape 5, :ladder 1} {:cap 1} {} {:vegetables 5, :fruit-and-berries 3, :cheese 1, :corn 1} {:tree-saplings 3, :grass 1} {:green-smoothie 3} {} {}), :factories ({:metal 52} {:seeds 27} {:plastic 10} {:minerals 9} {:chemicals 6} {:wood 5} {:animal-feed 2} {:textiles 2} {:electrical-components 0} {:glass 0} {:sugar-and-spices 0})}
+{:stores
+ ({:planks 33, :nails 24, :paint 21, :cement 14, :bricks 10, :glue 3}
+  {:measuring-tape 22, :shovel 14, :ladder 5, :hammer 5}
+  {:watch 7, :backpack 6, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 19,
+   :vegetables 15,
+   :corn 8,
+   :cream 7,
+   :fruit-and-berries 6,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 8, :lawn-mower 5, :fire-pit 5}
+  {:bread-roll 7, :green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:microwave-oven 7, :tv 7}),
+ :factories
+ ({:metal 37}
+  {:seeds 21}
+  {:plastic 16}
+  {:chemicals 14}
+  {:minerals 13}
+  {:textiles 10}
+  {:wood 10}
+  {:glass 9}
+  {:electrical-components 5}
+  {:animal-feed 3}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 18, :paint 2, :cement 2, :bricks 1} {:shovel 5, :measuring-tape 5} {:cap 1} {} {:vegetables 4, :fruit-and-berries 3, :cheese 1, :corn 1} {:tree-saplings 3, :grass 1} {:green-smoothie 3} {} {}), :factories ({:metal 50} {:seeds 25} {:plastic 10} {:minerals 9} {:chemicals 6} {:wood 5} {:animal-feed 2} {:textiles 2} {:electrical-components 0} {:glass 0} {:sugar-and-spices 0})}
+{:stores
+ ({:planks 33, :nails 24, :paint 21, :cement 12, :bricks 8, :glue 3}
+  {:measuring-tape 22, :shovel 13, :ladder 5, :hammer 5}
+  {:watch 7, :backpack 6, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 19,
+   :vegetables 15,
+   :corn 8,
+   :cream 7,
+   :fruit-and-berries 6,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 8, :lawn-mower 5, :fire-pit 4}
+  {:bread-roll 7, :green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:microwave-oven 7, :tv 7}),
+ :factories
+ ({:metal 37}
+  {:seeds 21}
+  {:plastic 16}
+  {:chemicals 13}
+  {:minerals 12}
+  {:textiles 10}
+  {:wood 10}
+  {:glass 9}
+  {:electrical-components 5}
+  {:animal-feed 3}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 21, :cement 3, :paint 2, :bricks 1} {:shovel 6, :measuring-tape 4} {:watch 1} {} {:vegetables 4, :fruit-and-berries 3, :cheese 1, :corn 1} {:tree-saplings 3, :grass 1} {:green-smoothie 3} {} {}), :factories ({:metal 56} {:seeds 25} {:plastic 12} {:minerals 11} {:chemicals 8} {:wood 6} {:animal-feed 2} {:glass 1} {:electrical-components 0} {:sugar-and-spices 0} {:textiles 0})}
+{:stores
+ ({:planks 33, :nails 24, :paint 21, :cement 12, :bricks 8, :glue 3}
+  {:measuring-tape 21, :shovel 13, :ladder 5, :hammer 5}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 19,
+   :vegetables 15,
+   :corn 8,
+   :cream 7,
+   :fruit-and-berries 6,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 8, :lawn-mower 5, :fire-pit 4}
+  {:bread-roll 7, :green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:microwave-oven 7, :tv 7}),
+ :factories
+ ({:metal 36}
+  {:seeds 21}
+  {:plastic 15}
+  {:chemicals 13}
+  {:minerals 12}
+  {:textiles 10}
+  {:wood 10}
+  {:glass 9}
+  {:electrical-components 5}
+  {:animal-feed 3}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 21, :cement 3, :paint 2, :bricks 1} {:shovel 6, :measuring-tape 4} {:watch 6} {} {:flour-bag 5, :vegetables 4, :fruit-and-berries 3, :cheese 1, :corn 1} {:tree-saplings 3, :grass 1} {:donuts 5, :green-smoothie 3} {} {}), :factories ({:metal 56} {:seeds 35} {:plastic 22} {:chemicals 13} {:minerals 11} {:textiles 10} {:glass 6} {:wood 6} {:sugar-and-spices 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:planks 29, :nails 24, :paint 21, :cement 12, :bricks 8, :glue 3}
+  {:measuring-tape 21, :shovel 13, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 19,
+   :vegetables 15,
+   :corn 8,
+   :cream 7,
+   :fruit-and-berries 6,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 8, :lawn-mower 5, :fire-pit 4}
+  {:bread-roll 7, :green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:microwave-oven 7, :tv 7}),
+ :factories
+ ({:metal 36}
+  {:seeds 21}
+  {:plastic 15}
+  {:chemicals 13}
+  {:minerals 12}
+  {:textiles 10}
+  {:wood 10}
+  {:glass 9}
+  {:electrical-components 5}
+  {:animal-feed 3}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 26, :cement 3, :paint 2, :bricks 1} {:shovel 6, :hammer 5, :measuring-tape 4} {:watch 6} {:chairs 5} {:flour-bag 5, :vegetables 4, :fruit-and-berries 3, :cheese 1, :corn 1} {:tree-saplings 3, :grass 1} {:donuts 5, :green-smoothie 3} {} {}), :factories ({:metal 61} {:seeds 35} {:plastic 22} {:wood 21} {:chemicals 13} {:minerals 11} {:textiles 10} {:glass 6} {:sugar-and-spices 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:planks 29, :nails 24, :paint 21, :cement 12, :bricks 8, :glue 3}
+  {:measuring-tape 21, :shovel 13, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:flour-bag 19,
+   :vegetables 15,
+   :corn 8,
+   :cream 7,
+   :fruit-and-berries 6,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 8, :lawn-mower 5, :fire-pit 4}
+  {:bread-roll 7, :green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 32}
+  {:seeds 21}
+  {:plastic 15}
+  {:chemicals 13}
+  {:minerals 12}
+  {:textiles 10}
+  {:wood 10}
+  {:glass 8}
+  {:electrical-components 4}
+  {:animal-feed 3}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 26, :cement 3, :paint 2, :planks 2, :bricks 1} {:shovel 6, :hammer 5, :measuring-tape 4} {:watch 6} {:chairs 5} {:flour-bag 5, :vegetables 4, :fruit-and-berries 3, :cheese 1, :corn 1} {:tree-saplings 3, :garden-furniture 1, :grass 1} {:donuts 5, :green-smoothie 3} {} {}), :factories ({:metal 61} {:seeds 35} {:plastic 24} {:wood 23} {:chemicals 13} {:textiles 12} {:minerals 11} {:glass 6} {:sugar-and-spices 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:planks 29, :nails 24, :paint 21, :cement 12, :bricks 8, :glue 3}
+  {:measuring-tape 21, :shovel 13, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:vegetables 15,
+   :corn 8,
+   :fruit-and-berries 6,
+   :flour-bag 5,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 8, :lawn-mower 5, :fire-pit 4}
+  {:green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 32}
+  {:seeds 18}
+  {:plastic 15}
+  {:chemicals 13}
+  {:minerals 12}
+  {:wood 10}
+  {:glass 8}
+  {:textiles 7}
+  {:electrical-components 4}
+  {:animal-feed 2}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 26, :planks 12, :cement 3, :paint 2, :bricks 1} {:shovel 6, :hammer 5, :measuring-tape 4} {:watch 6} {:chairs 5} {:flour-bag 5, :vegetables 4, :fruit-and-berries 3, :cheese 1, :corn 1} {:garden-furniture 6, :tree-saplings 3, :grass 1} {:donuts 5, :green-smoothie 3} {} {}), :factories ({:metal 61} {:seeds 35} {:plastic 34} {:wood 33} {:textiles 22} {:chemicals 13} {:minerals 11} {:glass 6} {:sugar-and-spices 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:planks 29, :nails 24, :paint 13, :cement 12, :bricks 8, :glue 3}
+  {:measuring-tape 21, :shovel 13, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:vegetables 15,
+   :corn 8,
+   :fruit-and-berries 6,
+   :flour-bag 5,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 8, :lawn-mower 5, :fire-pit 4}
+  {:green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 28}
+  {:seeds 18}
+  {:plastic 15}
+  {:chemicals 10}
+  {:minerals 10}
+  {:wood 10}
+  {:glass 8}
+  {:textiles 7}
+  {:electrical-components 4}
+  {:animal-feed 2}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 15, :nails 9, :cement 1, :bricks 1} {:hammer 8, :shovel 5, :ladder 1} {:watch 8} {:chairs 6, :tables 1} {:vegetables 8, :fruit-and-berries 5, :flour-bag 5, :cheese 1, :corn 1} {:garden-furniture 6, :tree-saplings 5} {:green-smoothie 5, :donuts 5} {} {}), :factories ({:seeds 50} {:wood 39} {:plastic 33} {:textiles 22} {:metal 21} {:chemicals 9} {:glass 8} {:sugar-and-spices 5} {:minerals 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:planks 29, :nails 24, :paint 13, :cement 12, :bricks 8, :glue 3}
+  {:measuring-tape 21, :shovel 11, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 8, :home-textiles 3}
+  {:vegetables 15,
+   :corn 8,
+   :fruit-and-berries 6,
+   :flour-bag 5,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 6, :lawn-mower 5, :fire-pit 4}
+  {:green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 28}
+  {:seeds 18}
+  {:plastic 15}
+  {:chemicals 10}
+  {:minerals 10}
+  {:wood 9}
+  {:glass 8}
+  {:textiles 7}
+  {:electrical-components 4}
+  {:animal-feed 2}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 14, :nails 9, :cement 1, :bricks 1} {:hammer 6, :shovel 5, :ladder 1} {:watch 7} {:chairs 5} {:vegetables 8, :fruit-and-berries 5, :flour-bag 5, :cheese 1, :corn 1} {:garden-furniture 6, :tree-saplings 5} {:green-smoothie 5, :donuts 5} {} {}), :factories ({:seeds 50} {:wood 33} {:plastic 31} {:textiles 22} {:metal 21} {:chemicals 8} {:glass 7} {:sugar-and-spices 5} {:minerals 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:nails 24, :planks 21, :cement 12, :paint 9, :bricks 8, :glue 3}
+  {:measuring-tape 21, :shovel 11, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 4, :home-textiles 3}
+  {:vegetables 15,
+   :corn 8,
+   :fruit-and-berries 6,
+   :flour-bag 5,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 6, :lawn-mower 5, :fire-pit 4}
+  {:green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 26}
+  {:seeds 18}
+  {:plastic 15}
+  {:chemicals 9}
+  {:minerals 9}
+  {:wood 8}
+  {:textiles 7}
+  {:glass 6}
+  {:electrical-components 4}
+  {:animal-feed 2}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 16, :nails 11, :cement 1, :bricks 1} {:hammer 7, :shovel 6, :ladder 1} {:watch 7} {:chairs 5, :tables 1} {:vegetables 8, :flour-bag 6, :fruit-and-berries 5, :cheese 1, :corn 1} {:garden-furniture 6, :tree-saplings 5} {:donuts 6, :green-smoothie 5} {} {}), :factories ({:seeds 52} {:wood 39} {:plastic 32} {:metal 27} {:textiles 24} {:chemicals 8} {:glass 7} {:sugar-and-spices 6} {:minerals 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:planks 21, :cement 12, :paint 9, :bricks 8, :nails 8, :glue 3}
+  {:measuring-tape 21, :shovel 11, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 4, :home-textiles 3}
+  {:vegetables 15,
+   :corn 8,
+   :fruit-and-berries 6,
+   :flour-bag 5,
+   :cheese 3,
+   :beef 1}
+  {:tree-saplings 6, :lawn-mower 5, :fire-pit 4}
+  {:green-smoothie 3, :donuts 3}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 20}
+  {:seeds 18}
+  {:plastic 15}
+  {:chemicals 9}
+  {:minerals 9}
+  {:wood 8}
+  {:textiles 7}
+  {:glass 6}
+  {:electrical-components 4}
+  {:animal-feed 2}
+  {:sugar-and-spices 1})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 15, :nails 11, :cement 1, :bricks 1} {:hammer 7, :shovel 5, :ladder 1} {:watch 7} {:chairs 5, :tables 1} {:vegetables 8, :fruit-and-berries 5, :flour-bag 5, :cheese 1, :corn 1} {:garden-furniture 6, :tree-saplings 5} {:green-smoothie 5, :donuts 5} {} {}), :factories ({:seeds 50} {:wood 36} {:plastic 31} {:metal 26} {:textiles 22} {:chemicals 8} {:glass 7} {:sugar-and-spices 5} {:minerals 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:planks 21, :cement 12, :paint 9, :bricks 8, :nails 8, :glue 3}
+  {:measuring-tape 21, :shovel 11, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 4, :home-textiles 3}
+  {:vegetables 15,
+   :corn 8,
+   :fruit-and-berries 6,
+   :cheese 3,
+   :flour-bag 3,
+   :beef 1}
+  {:tree-saplings 6, :lawn-mower 5, :fire-pit 4}
+  {:green-smoothie 3, :donuts 1}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 20}
+  {:seeds 17}
+  {:plastic 15}
+  {:chemicals 9}
+  {:minerals 9}
+  {:wood 8}
+  {:glass 6}
+  {:textiles 6}
+  {:electrical-components 4}
+  {:animal-feed 2}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 14, :nails 12, :cement 1, :bricks 1} {:hammer 6, :shovel 5, :ladder 1, :measuring-tape 1} {:watch 6} {:chairs 5} {:vegetables 8, :fruit-and-berries 5, :flour-bag 5, :cheese 1, :corn 1} {:garden-furniture 6, :tree-saplings 5} {:green-smoothie 5, :donuts 5} {} {}), :factories ({:seeds 50} {:wood 33} {:plastic 30} {:metal 28} {:textiles 22} {:chemicals 7} {:glass 6} {:sugar-and-spices 5} {:minerals 5} {:animal-feed 2} {:electrical-components 0})}
+{:stores
+ ({:planks 21, :cement 12, :paint 9, :bricks 8, :nails 8, :glue 3}
+  {:measuring-tape 21, :shovel 12, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 3}
+  {:cupboard 4, :home-textiles 3}
+  {:vegetables 16,
+   :corn 8,
+   :fruit-and-berries 7,
+   :cheese 3,
+   :flour-bag 3,
+   :beef 1}
+  {:tree-saplings 7, :lawn-mower 5, :fire-pit 4}
+  {:green-smoothie 4, :donuts 1}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 20}
+  {:seeds 18}
+  {:plastic 15}
+  {:chemicals 9}
+  {:minerals 9}
+  {:wood 8}
+  {:glass 6}
+  {:textiles 6}
+  {:electrical-components 4}
+  {:animal-feed 2}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 25, :planks 18, :paint 1, :cement 1, :bricks 1} {:hammer 6, :ladder 3, :shovel 3, :measuring-tape 1} {:watch 5, :cap 1} {:chairs 5} {:flour-bag 5, :fruit-and-berries 2, :vegetables 2, :cheese 1, :cream 1} {:garden-furniture 6, :tree-saplings 2} {:donuts 5, :green-smoothie 2, :coffee 1} {} {}), :factories ({:metal 58} {:wood 31} {:plastic 26} {:textiles 24} {:seeds 24} {:chemicals 8} {:sugar-and-spices 6} {:glass 5} {:minerals 5} {:animal-feed 3} {:electrical-components 0})}
+{:stores
+ ({:planks 21, :cement 12, :paint 9, :bricks 8, :nails 8, :glue 1}
+  {:measuring-tape 19, :shovel 12, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 1}
+  {:cupboard 4, :home-textiles 3}
+  {:vegetables 16,
+   :corn 8,
+   :fruit-and-berries 7,
+   :cheese 3,
+   :flour-bag 3,
+   :beef 1}
+  {:tree-saplings 7, :lawn-mower 5, :fire-pit 4}
+  {:green-smoothie 4, :donuts 1}
+  {:popcorn 2, :pizza 1}
+  {:tv 7, :microwave-oven 2}),
+ :factories
+ ({:metal 20}
+  {:seeds 18}
+  {:plastic 14}
+  {:minerals 9}
+  {:chemicals 8}
+  {:wood 8}
+  {:glass 6}
+  {:textiles 5}
+  {:electrical-components 4}
+  {:animal-feed 2}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 20, :planks 8, :paint 1, :cement 1, :bricks 1} {:ladder 3, :shovel 3, :measuring-tape 1, :hammer 1} {:cap 1} {} {:fruit-and-berries 2, :vegetables 2, :cheese 1, :cream 1} {:tree-saplings 2, :garden-furniture 1} {:green-smoothie 2, :coffee 1} {} {}), :factories ({:metal 53} {:seeds 14} {:plastic 6} {:wood 6} {:minerals 5} {:textiles 4} {:animal-feed 3} {:chemicals 3} {:sugar-and-spices 1} {:electrical-components 0} {:glass 0})}
+{:stores
+ ({:planks 21, :cement 12, :paint 9, :bricks 8, :nails 8, :glue 1}
+  {:measuring-tape 9, :shovel 7, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 1}
+  {:cupboard 4, :home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:lawn-mower 5, :fire-pit 4, :tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:tv 3, :microwave-oven 2}),
+ :factories
+ ({:metal 17}
+  {:seeds 13}
+  {:minerals 9}
+  {:plastic 9}
+  {:chemicals 8}
+  {:wood 7}
+  {:glass 5}
+  {:textiles 4}
+  {:electrical-components 3}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 20, :planks 6, :paint 1, :cement 1, :bricks 1} {:shovel 3, :ladder 2, :measuring-tape 1} {:cap 1} {} {:fruit-and-berries 2, :vegetables 2, :cheese 1, :cream 1} {:tree-saplings 2, :garden-furniture 1} {:green-smoothie 2, :coffee 1} {} {}), :factories ({:metal 50} {:seeds 14} {:plastic 6} {:minerals 5} {:wood 5} {:textiles 4} {:animal-feed 3} {:chemicals 3} {:sugar-and-spices 1} {:electrical-components 0} {:glass 0})}
+{:stores
+ ({:planks 19, :cement 12, :paint 8, :bricks 8, :nails 8, :glue 1}
+  {:measuring-tape 9, :shovel 7, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 1}
+  {:cupboard 3, :home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:lawn-mower 5, :fire-pit 4, :tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:tv 3, :microwave-oven 2}),
+ :factories
+ ({:metal 16}
+  {:seeds 13}
+  {:minerals 9}
+  {:plastic 9}
+  {:chemicals 7}
+  {:wood 6}
+  {:glass 4}
+  {:textiles 4}
+  {:electrical-components 3}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 21, :planks 4, :paint 1, :bricks 1} {:shovel 4, :ladder 2, :measuring-tape 1} {:watch 1, :cap 1} {} {:fruit-and-berries 2, :vegetables 2, :cheese 1, :cream 1} {:tree-saplings 2, :grass 1} {:green-smoothie 2, :coffee 1} {} {}), :factories ({:metal 53} {:seeds 15} {:plastic 7} {:wood 4} {:animal-feed 3} {:chemicals 3} {:minerals 3} {:textiles 2} {:glass 1} {:sugar-and-spices 1} {:electrical-components 0})}
+{:stores
+ ({:planks 19, :cement 12, :paint 8, :bricks 8, :nails 8, :glue 1}
+  {:measuring-tape 9, :shovel 7, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5, :business-suits 1}
+  {:cupboard 3, :home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:lawn-mower 5, :fire-pit 4, :tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:metal 16}
+  {:seeds 13}
+  {:minerals 9}
+  {:plastic 8}
+  {:chemicals 7}
+  {:wood 6}
+  {:textiles 4}
+  {:glass 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 7, :nails 3, :bricks 1} {:ladder 3, :shovel 3, :hammer 1} {:watch 1} {:tables 1} {:fruit-and-berries 2, :vegetables 2, :cheese 1} {:tree-saplings 2, :grass 1} {:green-smoothie 2} {} {}), :factories ({:metal 16} {:seeds 13} {:wood 6} {:plastic 5} {:animal-feed 2} {:minerals 2} {:glass 1} {:chemicals 1} {:electrical-components 0} {:sugar-and-spices 0} {:textiles 0})}
+{:stores
+ ({:planks 19, :cement 12, :paint 8, :bricks 8, :nails 8}
+  {:measuring-tape 8, :shovel 7, :hammer 5, :ladder 3}
+  {:watch 7, :backpack 5}
+  {:cupboard 3, :home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:lawn-mower 5, :fire-pit 4, :tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:metal 16}
+  {:seeds 13}
+  {:minerals 9}
+  {:plastic 8}
+  {:chemicals 7}
+  {:wood 6}
+  {:textiles 4}
+  {:glass 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 7, :nails 4, :bricks 1} {:ladder 3, :shovel 3, :hammer 2} {:watch 1} {:tables 1, :chairs 1} {:fruit-and-berries 2, :vegetables 2, :cheese 1} {:tree-saplings 2, :grass 1} {:green-smoothie 2} {} {}), :factories ({:metal 17} {:seeds 13} {:wood 9} {:plastic 5} {:animal-feed 2} {:minerals 2} {:glass 1} {:chemicals 1} {:electrical-components 0} {:sugar-and-spices 0} {:textiles 0})}
+{:stores
+ ({:planks 15, :cement 12, :paint 8, :bricks 8, :nails 8}
+  {:measuring-tape 8, :shovel 7, :hammer 5, :ladder 1}
+  {:watch 7, :backpack 5}
+  {:cupboard 3, :home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:lawn-mower 5, :fire-pit 4, :tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:metal 15}
+  {:seeds 13}
+  {:minerals 9}
+  {:plastic 8}
+  {:chemicals 7}
+  {:wood 6}
+  {:textiles 4}
+  {:glass 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 5, :nails 4, :bricks 1} {:shovel 4, :ladder 2, :hammer 2} {:watch 1} {:tables 1, :chairs 1} {:fruit-and-berries 2, :vegetables 2, :cheese 1} {:tree-saplings 2, :grass 2} {:green-smoothie 2} {} {}), :factories ({:metal 16} {:seeds 14} {:wood 10} {:plastic 6} {:animal-feed 2} {:minerals 2} {:glass 1} {:chemicals 1} {:electrical-components 0} {:sugar-and-spices 0} {:textiles 0})}
+{:stores
+ ({:planks 15, :cement 12, :bricks 8, :nails 8, :paint 4}
+  {:measuring-tape 8, :shovel 7, :hammer 5, :ladder 1}
+  {:watch 7, :backpack 5}
+  {:cupboard 3, :home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:fire-pit 4, :tree-saplings 3, :lawn-mower 1}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 11}
+  {:minerals 8}
+  {:plastic 8}
+  {:wood 6}
+  {:chemicals 5}
+  {:textiles 4}
+  {:glass 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+165.17857142857142
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 5, :nails 5, :bricks 1} {:shovel 6, :hammer 3, :ladder 2, :measuring-tape 1} {:backpack 1} {:chairs 2, :tables 1} {:cream 8, :flour-bag 8, :fruit-and-berries 2, :vegetables 2, :cheese 1} {:tree-saplings 2, :grass 1} {:bread-roll 4, :green-smoothie 2} {:ice-cream-sandwich 4} {}), :factories ({:seeds 21} {:metal 20} {:animal-feed 18} {:wood 15} {:textiles 10} {:plastic 9} {:minerals 2} {:electrical-components 0} {:glass 0} {:sugar-and-spices 0} {:chemicals 0})}
+{:stores
+ ({:cement 8, :nails 8, :planks 7, :bricks 4, :paint 1}
+  {:measuring-tape 8, :cooking-utensils 5, :shovel 5, :hammer 5}
+  {:watch 7, :backpack 5}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3, :fire-pit 2, :lawn-mower 1}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 13}
+  {:plastic 9}
+  {:wood 7}
+  {:minerals 5}
+  {:textiles 4}
+  {:chemicals 3}
+  {:glass 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 5, :nails 5, :bricks 1} {:shovel 6, :hammer 3, :ladder 2, :measuring-tape 1} {:backpack 1} {:chairs 2, :tables 1} {:cream 4, :flour-bag 4, :fruit-and-berries 2, :vegetables 2, :cheese 1} {:tree-saplings 2, :grass 1} {:bread-roll 2, :green-smoothie 2} {:ice-cream-sandwich 2} {}), :factories ({:metal 20} {:seeds 17} {:wood 15} {:animal-feed 10} {:plastic 9} {:textiles 6} {:minerals 2} {:electrical-components 0} {:glass 0} {:sugar-and-spices 0} {:chemicals 0})}
+{:stores
+ ({:cement 8, :nails 8, :planks 7, :bricks 4, :paint 3}
+  {:measuring-tape 8, :cooking-utensils 5, :shovel 5, :hammer 5}
+  {:watch 7, :backpack 5}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3, :fire-pit 2, :lawn-mower 1}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 13}
+  {:plastic 9}
+  {:wood 7}
+  {:minerals 6}
+  {:textiles 4}
+  {:chemicals 4}
+  {:glass 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 5, :planks 3, :bricks 1} {:shovel 5, :hammer 4, :measuring-tape 2, :ladder 1} {:watch 2, :backpack 1, :cap 1} {:chairs 3, :tables 1} {:cream 4, :flour-bag 4, :fruit-and-berries 2, :vegetables 2, :cheese 1, :corn 1} {:tree-saplings 2} {:bread-roll 2, :green-smoothie 2} {:ice-cream-sandwich 2} {}), :factories ({:seeds 20} {:wood 17} {:metal 17} {:plastic 13} {:animal-feed 10} {:textiles 8} {:minerals 3} {:glass 2} {:chemicals 2} {:electrical-components 0} {:sugar-and-spices 0})}
+{:stores
+ ({:nails 8, :planks 7, :cement 4, :paint 3}
+  {:measuring-tape 8, :cooking-utensils 5, :hammer 5, :shovel 3}
+  {:watch 7, :backpack 5}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3, :lawn-mower 1}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 13}
+  {:plastic 9}
+  {:wood 6}
+  {:textiles 4}
+  {:chemicals 3}
+  {:minerals 3}
+  {:glass 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 5, :planks 3, :bricks 1} {:shovel 5, :hammer 4, :measuring-tape 2, :ladder 1} {:watch 2, :backpack 1, :cap 1} {:chairs 3, :tables 1} {:fruit-and-berries 2, :vegetables 2, :cheese 1, :corn 1} {:tree-saplings 2} {:green-smoothie 2} {} {}), :factories ({:wood 17} {:metal 17} {:seeds 16} {:plastic 13} {:textiles 4} {:minerals 3} {:animal-feed 2} {:glass 2} {:chemicals 2} {:electrical-components 0} {:sugar-and-spices 0})}
+{:stores
+ ({:nails 8, :planks 7, :cement 4, :paint 2}
+  {:measuring-tape 8, :cooking-utensils 5, :hammer 5, :shovel 3}
+  {:watch 7, :backpack 5}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 12}
+  {:plastic 9}
+  {:wood 6}
+  {:textiles 4}
+  {:chemicals 3}
+  {:minerals 3}
+  {:glass 2}
+  {:animal-feed 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 5, :planks 3, :bricks 1} {:shovel 5, :hammer 4, :measuring-tape 2, :ladder 1} {:watch 2, :backpack 1, :cap 1} {:chairs 3, :tables 1} {:fruit-and-berries 2, :vegetables 2, :corn 1} {:tree-saplings 2} {:green-smoothie 2} {} {}), :factories ({:wood 17} {:metal 17} {:seeds 16} {:plastic 13} {:textiles 4} {:minerals 3} {:glass 2} {:chemicals 2} {:electrical-components 0} {:animal-feed 0} {:sugar-and-spices 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 2}
+  {:measuring-tape 8, :cooking-utensils 5, :hammer 5, :shovel 3}
+  {:watch 7, :backpack 5}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 12}
+  {:plastic 9}
+  {:wood 6}
+  {:textiles 4}
+  {:chemicals 3}
+  {:glass 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 5, :planks 3} {:hammer 4, :measuring-tape 2, :ladder 1} {:watch 2, :backpack 1, :cap 1} {:chairs 3, :tables 1} {:corn 1} {} {} {} {}), :factories ({:wood 12} {:metal 12} {:plastic 8} {:textiles 4} {:seeds 4} {:glass 2} {:chemicals 2} {:minerals 1} {:electrical-components 0} {:animal-feed 0} {:sugar-and-spices 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 2}
+  {:measuring-tape 8, :cooking-utensils 5, :hammer 5, :shovel 3}
+  {:watch 7, :backpack 5}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 12}
+  {:plastic 9}
+  {:wood 6}
+  {:textiles 4}
+  {:chemicals 3}
+  {:glass 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 4, :planks 1} {:hammer 3, :measuring-tape 1} {:watch 2, :cap 1} {:chairs 2, :tables 1} {:corn 1} {} {} {} {}), :factories ({:wood 9} {:metal 8} {:plastic 5} {:seeds 4} {:glass 2} {:textiles 2} {:chemicals 2} {:minerals 1} {:electrical-components 0} {:animal-feed 0} {:sugar-and-spices 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 2}
+  {:cooking-utensils 5, :hammer 5, :measuring-tape 4, :shovel 3}
+  {:watch 7, :backpack 1}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 11}
+  {:plastic 7}
+  {:wood 6}
+  {:chemicals 3}
+  {:glass 2}
+  {:textiles 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 6, :planks 2} {:hammer 8, :measuring-tape 1} {:watch 2, :cap 1} {:tables 2, :chairs 1} {:vegetables 3, :corn 1} {} {} {} {}), :factories ({:metal 19} {:wood 14} {:seeds 10} {:plastic 5} {:glass 2} {:textiles 2} {:chemicals 2} {:minerals 1} {:electrical-components 0} {:animal-feed 0} {:sugar-and-spices 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 2}
+  {:cooking-utensils 5, :hammer 5, :shovel 3, :measuring-tape 3}
+  {:watch 7}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 11}
+  {:plastic 6}
+  {:wood 6}
+  {:chemicals 3}
+  {:glass 2}
+  {:textiles 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 4, :paint 1, :planks 1} {:hammer 3} {} {:chairs 2} {:vegetables 3, :corn 2} {} {} {} {}), :factories ({:seeds 14} {:wood 9} {:metal 9} {:minerals 3} {:chemicals 2} {:electrical-components 0} {:animal-feed 0} {:glass 0} {:sugar-and-spices 0} {:textiles 0} {:plastic 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 2}
+  {:cooking-utensils 5, :hammer 5, :shovel 3, :measuring-tape 3}
+  {:watch 1}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 11}
+  {:wood 6}
+  {:plastic 4}
+  {:textiles 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:chemicals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:paint 1, :nails 1} {:hammer 2} {} {:chairs 1} {:vegetables 3, :corn 1} {} {} {} {}), :factories ({:seeds 10} {:wood 4} {:metal 4} {:chemicals 2} {:minerals 2} {:electrical-components 0} {:animal-feed 0} {:glass 0} {:sugar-and-spices 0} {:textiles 0} {:plastic 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 2}
+  {:hammer 5, :cooking-utensils 4, :shovel 3, :measuring-tape 3}
+  {:watch 1}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2, :bbq-grill 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 11}
+  {:wood 6}
+  {:plastic 3}
+  {:textiles 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:chemicals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 10, :nails 6, :paint 1} {:hammer 7} {:watch 5} {:chairs 6} {:flour-bag 5, :vegetables 3, :corn 1} {:garden-furniture 5} {:donuts 5} {} {}), :factories ({:wood 29} {:textiles 20} {:seeds 20} {:plastic 20} {:metal 9} {:chemicals 7} {:glass 5} {:sugar-and-spices 5} {:minerals 2} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 2}
+  {:hammer 5, :shovel 3, :measuring-tape 3, :cooking-utensils 2}
+  {:watch 1}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 9}
+  {:wood 5}
+  {:textiles 2}
+  {:minerals 2}
+  {:plastic 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:chemicals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 13, :planks 12, :paint 1, :cement 1} {:hammer 10, :measuring-tape 3} {:watch 6} {:chairs 7, :tables 1} {:flour-bag 5, :vegetables 4, :corn 1} {:garden-furniture 5} {:donuts 5} {} {}), :factories ({:wood 38} {:metal 27} {:plastic 25} {:seeds 22} {:textiles 20} {:chemicals 9} {:glass 6} {:sugar-and-spices 5} {:minerals 4} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 2}
+  {:hammer 5, :cooking-utensils 3, :shovel 3, :measuring-tape 3}
+  {:watch 1}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 9}
+  {:wood 6}
+  {:plastic 3}
+  {:textiles 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:chemicals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 13, :planks 12, :paint 1, :cement 1, :bricks 1} {:hammer 10, :measuring-tape 3} {:watch 6} {:chairs 7, :tables 1} {:flour-bag 5, :vegetables 4, :corn 1} {:garden-furniture 5} {:donuts 5} {} {}), :factories ({:wood 38} {:metal 27} {:plastic 25} {:seeds 22} {:textiles 20} {:chemicals 9} {:glass 6} {:minerals 6} {:sugar-and-spices 5} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7, :paint 2, :cement 1}
+  {:hammer 5, :cooking-utensils 3, :shovel 3, :measuring-tape 3}
+  {:watch 1}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 9}
+  {:wood 6}
+  {:plastic 3}
+  {:textiles 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:chemicals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 21, :nails 15, :cement 2, :bricks 1} {:hammer 10, :measuring-tape 2, :ladder 1} {:watch 5, :cap 1} {:chairs 7, :tables 1} {:flour-bag 6, :vegetables 1} {:garden-furniture 6} {:donuts 6} {} {}), :factories ({:wood 50} {:metal 30} {:textiles 26} {:plastic 24} {:seeds 14} {:chemicals 7} {:sugar-and-spices 6} {:minerals 6} {:glass 5} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7}
+  {:hammer 5, :cooking-utensils 3, :shovel 3, :measuring-tape 3}
+  {:watch 1}
+  {:home-textiles 3}
+  {:vegetables 14,
+   :corn 8,
+   :fruit-and-berries 3,
+   :cheese 2,
+   :flour-bag 1}
+  {:tree-saplings 3}
+  {:green-smoothie 2, :donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 8}
+  {:wood 6}
+  {:plastic 3}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0}
+  {:chemicals 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 20, :nails 17, :cement 2} {:hammer 8, :shovel 2, :measuring-tape 2, :ladder 1} {:watch 5, :cap 1} {:chairs 6, :tables 1} {:flour-bag 5, :vegetables 1} {:garden-furniture 5, :grass 2} {:donuts 5} {} {}), :factories ({:wood 48} {:metal 36} {:plastic 24} {:textiles 22} {:seeds 14} {:chemicals 7} {:glass 5} {:sugar-and-spices 5} {:minerals 4} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7}
+  {:hammer 5, :cooking-utensils 3, :measuring-tape 3, :shovel 1}
+  {:watch 1}
+  {:home-textiles 3}
+  {:vegetables 12,
+   :corn 8,
+   :cheese 2,
+   :fruit-and-berries 1,
+   :flour-bag 1}
+  {:tree-saplings 1}
+  {:donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 11}
+  {:metal 8}
+  {:wood 5}
+  {:textiles 2}
+  {:plastic 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0}
+  {:chemicals 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 19, :nails 15, :cement 2} {:hammer 7, :shovel 2, :measuring-tape 2, :ladder 1} {:watch 5, :cap 1} {:chairs 6} {:flour-bag 5, :vegetables 1} {:garden-furniture 5, :grass 2} {:donuts 5} {} {}), :factories ({:wood 45} {:metal 31} {:plastic 24} {:textiles 22} {:seeds 14} {:chemicals 7} {:glass 5} {:sugar-and-spices 5} {:minerals 4} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7}
+  {:hammer 5, :cooking-utensils 3, :measuring-tape 3, :shovel 1}
+  {:watch 1}
+  {:home-textiles 3}
+  {:vegetables 12,
+   :corn 8,
+   :cheese 2,
+   :fruit-and-berries 1,
+   :flour-bag 1}
+  {:tree-saplings 1}
+  {:donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 11}
+  {:metal 8}
+  {:wood 5}
+  {:textiles 2}
+  {:plastic 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0}
+  {:chemicals 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:planks 19, :nails 15, :cement 2} {:hammer 7, :shovel 4, :measuring-tape 2, :ladder 1} {:watch 5, :cap 1} {:chairs 6} {:flour-bag 5, :vegetables 1} {:garden-furniture 5, :grass 2} {:donuts 5} {} {}), :factories ({:wood 47} {:metal 33} {:plastic 26} {:textiles 22} {:seeds 14} {:chemicals 7} {:glass 5} {:sugar-and-spices 5} {:minerals 4} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7}
+  {:hammer 5, :cooking-utensils 3, :shovel 1}
+  {:watch 1}
+  {}
+  {:vegetables 12,
+   :corn 8,
+   :cheese 2,
+   :fruit-and-berries 1,
+   :flour-bag 1}
+  {:tree-saplings 1}
+  {:donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 11}
+  {:metal 7}
+  {:wood 5}
+  {:plastic 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0}
+  {:textiles 0}
+  {:chemicals 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 23, :planks 15} {:hammer 7, :shovel 3} {:watch 5} {:chairs 6} {:flour-bag 5, :corn 2, :fruit-and-berries 1, :vegetables 1} {:garden-furniture 5, :tree-saplings 1} {:donuts 5, :green-smoothie 1} {} {}), :factories ({:metal 44} {:wood 42} {:seeds 24} {:plastic 23} {:textiles 20} {:glass 5} {:sugar-and-spices 5} {:chemicals 5} {:minerals 2} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7}
+  {:hammer 5, :cooking-utensils 3, :shovel 1}
+  {:watch 1}
+  {}
+  {:vegetables 12,
+   :corn 8,
+   :cheese 2,
+   :fruit-and-berries 1,
+   :flour-bag 1}
+  {:tree-saplings 1}
+  {:donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 11}
+  {:metal 7}
+  {:wood 5}
+  {:plastic 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0}
+  {:textiles 0}
+  {:chemicals 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 23, :planks 17} {:hammer 7, :shovel 4, :ladder 1} {:watch 5} {:chairs 6} {:flour-bag 5, :corn 2, :fruit-and-berries 1, :vegetables 1} {:garden-furniture 5, :tree-saplings 1} {:donuts 5, :green-smoothie 1} {} {}), :factories ({:metal 47} {:wood 43} {:seeds 24} {:plastic 24} {:textiles 20} {:glass 5} {:sugar-and-spices 5} {:chemicals 5} {:minerals 2} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7}
+  {:hammer 5, :cooking-utensils 3, :shovel 1}
+  {:watch 1}
+  {}
+  {:vegetables 12,
+   :corn 8,
+   :cheese 2,
+   :fruit-and-berries 1,
+   :flour-bag 1}
+  {:tree-saplings 1}
+  {:donuts 1}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 11}
+  {:metal 7}
+  {:wood 5}
+  {:plastic 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0}
+  {:textiles 0}
+  {:chemicals 0})}
+nil
 clj꞉sim꞉> 
 ; Evaluating file: sim.clj
-{:stores ({:nails 26, :planks 18} {:hammer 9, :shovel 5, :ladder 1} {:watch 5} {:chairs 6, :tables 1} {:flour-bag 5, :corn 2, :fruit-and-berries 2, :vegetables 1} {:garden-furniture 5, :tree-saplings 2} {:donuts 5, :green-smoothie 1} {} {}), :factories ({:metal 56} {:wood 48} {:seeds 28} {:plastic 25} {:textiles 20} {:glass 5} {:sugar-and-spices 5} {:chemicals 5} {:minerals 2} {:electrical-components 0} {:animal-feed 0})}
+{:stores
+ ({:nails 8, :planks 7}
+  {:hammer 5, :cooking-utensils 3, :shovel 1}
+  {:watch 1}
+  {}
+  {:vegetables 12, :corn 8, :cheese 2, :fruit-and-berries 1}
+  {:tree-saplings 1}
+  {}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 10}
+  {:metal 7}
+  {:wood 5}
+  {:plastic 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0}
+  {:textiles 0}
+  {:chemicals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 8, :planks 7}
+  {:hammer 5, :shovel 1}
+  {:watch 1}
+  {}
+  {:vegetables 12, :corn 8, :cheese 2, :fruit-and-berries 1}
+  {:tree-saplings 1}
+  {}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 10}
+  {:metal 6}
+  {:wood 4}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:plastic 1}
+  {:electrical-components 0}
+  {:sugar-and-spices 0}
+  {:textiles 0}
+  {:chemicals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 7, :glue 4}
+  {:hammer 10, :drill 6, :shovel 4}
+  {:watch 1}
+  {}
+  {:vegetables 12, :corn 8, :cheese 2, :fruit-and-berries 1}
+  {:grass 3, :tree-saplings 1}
+  {}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 11}
+  {:metal 7}
+  {:wood 6}
+  {:plastic 4}
+  {:electrical-components 2}
+  {:chemicals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:sugar-and-spices 0}
+  {:textiles 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 7, :glue 4}
+  {:drill 6, :hammer 5, :shovel 4}
+  {:watch 1}
+  {}
+  {:vegetables 12, :corn 8, :cheese 2, :fruit-and-berries 1}
+  {:grass 3, :tree-saplings 1}
+  {}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:seeds 11}
+  {:metal 6}
+  {:wood 5}
+  {:plastic 4}
+  {:electrical-components 2}
+  {:chemicals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:sugar-and-spices 0}
+  {:textiles 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 7, :glue 4, :nails 4}
+  {:hammer 9, :drill 6, :shovel 6}
+  {:watch 1}
+  {:chairs 4}
+  {:vegetables 14, :corn 8, :fruit-and-berries 3, :cheese 2}
+  {:tree-saplings 3, :grass 3}
+  {:green-smoothie 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :tv 2}),
+ :factories
+ ({:seeds 13}
+  {:wood 7}
+  {:metal 7}
+  {:plastic 6}
+  {:electrical-components 2}
+  {:chemicals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:sugar-and-spices 0}
+  {:textiles 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 4, :nails 4, :planks 2}
+  {:hammer 9, :drill 6, :shovel 6}
+  {:watch 1}
+  {:chairs 4}
+  {:vegetables 14, :corn 8, :fruit-and-berries 3, :cheese 2}
+  {:tree-saplings 3, :grass 3}
+  {:green-smoothie 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :tv 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 7}
+  {:plastic 6}
+  {:wood 5}
+  {:electrical-components 2}
+  {:chemicals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:sugar-and-spices 0}
+  {:textiles 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 4, :planks 2}
+  {:hammer 9, :drill 6, :shovel 6}
+  {:watch 1}
+  {:chairs 4}
+  {:vegetables 14, :corn 8, :fruit-and-berries 3, :cheese 2}
+  {:tree-saplings 3, :grass 3}
+  {:green-smoothie 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :tv 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 7}
+  {:plastic 5}
+  {:wood 5}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:sugar-and-spices 0}
+  {:textiles 0}
+  {:chemicals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 4, :planks 2}
+  {:hammer 9, :drill 6, :shovel 6}
+  {:watch 1}
+  {:chairs 4}
+  {:vegetables 14, :corn 8, :fruit-and-berries 3, :cheese 2}
+  {:tree-saplings 3, :grass 3}
+  {:green-smoothie 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :tv 2}),
+ :factories
+ ({:seeds 13}
+  {:metal 7}
+  {:plastic 5}
+  {:wood 5}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:sugar-and-spices 0}
+  {:textiles 0}
+  {:chemicals 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 5, :nails 4, :planks 2}
+  {:drill 11, :hammer 9, :shovel 5}
+  {:watch 1}
+  {:couch 5, :chairs 4}
+  {:vegetables 14, :corn 4, :cheese 2, :fruit-and-berries 2}
+  {:grass 3, :tree-saplings 2}
+  {:green-smoothie 2}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 11}
+  {:plastic 8}
+  {:metal 7}
+  {:wood 5}
+  {:electrical-components 3}
+  {:textiles 3}
+  {:chemicals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:minerals 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 7, :planks 5, :nails 4}
+  {:drill 13, :shovel 12, :hammer 9}
+  {:shoes 2, :watch 1}
+  {:couch 5, :chairs 4}
+  {:vegetables 18, :fruit-and-berries 6, :corn 4, :cream 4, :cheese 2}
+  {:tree-saplings 6, :grass 6}
+  {:green-smoothie 6, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 18}
+  {:plastic 11}
+  {:metal 9}
+  {:wood 8}
+  {:textiles 4}
+  {:electrical-components 3}
+  {:chemicals 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:minerals 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 7, :planks 5, :nails 4}
+  {:drill 13, :shovel 12, :hammer 9}
+  {:shoes 2, :watch 1}
+  {:couch 5, :chairs 4}
+  {:vegetables 18, :fruit-and-berries 6, :corn 4, :cream 4, :cheese 2}
+  {:tree-saplings 6, :grass 6}
+  {:green-smoothie 6, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 18}
+  {:plastic 11}
+  {:metal 9}
+  {:wood 8}
+  {:textiles 4}
+  {:electrical-components 3}
+  {:chemicals 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:minerals 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 7, :planks 5, :nails 4}
+  {:drill 13, :shovel 12, :hammer 9}
+  {:shoes 2, :watch 1}
+  {:couch 5, :chairs 4}
+  {:vegetables 18, :fruit-and-berries 6, :corn 4, :cream 4, :cheese 2}
+  {:tree-saplings 6, :grass 6}
+  {:green-smoothie 6, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 18}
+  {:plastic 11}
+  {:metal 9}
+  {:wood 8}
+  {:textiles 4}
+  {:electrical-components 3}
+  {:chemicals 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:minerals 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 5, :nails 4, :glue 3}
+  {:shovel 12, :drill 9, :hammer 9}
+  {:shoes 2, :watch 1}
+  {:chairs 4, :couch 1}
+  {:vegetables 18, :fruit-and-berries 6, :corn 4, :cream 4, :cheese 2}
+  {:tree-saplings 6, :grass 6}
+  {:green-smoothie 6, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 18}
+  {:plastic 8}
+  {:wood 8}
+  {:metal 8}
+  {:electrical-components 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1}
+  {:chemicals 1}
+  {:minerals 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 7, :bricks 6, :planks 5, :nails 4}
+  {:shovel 9, :hammer 9, :drill 7}
+  {:watch 1}
+  {:chairs 4, :couch 1}
+  {:vegetables 21, :fruit-and-berries 6, :corn 4, :cream 4, :cheese 2}
+  {:tree-saplings 6, :grass 3}
+  {:green-smoothie 6, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 19}
+  {:plastic 7}
+  {:wood 7}
+  {:metal 6}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 7, :bricks 6, :planks 5, :nails 4}
+  {:shovel 9, :hammer 9, :drill 7}
+  {:watch 1}
+  {:chairs 4, :couch 1}
+  {:vegetables 21, :fruit-and-berries 6, :corn 4, :cream 4}
+  {:tree-saplings 6, :grass 3}
+  {:green-smoothie 6, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 19}
+  {:plastic 7}
+  {:wood 7}
+  {:metal 6}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 7, :bricks 6, :planks 5, :nails 4}
+  {:shovel 9, :hammer 9, :drill 7}
+  {:watch 1}
+  {:chairs 4, :couch 1}
+  {:vegetables 21, :fruit-and-berries 6, :corn 4, :cream 4}
+  {:tree-saplings 6, :grass 3}
+  {:green-smoothie 6, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 19}
+  {:plastic 7}
+  {:wood 7}
+  {:metal 6}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 7, :bricks 6, :planks 5, :nails 4}
+  {:shovel 10, :hammer 9, :drill 7}
+  {:watch 1}
+  {:chairs 4, :couch 1}
+  {:vegetables 22, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 20}
+  {:plastic 7}
+  {:wood 7}
+  {:metal 7}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:glue 7, :bricks 6, :planks 5, :nails 4}
+  {:shovel 10, :hammer 9, :drill 7}
+  {}
+  {:chairs 4, :couch 1}
+  {:vegetables 22, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 20}
+  {:plastic 7}
+  {:wood 7}
+  {:metal 7}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 13, :glue 7, :bricks 6, :planks 5}
+  {:shovel 10, :hammer 9, :drill 7}
+  {}
+  {:chairs 4, :couch 1}
+  {:vegetables 22, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 20}
+  {:metal 10}
+  {:plastic 7}
+  {:wood 7}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 13, :glue 7, :bricks 7, :planks 5}
+  {:shovel 10, :hammer 9, :drill 7}
+  {}
+  {:chairs 4, :couch 1}
+  {:vegetables 22, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 20}
+  {:metal 10}
+  {:plastic 7}
+  {:wood 7}
+  {:minerals 4}
+  {:chemicals 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 13, :bricks 7, :glue 5, :planks 5}
+  {:shovel 10, :hammer 9, :drill 7}
+  {}
+  {:chairs 4, :couch 1}
+  {:vegetables 19, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 19}
+  {:metal 10}
+  {:plastic 7}
+  {:wood 7}
+  {:minerals 4}
+  {:electrical-components 2}
+  {:chemicals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 13, :glue 5, :planks 5, :bricks 4}
+  {:shovel 10, :hammer 9, :drill 7}
+  {}
+  {:chairs 4, :couch 1}
+  {:vegetables 19, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 19}
+  {:metal 10}
+  {:plastic 7}
+  {:wood 7}
+  {:electrical-components 2}
+  {:chemicals 2}
+  {:minerals 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 13, :planks 9, :glue 5, :bricks 4, :paint 2}
+  {:shovel 10, :hammer 9, :drill 7}
+  {}
+  {:chairs 4, :cupboard 2, :couch 1}
+  {:vegetables 19, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 19}
+  {:metal 11}
+  {:wood 8}
+  {:plastic 7}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 13, :glue 5, :bricks 4, :paint 2}
+  {:shovel 10, :hammer 9, :drill 7, :ladder 3}
+  {}
+  {:chairs 4, :cupboard 2, :couch 1}
+  {:vegetables 19, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 19}
+  {:metal 12}
+  {:wood 8}
+  {:plastic 7}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 13, :glue 5, :bricks 4, :paint 2}
+  {:shovel 10, :hammer 9, :drill 6, :ladder 3}
+  {}
+  {:chairs 4, :cupboard 2, :couch 1}
+  {:vegetables 19, :fruit-and-berries 7, :corn 4, :cream 4}
+  {:tree-saplings 7, :grass 3}
+  {:green-smoothie 7, :coffee 4}
+  {}
+  {:tv 2}),
+ :factories
+ ({:seeds 19}
+  {:metal 12}
+  {:wood 8}
+  {:plastic 6}
+  {:chemicals 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1}
+  {:textiles 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 12, :glue 9, :bricks 4, :paint 2}
+  {:shovel 10, :hammer 8, :drill 6, :ladder 3, :measuring-tape 3}
+  {:business-suits 3}
+  {:chairs 3, :cupboard 2, :couch 1}
+  {:vegetables 18, :fruit-and-berries 7, :corn 6, :cream 4}
+  {:tree-saplings 8, :grass 2}
+  {:green-smoothie 7, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:seeds 19}
+  {:metal 13}
+  {:wood 8}
+  {:plastic 7}
+  {:chemicals 4}
+  {:minerals 3}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 17, :planks 15, :glue 9, :bricks 4, :paint 2}
+  {:shovel 10, :hammer 8, :drill 6, :ladder 3, :measuring-tape 3}
+  {:business-suits 3}
+  {:chairs 3, :cupboard 2, :couch 1}
+  {:vegetables 18, :fruit-and-berries 7, :corn 6, :cream 4}
+  {:tree-saplings 8, :grass 2}
+  {:green-smoothie 7, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:seeds 19}
+  {:metal 15}
+  {:wood 8}
+  {:plastic 7}
+  {:chemicals 4}
+  {:minerals 3}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 17, :planks 15, :glue 9, :paint 7, :bricks 4}
+  {:shovel 10, :hammer 8, :drill 6, :ladder 3, :measuring-tape 3}
+  {:business-suits 3}
+  {:chairs 3, :cupboard 2, :couch 1}
+  {:vegetables 18, :fruit-and-berries 7, :corn 6, :cream 4}
+  {:tree-saplings 8, :lawn-mower 5, :grass 2}
+  {:green-smoothie 7, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:metal 20}
+  {:seeds 19}
+  {:wood 8}
+  {:plastic 7}
+  {:chemicals 6}
+  {:minerals 4}
+  {:electrical-components 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 14, :glue 9, :paint 7, :bricks 4}
+  {:shovel 10, :drill 6, :hammer 5, :ladder 3, :measuring-tape 3}
+  {:business-suits 3}
+  {:cupboard 2, :couch 1}
+  {:vegetables 18, :fruit-and-berries 7, :corn 6, :cream 4}
+  {:tree-saplings 8, :lawn-mower 5, :grass 2}
+  {:green-smoothie 7, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:seeds 19}
+  {:metal 19}
+  {:plastic 7}
+  {:chemicals 6}
+  {:wood 6}
+  {:minerals 4}
+  {:electrical-components 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 16, :planks 15, :glue 9, :paint 7, :bricks 4}
+  {:shovel 10, :hammer 7, :drill 6, :ladder 3, :measuring-tape 3}
+  {:business-suits 3}
+  {:cupboard 2, :chairs 2, :couch 1}
+  {:vegetables 18, :fruit-and-berries 7, :corn 6, :cream 4}
+  {:tree-saplings 8, :lawn-mower 5, :grass 2}
+  {:green-smoothie 7, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:metal 20}
+  {:seeds 19}
+  {:plastic 7}
+  {:wood 7}
+  {:chemicals 6}
+  {:minerals 4}
+  {:electrical-components 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 14, :bricks 12, :glue 10, :paint 7}
+  {:measuring-tape 12,
+   :shovel 8,
+   :drill 7,
+   :hammer 5,
+   :cooking-utensils 4,
+   :ladder 3}
+  {:business-suits 3}
+  {:couch 2, :cupboard 2}
+  {:vegetables 16, :corn 6, :fruit-and-berries 5, :cream 4}
+  {:tree-saplings 6, :lawn-mower 5, :grass 2}
+  {:green-smoothie 5, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:metal 23}
+  {:seeds 17}
+  {:plastic 10}
+  {:chemicals 7}
+  {:minerals 7}
+  {:wood 7}
+  {:electrical-components 3}
+  {:textiles 3}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 14, :bricks 12, :glue 10, :paint 7}
+  {:measuring-tape 12,
+   :shovel 8,
+   :drill 7,
+   :hammer 5,
+   :cooking-utensils 4,
+   :ladder 3}
+  {:business-suits 3}
+  {:couch 2, :cupboard 2}
+  {:vegetables 16, :corn 6, :fruit-and-berries 5, :cream 4, :cheese 2}
+  {:tree-saplings 6, :lawn-mower 5, :grass 2}
+  {:green-smoothie 5, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:metal 23}
+  {:seeds 17}
+  {:plastic 10}
+  {:chemicals 7}
+  {:minerals 7}
+  {:wood 7}
+  {:electrical-components 3}
+  {:textiles 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+false
+clj꞉sim꞉> 
+false
+clj꞉sim꞉> 
+false
+clj꞉sim꞉> 
+false
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 14, :bricks 12, :glue 10, :paint 7}
+  {:measuring-tape 12,
+   :shovel 8,
+   :drill 7,
+   :cooking-utensils 7,
+   :hammer 5,
+   :ladder 3}
+  {:business-suits 3}
+  {:couch 2, :cupboard 2}
+  {:vegetables 16, :corn 6, :fruit-and-berries 5, :cream 4, :cheese 2}
+  {:tree-saplings 6, :lawn-mower 5, :grass 2}
+  {:green-smoothie 5, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:metal 24}
+  {:seeds 17}
+  {:plastic 12}
+  {:wood 8}
+  {:chemicals 7}
+  {:minerals 7}
+  {:electrical-components 3}
+  {:textiles 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 14, :bricks 12, :glue 8, :paint 7}
+  {:measuring-tape 12,
+   :shovel 8,
+   :cooking-utensils 7,
+   :drill 5,
+   :hammer 5,
+   :ladder 3}
+  {:business-suits 3}
+  {:cupboard 2}
+  {:vegetables 16, :corn 6, :fruit-and-berries 5, :cream 4, :cheese 2}
+  {:tree-saplings 6, :lawn-mower 5, :grass 2}
+  {:green-smoothie 5, :coffee 2}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:metal 23}
+  {:seeds 17}
+  {:plastic 10}
+  {:wood 8}
+  {:minerals 7}
+  {:chemicals 6}
+  {:electrical-components 2}
+  {:animal-feed 2}
+  {:textiles 2}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 15, :nails 14, :bricks 12, :glue 8, :paint 7}
+  {:measuring-tape 12,
+   :shovel 8,
+   :cooking-utensils 7,
+   :drill 5,
+   :hammer 5,
+   :ladder 3}
+  {:business-suits 3}
+  {:cupboard 2}
+  {:vegetables 16, :corn 6, :fruit-and-berries 5, :cheese 2, :cream 2}
+  {:tree-saplings 6, :lawn-mower 5, :grass 2}
+  {:green-smoothie 5}
+  {}
+  {:microwave-oven 1}),
+ :factories
+ ({:metal 23}
+  {:seeds 16}
+  {:plastic 10}
+  {:wood 8}
+  {:minerals 7}
+  {:chemicals 6}
+  {:electrical-components 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 22, :nails 14, :paint 12, :bricks 12, :glue 8}
+  {:measuring-tape 12,
+   :ladder 8,
+   :cooking-utensils 7,
+   :shovel 6,
+   :drill 5,
+   :hammer 5}
+  {:business-suits 3}
+  {:cupboard 2}
+  {:vegetables 14,
+   :corn 6,
+   :cheese 4,
+   :flour-bag 4,
+   :cream 2,
+   :fruit-and-berries 1}
+  {:lawn-mower 10, :grass 4, :tree-saplings 2}
+  {:donuts 4, :green-smoothie 1}
+  {:cheese-fries 2}
+  {:refrigerator 2}),
+ :factories
+ ({:metal 29}
+  {:seeds 14}
+  {:plastic 11}
+  {:chemicals 9}
+  {:minerals 8}
+  {:wood 7}
+  {:electrical-components 4}
+  {:textiles 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 22, :nails 14, :paint 12, :bricks 12, :glue 8}
+  {:measuring-tape 12,
+   :ladder 8,
+   :cooking-utensils 7,
+   :shovel 6,
+   :drill 5,
+   :hammer 5}
+  {:business-suits 3}
+  {:cupboard 2}
+  {:vegetables 14,
+   :corn 6,
+   :cheese 4,
+   :flour-bag 3,
+   :cream 2,
+   :fruit-and-berries 1}
+  {:lawn-mower 10, :grass 4, :tree-saplings 2}
+  {:donuts 3, :green-smoothie 1}
+  {:cheese-fries 2}
+  {:refrigerator 2}),
+ :factories
+ ({:metal 29}
+  {:seeds 14}
+  {:plastic 11}
+  {:chemicals 9}
+  {:minerals 8}
+  {:wood 7}
+  {:electrical-components 4}
+  {:textiles 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 22, :nails 14, :paint 12, :bricks 12, :glue 8}
+  {:measuring-tape 12,
+   :ladder 8,
+   :cooking-utensils 7,
+   :shovel 6,
+   :drill 5,
+   :hammer 5}
+  {:business-suits 3}
+  {:cupboard 2}
+  {:vegetables 15,
+   :corn 6,
+   :cheese 5,
+   :flour-bag 3,
+   :cream 2,
+   :fruit-and-berries 1}
+  {:lawn-mower 10, :grass 4, :tree-saplings 2}
+  {:donuts 3, :green-smoothie 1}
+  {:cheese-fries 3}
+  {:refrigerator 2}),
+ :factories
+ ({:metal 29}
+  {:seeds 14}
+  {:plastic 11}
+  {:chemicals 9}
+  {:minerals 8}
+  {:wood 7}
+  {:electrical-components 4}
+  {:textiles 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 22, :nails 14, :paint 12, :bricks 12, :glue 8}
+  {:measuring-tape 22,
+   :ladder 8,
+   :cooking-utensils 7,
+   :shovel 6,
+   :drill 5,
+   :hammer 5}
+  {:business-suits 3}
+  {:cupboard 2}
+  {:vegetables 15,
+   :corn 6,
+   :cheese 5,
+   :flour-bag 3,
+   :cream 2,
+   :fruit-and-berries 1}
+  {:lawn-mower 10, :grass 4, :tree-saplings 2}
+  {:donuts 3, :green-smoothie 1}
+  {:cheese-fries 3}
+  {:refrigerator 2}),
+ :factories
+ ({:metal 31}
+  {:seeds 14}
+  {:plastic 13}
+  {:chemicals 9}
+  {:minerals 8}
+  {:wood 7}
+  {:electrical-components 4}
+  {:textiles 3}
+  {:animal-feed 2}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 22, :nails 14, :paint 12, :bricks 12, :glue 8}
+  {:measuring-tape 22,
+   :ladder 8,
+   :cooking-utensils 7,
+   :shovel 6,
+   :drill 5,
+   :hammer 5}
+  {:business-suits 3}
+  {:cupboard 2}
+  {:vegetables 15,
+   :cheese 7,
+   :corn 6,
+   :flour-bag 5,
+   :cream 2,
+   :beef 2,
+   :fruit-and-berries 1}
+  {:lawn-mower 10, :grass 4, :tree-saplings 2}
+  {:donuts 3, :green-smoothie 1}
+  {:cheese-fries 3, :pizza 2}
+  {:refrigerator 2}),
+ :factories
+ ({:metal 31}
+  {:seeds 15}
+  {:plastic 13}
+  {:chemicals 9}
+  {:minerals 8}
+  {:wood 7}
+  {:electrical-components 4}
+  {:animal-feed 4}
+  {:textiles 4}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 22, :nails 14, :paint 12, :bricks 12, :glue 10}
+  {:measuring-tape 22,
+   :ladder 8,
+   :drill 7,
+   :cooking-utensils 7,
+   :shovel 6,
+   :hammer 5}
+  {:business-suits 3}
+  {:couch 2, :cupboard 2}
+  {:vegetables 15,
+   :cheese 7,
+   :corn 6,
+   :flour-bag 5,
+   :cream 2,
+   :beef 2,
+   :fruit-and-berries 1}
+  {:lawn-mower 10, :grass 4, :tree-saplings 2}
+  {:donuts 3, :green-smoothie 1}
+  {:cheese-fries 3, :pizza 2}
+  {:refrigerator 2}),
+ :factories
+ ({:metal 32}
+  {:seeds 15}
+  {:plastic 14}
+  {:chemicals 10}
+  {:minerals 8}
+  {:wood 7}
+  {:textiles 5}
+  {:electrical-components 4}
+  {:animal-feed 4}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 22, :nails 14, :paint 12, :bricks 12, :glue 10}
+  {:measuring-tape 22,
+   :ladder 8,
+   :drill 7,
+   :cooking-utensils 7,
+   :shovel 7,
+   :hammer 5}
+  {:business-suits 3}
+  {:couch 2, :cupboard 2}
+  {:vegetables 16,
+   :cheese 7,
+   :corn 6,
+   :flour-bag 5,
+   :cream 2,
+   :fruit-and-berries 2,
+   :beef 2}
+  {:lawn-mower 10, :grass 4, :tree-saplings 3}
+  {:donuts 3, :green-smoothie 2}
+  {:cheese-fries 3, :pizza 2}
+  {:refrigerator 2}),
+ :factories
+ ({:metal 32}
+  {:seeds 16}
+  {:plastic 14}
+  {:chemicals 10}
+  {:minerals 8}
+  {:wood 7}
+  {:textiles 5}
+  {:electrical-components 4}
+  {:animal-feed 4}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 20, :paint 12, :bricks 11, :nails 8, :glue 6}
+  {:measuring-tape 13,
+   :ladder 8,
+   :cooking-utensils 7,
+   :shovel 7,
+   :drill 3}
+  {}
+  {:couch 2, :cupboard 2}
+  {:vegetables 16,
+   :cheese 7,
+   :flour-bag 5,
+   :fruit-and-berries 2,
+   :beef 2,
+   :corn 1}
+  {:lawn-mower 10, :grass 4, :tree-saplings 3}
+  {:donuts 3, :green-smoothie 2}
+  {:cheese-fries 3, :pizza 2}
+  {:refrigerator 2}),
+ :factories
+ ({:metal 25}
+  {:seeds 12}
+  {:plastic 10}
+  {:chemicals 8}
+  {:minerals 7}
+  {:wood 5}
+  {:animal-feed 4}
+  {:electrical-components 3}
+  {:textiles 3}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:shovel 45,
+   :measuring-tape 18,
+   :cooking-utensils 7,
+   :ladder 3,
+   :drill 2}
+  {:business-suits 5}
+  {:couch 2, :cupboard 2}
+  {:fruit-and-berries 44, :vegetables 18, :cheese 2, :corn 1}
+  {:tree-saplings 44, :lawn-mower 10, :grass 1}
+  {}
+  {}
+  {:refrigerator 3, :tv 1}),
+ :factories
+ ({:seeds 43}
+  {:metal 31}
+  {:plastic 20}
+  {:wood 13}
+  {:chemicals 10}
+  {:minerals 7}
+  {:electrical-components 4}
+  {:textiles 4}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:shovel 45,
+   :measuring-tape 18,
+   :cooking-utensils 7,
+   :ladder 3,
+   :drill 2}
+  {:business-suits 5}
+  {:couch 2, :cupboard 2}
+  {:fruit-and-berries 44, :vegetables 18, :cheese 2, :corn 1}
+  {:tree-saplings 44, :lawn-mower 10, :grass 1}
+  {}
+  {}
+  {:tv 2, :refrigerator 1}),
+ :factories
+ ({:seeds 43}
+  {:metal 31}
+  {:plastic 20}
+  {:wood 13}
+  {:chemicals 10}
+  {:minerals 7}
+  {:electrical-components 4}
+  {:textiles 4}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:measuring-tape 18,
+   :cooking-utensils 7,
+   :shovel 5,
+   :ladder 3,
+   :drill 2}
+  {:business-suits 5}
+  {:couch 2, :cupboard 2}
+  {:vegetables 18, :fruit-and-berries 4, :cheese 2, :corn 1}
+  {:lawn-mower 10, :tree-saplings 4, :grass 1}
+  {}
+  {}
+  {:tv 2, :refrigerator 1}),
+ :factories
+ ({:metal 23}
+  {:plastic 12}
+  {:seeds 11}
+  {:chemicals 10}
+  {:minerals 7}
+  {:wood 5}
+  {:electrical-components 4}
+  {:textiles 4}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:measuring-tape 18,
+   :cooking-utensils 7,
+   :shovel 5,
+   :drill 3,
+   :ladder 3}
+  {:business-suits 5}
+  {:couch 2, :cupboard 2}
+  {:vegetables 18, :fruit-and-berries 4, :cheese 2, :corn 1}
+  {:lawn-mower 10, :tree-saplings 4, :grass 1}
+  {}
+  {}
+  {:tv 2, :refrigerator 1}),
+ :factories
+ ({:metal 24}
+  {:plastic 12}
+  {:seeds 11}
+  {:chemicals 10}
+  {:minerals 7}
+  {:wood 5}
+  {:electrical-components 4}
+  {:textiles 4}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:measuring-tape 18,
+   :cooking-utensils 7,
+   :shovel 5,
+   :drill 3,
+   :ladder 3}
+  {:business-suits 5}
+  {:couch 2, :cupboard 2}
+  {:vegetables 18, :fruit-and-berries 4, :cheese 3, :corn 1}
+  {:lawn-mower 10, :tree-saplings 4, :grass 1}
+  {}
+  {}
+  {:tv 2, :refrigerator 1}),
+ :factories
+ ({:metal 24}
+  {:plastic 12}
+  {:seeds 11}
+  {:chemicals 10}
+  {:minerals 7}
+  {:wood 5}
+  {:electrical-components 4}
+  {:textiles 4}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:measuring-tape 18,
+   :cooking-utensils 7,
+   :shovel 5,
+   :drill 3,
+   :ladder 3}
+  {:business-suits 5}
+  {:couch 2, :cupboard 2}
+  {:vegetables 18,
+   :cheese 5,
+   :fruit-and-berries 4,
+   :flour-bag 2,
+   :beef 2,
+   :corn 1}
+  {:lawn-mower 10, :tree-saplings 4, :grass 1}
+  {}
+  {:pizza 2}
+  {:tv 2, :refrigerator 1}),
+ :factories
+ ({:metal 24}
+  {:seeds 12}
+  {:plastic 12}
+  {:chemicals 10}
+  {:minerals 7}
+  {:textiles 5}
+  {:wood 5}
+  {:electrical-components 4}
+  {:animal-feed 3}
+  {:glass 2}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:measuring-tape 18,
+   :cooking-utensils 7,
+   :shovel 5,
+   :drill 3,
+   :ladder 3}
+  {:business-suits 5}
+  {:couch 2, :cupboard 2}
+  {:vegetables 18,
+   :cheese 4,
+   :fruit-and-berries 4,
+   :flour-bag 2,
+   :beef 2,
+   :corn 1}
+  {:lawn-mower 10, :tree-saplings 4, :grass 1}
+  {}
+  {:pizza 2}
+  {:tv 2, :refrigerator 1}),
+ :factories
+ ({:metal 24}
+  {:seeds 12}
+  {:plastic 12}
+  {:chemicals 10}
+  {:minerals 7}
+  {:textiles 5}
+  {:wood 5}
+  {:electrical-components 4}
+  {:animal-feed 3}
+  {:glass 2}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:measuring-tape 18,
+   :cooking-utensils 7,
+   :shovel 5,
+   :drill 3,
+   :ladder 3}
+  {:business-suits 5}
+  {:couch 2, :cupboard 2}
+  {:vegetables 18, :fruit-and-berries 4, :cheese 2, :corn 1}
+  {:lawn-mower 10, :tree-saplings 4, :grass 1}
+  {}
+  {}
+  {:tv 2, :refrigerator 1}),
+ :factories
+ ({:metal 24}
+  {:plastic 12}
+  {:seeds 11}
+  {:chemicals 10}
+  {:minerals 7}
+  {:wood 5}
+  {:electrical-components 4}
+  {:textiles 4}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :glue 11, :bricks 11, :planks 10, :nails 8}
+  {:measuring-tape 21,
+   :cooking-utensils 7,
+   :shovel 5,
+   :drill 3,
+   :ladder 3}
+  {:business-suits 5}
+  {:home-textiles 3, :couch 2, :cupboard 2}
+  {:vegetables 18, :fruit-and-berries 4, :cheese 2, :corn 1}
+  {:lawn-mower 10, :tree-saplings 4, :grass 1}
+  {}
+  {}
+  {:tv 2, :refrigerator 1}),
+ :factories
+ ({:metal 24}
+  {:plastic 13}
+  {:seeds 11}
+  {:chemicals 10}
+  {:minerals 7}
+  {:textiles 5}
+  {:wood 5}
+  {:electrical-components 4}
+  {:glass 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 12, :bricks 11, :planks 10, :glue 9, :nails 8}
+  {:measuring-tape 19,
+   :cooking-utensils 7,
+   :shovel 5,
+   :drill 3,
+   :ladder 3}
+  {:business-suits 3}
+  {:home-textiles 3, :couch 2, :cupboard 2}
+  {:vegetables 18,
+   :cream 4,
+   :fruit-and-berries 4,
+   :flour-bag 4,
+   :cheese 2,
+   :corn 1}
+  {:lawn-mower 10, :tree-saplings 4, :grass 1}
+  {:bread-roll 2}
+  {:ice-cream-sandwich 2}
+  {:tv 2}),
+ :factories
+ ({:metal 24}
+  {:seeds 12}
+  {:plastic 11}
+  {:chemicals 8}
+  {:minerals 7}
+  {:textiles 5}
+  {:wood 5}
+  {:electrical-components 3}
+  {:animal-feed 2}
+  {:glass 2}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 18, :planks 16, :bricks 11, :glue 9, :nails 8}
+  {:measuring-tape 22,
+   :shovel 8,
+   :cooking-utensils 7,
+   :drill 3,
+   :ladder 3}
+  {:backpack 3, :business-suits 3}
+  {:cupboard 5, :home-textiles 3, :couch 2}
+  {:vegetables 22,
+   :cheese 7,
+   :fruit-and-berries 7,
+   :flour-bag 6,
+   :cream 4,
+   :beef 2,
+   :corn 1}
+  {:lawn-mower 13, :tree-saplings 7, :grass 1}
+  {:bread-roll 2, :green-smoothie 1}
+  {:cheese-fries 3,
+   :lemonade-bottle 2,
+   :pizza 2,
+   :ice-cream-sandwich 2}
+  {:tv 2}),
+ :factories
+ ({:metal 29}
+  {:seeds 15}
+  {:plastic 14}
+  {:chemicals 11}
+  {:minerals 8}
+  {:textiles 7}
+  {:animal-feed 6}
+  {:wood 6}
+  {:electrical-components 4}
+  {:glass 4}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:paint 18, :planks 16, :bricks 11, :glue 10, :nails 8}
+  {:measuring-tape 22,
+   :shovel 8,
+   :cooking-utensils 7,
+   :drill 3,
+   :ladder 3}
+  {:backpack 3, :business-suits 3}
+  {:cupboard 5, :home-textiles 3, :couch 2}
+  {:vegetables 22,
+   :cheese 7,
+   :fruit-and-berries 7,
+   :flour-bag 6,
+   :cream 4,
+   :beef 2,
+   :corn 1}
+  {:lawn-mower 13, :tree-saplings 7, :grass 1}
+  {:bread-roll 2, :green-smoothie 1}
+  {:cheese-fries 3,
+   :lemonade-bottle 2,
+   :pizza 2,
+   :ice-cream-sandwich 2}
+  {:tv 2}),
+ :factories
+ ({:metal 29}
+  {:seeds 15}
+  {:plastic 14}
+  {:chemicals 11}
+  {:minerals 8}
+  {:textiles 7}
+  {:animal-feed 6}
+  {:wood 6}
+  {:electrical-components 4}
+  {:glass 4}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 24, :paint 8, :bricks 7, :nails 6, :cement 4, :glue 3}
+  {:measuring-tape 25,
+   :shovel 17,
+   :cooking-utensils 16,
+   :drill 3,
+   :ladder 3,
+   :hammer 3}
+  {:backpack 11, :business-suits 3}
+  {:tables 3, :cupboard 2}
+  {:cream 13,
+   :fruit-and-berries 12,
+   :vegetables 10,
+   :flour-bag 6,
+   :beef 3}
+  {:tree-saplings 17, :lawn-mower 6}
+  {:bread-roll 3, :green-smoothie 1}
+  {:burgers 3, :lemonade-bottle 2}
+  {:bbq-grill 3}),
+ :factories
+ ({:metal 29}
+  {:plastic 21}
+  {:wood 17}
+  {:seeds 15}
+  {:textiles 7}
+  {:minerals 6}
+  {:chemicals 5}
+  {:animal-feed 3}
+  {:electrical-components 2}
+  {:glass 2}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 28, :paint 8, :bricks 7, :cement 6, :nails 6}
+  {:measuring-tape 17,
+   :shovel 15,
+   :cooking-utensils 9,
+   :drill 4,
+   :hammer 4,
+   :ladder 3}
+  {:backpack 7, :watch 2}
+  {:tables 3, :cupboard 2}
+  {:cream 14,
+   :flour-bag 11,
+   :fruit-and-berries 8,
+   :beef 5,
+   :vegetables 4,
+   :corn 3,
+   :cheese 2}
+  {:tree-saplings 15, :lawn-mower 6}
+  {:bread-roll 3, :donuts 3, :green-smoothie 1}
+  {:burgers 3, :pizza 2}
+  {:bbq-grill 3, :refrigerator 2}),
+ :factories
+ ({:metal 25}
+  {:seeds 16}
+  {:plastic 16}
+  {:wood 15}
+  {:minerals 7}
+  {:textiles 6}
+  {:chemicals 6}
+  {:animal-feed 5}
+  {:electrical-components 3}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 28, :paint 8, :bricks 7, :cement 6, :nails 6}
+  {:shovel 15,
+   :measuring-tape 14,
+   :cooking-utensils 9,
+   :drill 4,
+   :hammer 4,
+   :ladder 3}
+  {:backpack 4, :watch 2}
+  {:tables 3, :cupboard 2}
+  {:cream 14,
+   :flour-bag 9,
+   :fruit-and-berries 8,
+   :vegetables 4,
+   :corn 3,
+   :beef 3}
+  {:tree-saplings 15, :lawn-mower 6}
+  {:bread-roll 3, :donuts 3, :green-smoothie 1}
+  {:burgers 3}
+  {:bbq-grill 3, :refrigerator 2}),
+ :factories
+ ({:metal 24}
+  {:seeds 16}
+  {:wood 15}
+  {:plastic 14}
+  {:minerals 7}
+  {:chemicals 6}
+  {:textiles 4}
+  {:electrical-components 3}
+  {:animal-feed 3}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 28, :paint 8, :bricks 7, :cement 6, :nails 6}
+  {:shovel 15,
+   :measuring-tape 14,
+   :cooking-utensils 7,
+   :drill 4,
+   :hammer 4,
+   :ladder 3}
+  {:backpack 4, :watch 2}
+  {:tables 3, :cupboard 2}
+  {:fruit-and-berries 8,
+   :cream 6,
+   :flour-bag 5,
+   :vegetables 4,
+   :corn 3,
+   :beef 1}
+  {:tree-saplings 15, :lawn-mower 6}
+  {:donuts 3, :bread-roll 1, :green-smoothie 1}
+  {:burgers 1}
+  {:refrigerator 2, :bbq-grill 1}),
+ :factories
+ ({:metal 22}
+  {:seeds 15}
+  {:wood 15}
+  {:plastic 13}
+  {:minerals 7}
+  {:chemicals 6}
+  {:electrical-components 3}
+  {:textiles 3}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 28, :paint 8, :bricks 7, :cement 6, :nails 6}
+  {:shovel 15,
+   :measuring-tape 14,
+   :drill 4,
+   :hammer 4,
+   :ladder 3,
+   :cooking-utensils 1}
+  {:watch 8, :backpack 4}
+  {:tables 3, :cupboard 2}
+  {:cream 12,
+   :flour-bag 11,
+   :fruit-and-berries 8,
+   :vegetables 4,
+   :corn 3,
+   :beef 1}
+  {:tree-saplings 15, :lawn-mower 6}
+  {:donuts 9, :coffee 6, :bread-roll 1, :green-smoothie 1}
+  {:burgers 1}
+  {:refrigerator 2, :bbq-grill 1}),
+ :factories
+ ({:seeds 20}
+  {:metal 20}
+  {:plastic 13}
+  {:wood 12}
+  {:chemicals 7}
+  {:minerals 7}
+  {:textiles 6}
+  {:electrical-components 3}
+  {:sugar-and-spices 3}
+  {:animal-feed 2}
+  {:glass 2})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 28, :paint 8, :cement 6, :nails 6, :bricks 3}
+  {:shovel 15,
+   :measuring-tape 14,
+   :drill 4,
+   :hammer 4,
+   :ladder 3,
+   :cooking-utensils 1}
+  {:watch 8, :backpack 4}
+  {:tables 3, :cupboard 2}
+  {:cream 12,
+   :flour-bag 11,
+   :fruit-and-berries 8,
+   :vegetables 4,
+   :corn 3,
+   :beef 1}
+  {:tree-saplings 15, :lawn-mower 6}
+  {:donuts 9, :coffee 6, :bread-roll 1, :green-smoothie 1}
+  {:burgers 1}
+  {:refrigerator 2, :bbq-grill 1}),
+ :factories
+ ({:seeds 20}
+  {:metal 20}
+  {:plastic 13}
+  {:wood 12}
+  {:chemicals 7}
+  {:textiles 6}
+  {:minerals 6}
+  {:electrical-components 3}
+  {:sugar-and-spices 3}
+  {:animal-feed 2}
+  {:glass 2})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 28, :paint 8, :cement 6, :nails 6, :bricks 3}
+  {:shovel 15,
+   :measuring-tape 14,
+   :cooking-utensils 6,
+   :drill 4,
+   :hammer 4,
+   :ladder 3}
+  {:watch 8, :backpack 4}
+  {:tables 3, :cupboard 2}
+  {:cream 12,
+   :flour-bag 11,
+   :fruit-and-berries 8,
+   :vegetables 4,
+   :corn 3,
+   :beef 1}
+  {:tree-saplings 15, :lawn-mower 6}
+  {:donuts 9, :coffee 6, :bread-roll 1, :green-smoothie 1}
+  {:burgers 1}
+  {:refrigerator 2, :bbq-grill 1}),
+ :factories
+ ({:metal 22}
+  {:seeds 20}
+  {:plastic 15}
+  {:wood 14}
+  {:chemicals 7}
+  {:textiles 6}
+  {:minerals 6}
+  {:electrical-components 3}
+  {:sugar-and-spices 3}
+  {:animal-feed 2}
+  {:glass 2})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 28, :paint 8, :cement 6, :nails 6, :bricks 3}
+  {:shovel 15,
+   :measuring-tape 14,
+   :cooking-utensils 6,
+   :drill 4,
+   :hammer 4,
+   :ladder 3}
+  {:watch 8, :backpack 4}
+  {:tables 3, :cupboard 2}
+  {:cream 12,
+   :flour-bag 11,
+   :fruit-and-berries 8,
+   :corn 3,
+   :vegetables 1,
+   :beef 1}
+  {:tree-saplings 15, :lawn-mower 6}
+  {:donuts 9, :coffee 6, :bread-roll 1, :green-smoothie 1}
+  {:burgers 1}
+  {:refrigerator 2, :bbq-grill 1}),
+ :factories
+ ({:metal 22}
+  {:seeds 18}
+  {:plastic 15}
+  {:wood 14}
+  {:chemicals 7}
+  {:textiles 6}
+  {:minerals 6}
+  {:electrical-components 3}
+  {:sugar-and-spices 3}
+  {:animal-feed 2}
+  {:glass 2})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 39, :nails 22, :paint 12, :cement 6, :bricks 1}
+  {:measuring-tape 11,
+   :hammer 6,
+   :shovel 4,
+   :cooking-utensils 3,
+   :drill 1}
+  {:watch 8, :backpack 4}
+  {:cupboard 6, :tables 6}
+  {:cream 12,
+   :flour-bag 11,
+   :corn 7,
+   :fruit-and-berries 4,
+   :vegetables 1,
+   :beef 1}
+  {:lawn-mower 6, :garden-furniture 4, :tree-saplings 4}
+  {:donuts 9, :coffee 6, :bread-roll 1, :green-smoothie 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :refrigerator 2, :bbq-grill 1}),
+ :factories
+ ({:metal 25}
+  {:wood 15}
+  {:seeds 14}
+  {:plastic 12}
+  {:chemicals 8}
+  {:textiles 7}
+  {:minerals 6}
+  {:glass 4}
+  {:electrical-components 3}
+  {:sugar-and-spices 3}
+  {:animal-feed 2})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 39, :nails 22, :paint 12, :cement 6, :bricks 1}
+  {:measuring-tape 11,
+   :hammer 6,
+   :cooking-utensils 3,
+   :shovel 3,
+   :drill 1}
+  {:watch 8, :backpack 4}
+  {:cupboard 6, :tables 6}
+  {:cream 12, :flour-bag 11, :corn 7, :fruit-and-berries 3, :beef 1}
+  {:lawn-mower 6, :garden-furniture 4, :tree-saplings 3}
+  {:donuts 9, :coffee 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :refrigerator 2, :bbq-grill 1}),
+ :factories
+ ({:metal 25}
+  {:wood 15}
+  {:seeds 13}
+  {:plastic 12}
+  {:chemicals 8}
+  {:textiles 7}
+  {:minerals 6}
+  {:glass 4}
+  {:electrical-components 3}
+  {:sugar-and-spices 3}
+  {:animal-feed 2})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 33, :nails 22, :paint 6, :cement 6, :bricks 1}
+  {:measuring-tape 11,
+   :hammer 6,
+   :cooking-utensils 3,
+   :shovel 3,
+   :drill 1}
+  {:backpack 4, :watch 4}
+  {:tables 6, :cupboard 3}
+  {:cream 12, :flour-bag 11, :corn 7, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:donuts 9, :coffee 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :refrigerator 2, :bbq-grill 1}),
+ :factories
+ ({:metal 21}
+  {:seeds 13}
+  {:wood 13}
+  {:plastic 10}
+  {:textiles 7}
+  {:chemicals 5}
+  {:minerals 5}
+  {:sugar-and-spices 3}
+  {:electrical-components 2}
+  {:animal-feed 2}
+  {:glass 2})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 49, :nails 22, :paint 6, :cement 6, :bricks 1}
+  {:shovel 15, :measuring-tape 11, :hammer 6, :cooking-utensils 3}
+  {:backpack 4, :watch 4}
+  {:tables 6, :cupboard 3}
+  {:corn 23, :cream 10, :flour-bag 8, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:coffee 6, :donuts 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :bbq-grill 1}),
+ :factories
+ ({:seeds 24}
+  {:metal 23}
+  {:wood 22}
+  {:plastic 11}
+  {:minerals 8}
+  {:textiles 6}
+  {:chemicals 4}
+  {:animal-feed 2}
+  {:glass 2}
+  {:sugar-and-spices 2}
+  {:electrical-components 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 49, :nails 22, :paint 6, :cement 6, :bricks 1}
+  {:shovel 15, :measuring-tape 11, :hammer 6, :cooking-utensils 3}
+  {:backpack 4, :watch 4}
+  {:tables 6, :cupboard 3}
+  {:corn 23, :cream 10, :flour-bag 8, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:coffee 6, :donuts 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :bbq-grill 1}),
+ :factories
+ ({:seeds 24}
+  {:metal 23}
+  {:wood 22}
+  {:plastic 11}
+  {:minerals 8}
+  {:textiles 6}
+  {:chemicals 4}
+  {:animal-feed 2}
+  {:glass 2}
+  {:sugar-and-spices 2}
+  {:electrical-components 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 49, :nails 22, :paint 6, :cement 6, :glue 3, :bricks 1}
+  {:shovel 15, :measuring-tape 11, :hammer 6, :cooking-utensils 3}
+  {:backpack 4, :watch 4}
+  {:tables 6, :cupboard 3}
+  {:corn 23, :cream 10, :flour-bag 8, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:coffee 6, :donuts 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :bbq-grill 1}),
+ :factories
+ ({:seeds 24}
+  {:metal 23}
+  {:wood 22}
+  {:plastic 12}
+  {:minerals 8}
+  {:textiles 6}
+  {:chemicals 6}
+  {:animal-feed 2}
+  {:glass 2}
+  {:sugar-and-spices 2}
+  {:electrical-components 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 51, :nails 22, :paint 7, :cement 6, :glue 3, :bricks 1}
+  {:shovel 15, :measuring-tape 11, :hammer 6, :cooking-utensils 3}
+  {:backpack 4, :watch 4}
+  {:tables 6, :cupboard 4}
+  {:corn 23, :cream 10, :flour-bag 8, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:coffee 6, :donuts 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :bbq-grill 1}),
+ :factories
+ ({:seeds 24}
+  {:wood 23}
+  {:metal 23}
+  {:plastic 12}
+  {:minerals 8}
+  {:textiles 6}
+  {:chemicals 6}
+  {:glass 3}
+  {:animal-feed 2}
+  {:sugar-and-spices 2}
+  {:electrical-components 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 51, :nails 30, :paint 7, :cement 6, :glue 3, :bricks 1}
+  {:shovel 15, :measuring-tape 11, :hammer 6, :cooking-utensils 3}
+  {:backpack 4, :watch 4}
+  {:tables 6, :cupboard 4}
+  {:corn 23, :cream 10, :flour-bag 8, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:coffee 6, :donuts 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :bbq-grill 1}),
+ :factories
+ ({:metal 26}
+  {:seeds 24}
+  {:wood 23}
+  {:plastic 12}
+  {:minerals 8}
+  {:textiles 6}
+  {:chemicals 6}
+  {:glass 3}
+  {:animal-feed 2}
+  {:sugar-and-spices 2}
+  {:electrical-components 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 51, :nails 30, :paint 7, :cement 4, :glue 3, :bricks 1}
+  {:shovel 15, :measuring-tape 6, :hammer 6, :cooking-utensils 3}
+  {:backpack 4, :watch 4}
+  {:tables 6, :cupboard 4}
+  {:corn 23, :cream 10, :flour-bag 8, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:coffee 6, :donuts 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :bbq-grill 1}),
+ :factories
+ ({:metal 25}
+  {:seeds 24}
+  {:wood 23}
+  {:plastic 11}
+  {:minerals 8}
+  {:textiles 6}
+  {:chemicals 6}
+  {:glass 3}
+  {:animal-feed 2}
+  {:sugar-and-spices 2}
+  {:electrical-components 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 51, :nails 30, :paint 7, :cement 4, :glue 3, :bricks 1}
+  {:shovel 15, :hammer 6, :measuring-tape 4, :cooking-utensils 3}
+  {:watch 4, :backpack 2}
+  {:tables 6, :cupboard 4}
+  {:corn 23, :cream 10, :flour-bag 8, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:coffee 6, :donuts 6, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :bbq-grill 1}),
+ :factories
+ ({:metal 25}
+  {:seeds 24}
+  {:wood 23}
+  {:plastic 10}
+  {:minerals 8}
+  {:chemicals 6}
+  {:textiles 5}
+  {:glass 3}
+  {:animal-feed 2}
+  {:sugar-and-spices 2}
+  {:electrical-components 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 50, :nails 28, :paint 7, :cement 4, :glue 3, :bricks 1}
+  {:shovel 15, :hammer 5, :measuring-tape 4, :cooking-utensils 3}
+  {:watch 3, :backpack 2}
+  {:tables 5, :cupboard 4}
+  {:corn 21, :cream 7, :flour-bag 4, :fruit-and-berries 3, :beef 1}
+  {:garden-furniture 4, :lawn-mower 3, :tree-saplings 3}
+  {:coffee 3, :donuts 2, :bread-roll 1}
+  {:popcorn 2, :burgers 1}
+  {:microwave-oven 2, :bbq-grill 1}),
+ :factories
+ ({:metal 24}
+  {:wood 22}
+  {:seeds 20}
+  {:plastic 9}
+  {:minerals 7}
+  {:chemicals 5}
+  {:textiles 4}
+  {:glass 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 53, :nails 28, :paint 6, :cement 4, :glue 3, :bricks 1}
+  {:shovel 15, :hammer 5, :measuring-tape 4, :cooking-utensils 2}
+  {:watch 3, :backpack 2}
+  {:tables 5, :cupboard 4}
+  {:corn 21, :cream 3, :fruit-and-berries 3, :flour-bag 2}
+  {:garden-furniture 4, :tree-saplings 3, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:wood 23}
+  {:metal 22}
+  {:seeds 20}
+  {:plastic 9}
+  {:minerals 7}
+  {:chemicals 5}
+  {:glass 3}
+  {:textiles 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 53, :nails 28, :paint 6, :cement 4, :glue 3, :bricks 1}
+  {:shovel 15, :hammer 5, :measuring-tape 4, :cooking-utensils 2}
+  {:watch 3, :backpack 2}
+  {:tables 5, :cupboard 4}
+  {:corn 21, :cream 3, :fruit-and-berries 3, :flour-bag 2}
+  {:garden-furniture 4, :tree-saplings 3, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:wood 23}
+  {:metal 22}
+  {:seeds 20}
+  {:plastic 9}
+  {:minerals 7}
+  {:chemicals 5}
+  {:glass 3}
+  {:textiles 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 53, :nails 28, :paint 6, :cement 4, :glue 3, :bricks 1}
+  {:shovel 16, :hammer 5, :measuring-tape 4, :cooking-utensils 2}
+  {:watch 3, :backpack 2}
+  {:tables 5, :cupboard 4}
+  {:corn 21, :fruit-and-berries 4, :cream 3, :flour-bag 2}
+  {:garden-furniture 4, :tree-saplings 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:wood 23}
+  {:metal 22}
+  {:seeds 20}
+  {:plastic 9}
+  {:minerals 7}
+  {:chemicals 5}
+  {:glass 3}
+  {:textiles 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 50, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 16, :measuring-tape 2, :hammer 2}
+  {:watch 3, :backpack 2}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 4, :cream 3, :flour-bag 2}
+  {:garden-furniture 4, :tree-saplings 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2}),
+ :factories
+ ({:wood 20}
+  {:seeds 18}
+  {:metal 18}
+  {:plastic 8}
+  {:minerals 6}
+  {:chemicals 5}
+  {:glass 3}
+  {:textiles 3}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 18, :measuring-tape 2, :hammer 2}
+  {:watch 3, :backpack 2}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 6, :cream 3, :flour-bag 2}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:refrigerator 3, :microwave-oven 2}),
+ :factories
+ ({:wood 22}
+  {:seeds 20}
+  {:metal 18}
+  {:plastic 9}
+  {:chemicals 6}
+  {:minerals 6}
+  {:glass 3}
+  {:textiles 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 18, :measuring-tape 2, :hammer 2}
+  {:watch 3, :backpack 2}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 6, :cream 3, :flour-bag 2}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :refrigerator 2}),
+ :factories
+ ({:wood 22}
+  {:seeds 20}
+  {:metal 18}
+  {:plastic 9}
+  {:chemicals 6}
+  {:minerals 6}
+  {:glass 3}
+  {:textiles 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 10, :measuring-tape 2, :hammer 2}
+  {:watch 3, :backpack 2}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 6, :cream 3, :flour-bag 2}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :refrigerator 2}),
+ :factories
+ ({:wood 21}
+  {:seeds 20}
+  {:metal 17}
+  {:plastic 7}
+  {:chemicals 6}
+  {:minerals 6}
+  {:glass 3}
+  {:textiles 3}
+  {:electrical-components 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 10, :hammer 2}
+  {:watch 3}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 6, :cream 3, :flour-bag 2}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :refrigerator 2}),
+ :factories
+ ({:wood 21}
+  {:seeds 20}
+  {:metal 16}
+  {:chemicals 6}
+  {:minerals 6}
+  {:plastic 6}
+  {:glass 3}
+  {:electrical-components 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 10, :hammer 2}
+  {:watch 2}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 6, :cream 3, :flour-bag 2}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :refrigerator 2}),
+ :factories
+ ({:wood 21}
+  {:seeds 20}
+  {:metal 16}
+  {:chemicals 6}
+  {:minerals 6}
+  {:plastic 6}
+  {:electrical-components 2}
+  {:glass 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 10, :hammer 2}
+  {:watch 2}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 6, :cream 3, :flour-bag 2}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :refrigerator 2}),
+ :factories
+ ({:wood 21}
+  {:seeds 20}
+  {:metal 16}
+  {:chemicals 6}
+  {:minerals 6}
+  {:plastic 6}
+  {:electrical-components 2}
+  {:glass 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 10, :hammer 2}
+  {:watch 2}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 6, :cream 3, :flour-bag 2}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3, :donuts 2}
+  {:popcorn 2}
+  {:microwave-oven 2, :refrigerator 2}),
+ :factories
+ ({:wood 21}
+  {:seeds 20}
+  {:metal 16}
+  {:chemicals 6}
+  {:minerals 6}
+  {:plastic 6}
+  {:electrical-components 2}
+  {:glass 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 10, :hammer 2}
+  {:watch 2}
+  {:cupboard 4, :tables 2}
+  {:corn 18, :fruit-and-berries 6, :cream 3}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3}
+  {:popcorn 2}
+  {:microwave-oven 2, :refrigerator 2}),
+ :factories
+ ({:wood 21}
+  {:seeds 19}
+  {:metal 16}
+  {:chemicals 6}
+  {:minerals 6}
+  {:plastic 6}
+  {:electrical-components 2}
+  {:glass 2}
+  {:textiles 2}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 54, :nails 22, :paint 6, :cement 4, :glue 3}
+  {:shovel 10, :hammer 2}
+  {:watch 2}
+  {:cupboard 4, :tables 2}
+  {:corn 16, :fruit-and-berries 6, :cream 3}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:wood 21}
+  {:seeds 18}
+  {:metal 16}
+  {:chemicals 6}
+  {:minerals 6}
+  {:plastic 6}
+  {:glass 2}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 52, :nails 18, :paint 6, :cement 4, :glue 3}
+  {:shovel 10}
+  {:watch 2}
+  {:cupboard 4}
+  {:corn 16, :fruit-and-berries 6, :cream 3}
+  {:tree-saplings 6, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:wood 20}
+  {:seeds 18}
+  {:metal 14}
+  {:chemicals 6}
+  {:minerals 6}
+  {:plastic 6}
+  {:glass 2}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 52, :nails 18, :paint 6, :cement 4, :glue 3}
+  {:shovel 14}
+  {:watch 2}
+  {:cupboard 4}
+  {:corn 16, :fruit-and-berries 6, :cream 3}
+  {:tree-saplings 10, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:seeds 20}
+  {:wood 20}
+  {:metal 14}
+  {:plastic 7}
+  {:chemicals 6}
+  {:minerals 6}
+  {:glass 2}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 44, :nails 18, :cement 4, :glue 3, :paint 2}
+  {:shovel 14}
+  {:watch 2}
+  {}
+  {:corn 16, :fruit-and-berries 6, :cream 3}
+  {:tree-saplings 10, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:seeds 20}
+  {:wood 19}
+  {:metal 13}
+  {:plastic 7}
+  {:minerals 5}
+  {:chemicals 4}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 44, :nails 18, :cement 4, :paint 2, :glue 1}
+  {:shovel 14}
+  {:watch 2}
+  {}
+  {:corn 16, :fruit-and-berries 6, :cream 3}
+  {:tree-saplings 10, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:seeds 20}
+  {:wood 19}
+  {:metal 13}
+  {:plastic 6}
+  {:minerals 5}
+  {:chemicals 3}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 44, :nails 18, :cement 3, :paint 2, :glue 1}
+  {:shovel 14, :measuring-tape 1}
+  {:watch 2}
+  {}
+  {:corn 16, :fruit-and-berries 6, :cream 3}
+  {:tree-saplings 10, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 3}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:seeds 20}
+  {:wood 19}
+  {:metal 13}
+  {:plastic 6}
+  {:minerals 5}
+  {:chemicals 3}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:glass 1}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 44, :nails 18, :cement 3, :paint 2, :glue 1}
+  {:shovel 14, :measuring-tape 1}
+  {}
+  {}
+  {:corn 16, :fruit-and-berries 6, :cream 1}
+  {:tree-saplings 10, :garden-furniture 4, :lawn-mower 2}
+  {:coffee 1}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:seeds 19}
+  {:wood 19}
+  {:metal 13}
+  {:plastic 6}
+  {:minerals 5}
+  {:chemicals 3}
+  {:textiles 2}
+  {:electrical-components 1}
+  {:animal-feed 0}
+  {:glass 0}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 44, :nails 18, :cement 3, :paint 1, :glue 1}
+  {:shovel 14, :measuring-tape 1}
+  {}
+  {}
+  {:corn 16, :fruit-and-berries 6, :cream 1}
+  {:tree-saplings 10, :garden-furniture 4, :lawn-mower 1}
+  {:coffee 1}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:seeds 19}
+  {:wood 19}
+  {:metal 12}
+  {:plastic 6}
+  {:minerals 4}
+  {:textiles 2}
+  {:chemicals 2}
+  {:electrical-components 1}
+  {:animal-feed 0}
+  {:glass 0}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 44, :nails 18, :cement 3, :paint 1, :glue 1}
+  {:shovel 13, :measuring-tape 1}
+  {}
+  {}
+  {:corn 16, :fruit-and-berries 5, :cream 1}
+  {:tree-saplings 9, :garden-furniture 4, :lawn-mower 1}
+  {:coffee 1}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:wood 19}
+  {:seeds 18}
+  {:metal 12}
+  {:plastic 5}
+  {:minerals 4}
+  {:textiles 2}
+  {:chemicals 2}
+  {:electrical-components 1}
+  {:animal-feed 0}
+  {:glass 0}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 38, :nails 18, :cement 3, :paint 1, :glue 1}
+  {:shovel 13, :measuring-tape 1}
+  {}
+  {}
+  {:corn 16, :fruit-and-berries 5, :cream 1}
+  {:tree-saplings 9, :lawn-mower 1, :garden-furniture 1}
+  {:coffee 1}
+  {:popcorn 1}
+  {:refrigerator 2, :microwave-oven 1}),
+ :factories
+ ({:seeds 18}
+  {:wood 17}
+  {:metal 12}
+  {:minerals 4}
+  {:plastic 4}
+  {:chemicals 2}
+  {:electrical-components 1}
+  {:animal-feed 0}
+  {:glass 0}
+  {:sugar-and-spices 0}
+  {:textiles 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 34, :nails 18, :cement 3, :paint 1, :glue 1}
+  {:shovel 11, :measuring-tape 3, :drill 1, :cooking-utensils 1}
+  {}
+  {}
+  {:corn 16, :fruit-and-berries 3, :flour-bag 2, :cheese 1, :beef 1}
+  {:tree-saplings 7, :lawn-mower 1, :garden-furniture 1}
+  {}
+  {:popcorn 1, :pizza 1}
+  {:microwave-oven 1, :lighting-system 1, :bbq-grill 1}),
+ :factories
+ ({:seeds 17}
+  {:wood 16}
+  {:metal 13}
+  {:minerals 4}
+  {:plastic 4}
+  {:chemicals 2}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:textiles 1}
+  {:glass 0}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 34, :nails 18, :cement 3, :paint 1}
+  {:shovel 11, :measuring-tape 3, :drill 1, :cooking-utensils 1}
+  {}
+  {}
+  {:corn 16, :fruit-and-berries 3, :flour-bag 2, :cheese 1, :beef 1}
+  {:tree-saplings 7, :lawn-mower 1, :garden-furniture 1}
+  {}
+  {:popcorn 1, :pizza 1}
+  {:microwave-oven 1, :lighting-system 1, :bbq-grill 1}),
+ :factories
+ ({:seeds 17}
+  {:wood 16}
+  {:metal 13}
+  {:minerals 4}
+  {:plastic 4}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:textiles 1}
+  {:chemicals 1}
+  {:glass 0}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 34, :nails 18, :cement 3, :paint 1}
+  {:shovel 11, :measuring-tape 3, :drill 1, :cooking-utensils 1}
+  {}
+  {}
+  {:corn 16, :fruit-and-berries 3, :flour-bag 2, :cheese 1, :beef 1}
+  {:tree-saplings 7, :lawn-mower 1, :garden-furniture 1}
+  {}
+  {:popcorn 1, :pizza 1}
+  {:microwave-oven 1, :lighting-system 1, :bbq-grill 1}),
+ :factories
+ ({:seeds 17}
+  {:wood 16}
+  {:metal 13}
+  {:minerals 4}
+  {:plastic 4}
+  {:electrical-components 1}
+  {:animal-feed 1}
+  {:textiles 1}
+  {:chemicals 1}
+  {:glass 0}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 34, :nails 18, :cement 3, :paint 1}
+  {:shovel 11, :measuring-tape 3, :drill 1, :cooking-utensils 1}
+  {}
+  {}
+  {:corn 16, :fruit-and-berries 3, :flour-bag 1}
+  {:tree-saplings 7, :lawn-mower 1, :garden-furniture 1}
+  {}
+  {:popcorn 1}
+  {:microwave-oven 1, :lighting-system 1, :bbq-grill 1}),
+ :factories
+ ({:seeds 16}
+  {:wood 16}
+  {:metal 13}
+  {:minerals 4}
+  {:plastic 4}
+  {:electrical-components 1}
+  {:textiles 1}
+  {:chemicals 1}
+  {:animal-feed 0}
+  {:glass 0}
+  {:sugar-and-spices 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 14, :planks 12, :glue 4, :paint 3, :cement 2}
+  {:hammer 5, :shovel 2, :measuring-tape 2}
+  {:watch 3}
+  {:cupboard 3, :chairs 3, :tables 2}
+  {:flour-bag 12, :cream 2, :fruit-and-berries 2, :vegetables 1}
+  {:garden-furniture 2, :tree-saplings 2, :garden-gnomes 1}
+  {:donuts 7, :bread-roll 2, :green-smoothie 1}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 13}
+  {:seeds 6}
+  {:textiles 5}
+  {:wood 5}
+  {:chemicals 4}
+  {:plastic 4}
+  {:glass 3}
+  {:electrical-components 1}
+  {:sugar-and-spices 1}
+  {:minerals 1}
+  {:animal-feed 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 13, :planks 12, :glue 4, :paint 3, :cement 2}
+  {:hammer 5, :shovel 2, :measuring-tape 2}
+  {:watch 3}
+  {:cupboard 3, :chairs 3, :tables 2}
+  {:flour-bag 12, :cream 2, :fruit-and-berries 2, :vegetables 1}
+  {:garden-furniture 2, :tree-saplings 2, :garden-gnomes 1}
+  {:donuts 7, :bread-roll 2, :green-smoothie 1}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 13}
+  {:seeds 6}
+  {:textiles 5}
+  {:wood 5}
+  {:chemicals 4}
+  {:plastic 4}
+  {:glass 3}
+  {:electrical-components 1}
+  {:sugar-and-spices 1}
+  {:minerals 1}
+  {:animal-feed 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 6, :paint 3, :cement 2}
+  {:hammer 7, :shovel 4, :drill 2, :measuring-tape 2}
+  {:watch 3}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 15,
+   :fruit-and-berries 4,
+   :cheese 2,
+   :cream 2,
+   :beef 2,
+   :vegetables 1}
+  {:tree-saplings 4, :garden-furniture 2, :garden-gnomes 1}
+  {:donuts 7, :bread-roll 2, :green-smoothie 1}
+  {:pizza 2}
+  {:microwave-oven 7, :lighting-system 2}),
+ :factories
+ ({:metal 14}
+  {:seeds 9}
+  {:textiles 7}
+  {:wood 7}
+  {:chemicals 5}
+  {:plastic 5}
+  {:glass 4}
+  {:electrical-components 2}
+  {:animal-feed 2}
+  {:sugar-and-spices 1}
+  {:minerals 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 6, :paint 3, :cement 2}
+  {:hammer 7, :shovel 4, :drill 2, :measuring-tape 2}
+  {:watch 3}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 15,
+   :fruit-and-berries 4,
+   :cheese 2,
+   :cream 2,
+   :beef 2,
+   :vegetables 1}
+  {:tree-saplings 4, :garden-furniture 2, :garden-gnomes 1}
+  {:donuts 7, :bread-roll 2, :green-smoothie 1}
+  {:pizza 2}
+  {:microwave-oven 7, :lighting-system 2}),
+ :factories
+ ({:metal 14}
+  {:seeds 9}
+  {:textiles 7}
+  {:wood 7}
+  {:chemicals 5}
+  {:plastic 5}
+  {:glass 4}
+  {:electrical-components 2}
+  {:animal-feed 2}
+  {:sugar-and-spices 1}
+  {:minerals 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 6, :paint 3, :cement 2}
+  {:hammer 7, :shovel 4, :drill 2, :measuring-tape 2}
+  {:watch 3}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 15,
+   :fruit-and-berries 4,
+   :cheese 2,
+   :cream 2,
+   :beef 2,
+   :vegetables 1}
+  {:tree-saplings 4, :garden-furniture 2, :garden-gnomes 1}
+  {:donuts 7, :bread-roll 2, :green-smoothie 1}
+  {:pizza 2}
+  {:microwave-oven 7, :lighting-system 2}),
+ :factories
+ ({:metal 14}
+  {:seeds 9}
+  {:textiles 7}
+  {:wood 7}
+  {:chemicals 5}
+  {:plastic 5}
+  {:glass 4}
+  {:electrical-components 2}
+  {:animal-feed 2}
+  {:sugar-and-spices 1}
+  {:minerals 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 9, :cement 6, :paint 3}
+  {:hammer 8, :shovel 5, :drill 2, :measuring-tape 2}
+  {:watch 3, :shoes 1}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 15,
+   :fruit-and-berries 5,
+   :cheese 2,
+   :cream 2,
+   :vegetables 2,
+   :beef 2}
+  {:tree-saplings 5, :garden-gnomes 3, :garden-furniture 2}
+  {:donuts 7, :bread-roll 2, :green-smoothie 2}
+  {:pizza 2}
+  {:microwave-oven 7, :lighting-system 2}),
+ :factories
+ ({:metal 15}
+  {:seeds 10}
+  {:textiles 8}
+  {:chemicals 7}
+  {:wood 7}
+  {:plastic 6}
+  {:glass 4}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:animal-feed 2}
+  {:sugar-and-spices 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 9, :cement 6, :paint 3}
+  {:hammer 8, :shovel 5, :drill 2, :measuring-tape 2}
+  {:watch 3, :shoes 1}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 13, :fruit-and-berries 5, :cream 2, :vegetables 2}
+  {:tree-saplings 5, :garden-gnomes 3, :garden-furniture 2}
+  {:donuts 7, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7, :lighting-system 2}),
+ :factories
+ ({:metal 15}
+  {:seeds 9}
+  {:textiles 7}
+  {:chemicals 7}
+  {:wood 7}
+  {:plastic 6}
+  {:glass 4}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:sugar-and-spices 1}
+  {:animal-feed 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 9, :cement 6, :paint 3}
+  {:hammer 8, :shovel 5, :drill 2, :measuring-tape 2}
+  {:watch 3, :shoes 1}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 13, :fruit-and-berries 5, :cream 4, :vegetables 2}
+  {:tree-saplings 5, :garden-gnomes 3, :garden-furniture 2}
+  {:donuts 7, :coffee 2, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7, :lighting-system 2}),
+ :factories
+ ({:metal 15}
+  {:seeds 10}
+  {:textiles 7}
+  {:chemicals 7}
+  {:wood 7}
+  {:plastic 6}
+  {:glass 4}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:sugar-and-spices 2}
+  {:animal-feed 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 9, :cement 6, :paint 3}
+  {:hammer 7, :shovel 5, :drill 2, :measuring-tape 2}
+  {:watch 3, :shoes 1}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 13, :fruit-and-berries 5, :cream 4, :vegetables 2}
+  {:tree-saplings 5, :garden-gnomes 3, :garden-furniture 2}
+  {:donuts 7, :coffee 2, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7, :lighting-system 2}),
+ :factories
+ ({:metal 14}
+  {:seeds 10}
+  {:textiles 7}
+  {:chemicals 7}
+  {:wood 7}
+  {:plastic 6}
+  {:glass 4}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:sugar-and-spices 2}
+  {:animal-feed 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 9, :cement 6, :paint 3}
+  {:hammer 7, :shovel 5, :drill 2, :measuring-tape 2}
+  {:shoes 1}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 13, :fruit-and-berries 5, :cream 4, :vegetables 2}
+  {:tree-saplings 5, :garden-gnomes 3, :garden-furniture 2}
+  {:donuts 7, :coffee 2, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7, :lighting-system 2}),
+ :factories
+ ({:metal 14}
+  {:seeds 10}
+  {:textiles 7}
+  {:wood 7}
+  {:chemicals 6}
+  {:plastic 5}
+  {:glass 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:sugar-and-spices 2}
+  {:animal-feed 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 9, :cement 6, :paint 3}
+  {:hammer 7, :shovel 5, :drill 2, :measuring-tape 2}
+  {:shoes 1}
+  {:chairs 5, :cupboard 3, :couch 2, :tables 2}
+  {:flour-bag 13, :fruit-and-berries 5, :cream 4, :vegetables 2}
+  {:tree-saplings 5, :garden-gnomes 3, :garden-furniture 2}
+  {:donuts 7, :coffee 2, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 14}
+  {:seeds 10}
+  {:textiles 7}
+  {:wood 7}
+  {:chemicals 6}
+  {:plastic 5}
+  {:glass 3}
+  {:minerals 3}
+  {:electrical-components 2}
+  {:sugar-and-spices 2}
+  {:animal-feed 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 15, :planks 12, :glue 7, :cement 6, :paint 3}
+  {:hammer 7, :shovel 3, :measuring-tape 2}
+  {:shoes 1}
+  {:chairs 5, :cupboard 3, :tables 2}
+  {:flour-bag 12, :cream 4, :fruit-and-berries 3, :vegetables 2}
+  {:garden-gnomes 3, :tree-saplings 3, :garden-furniture 2}
+  {:donuts 7, :coffee 2, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 13}
+  {:seeds 8}
+  {:wood 7}
+  {:textiles 5}
+  {:chemicals 5}
+  {:glass 3}
+  {:minerals 3}
+  {:plastic 3}
+  {:sugar-and-spices 2}
+  {:electrical-components 1}
+  {:animal-feed 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:nails 11, :planks 10, :glue 7, :cement 6, :paint 3}
+  {:hammer 5, :shovel 3, :measuring-tape 2}
+  {:shoes 1}
+  {:chairs 5, :cupboard 3}
+  {:flour-bag 12, :cream 4, :fruit-and-berries 3, :vegetables 2}
+  {:garden-gnomes 3, :tree-saplings 3, :garden-furniture 2}
+  {:donuts 7, :coffee 2, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 11}
+  {:seeds 8}
+  {:wood 6}
+  {:textiles 5}
+  {:chemicals 5}
+  {:glass 3}
+  {:minerals 3}
+  {:plastic 3}
+  {:sugar-and-spices 2}
+  {:electrical-components 1}
+  {:animal-feed 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 10, :glue 7, :cement 6, :nails 5, :paint 3}
+  {:hammer 5, :shovel 3, :measuring-tape 2}
+  {:shoes 1}
+  {:chairs 5, :cupboard 3}
+  {:flour-bag 12, :cream 4, :fruit-and-berries 3, :vegetables 2}
+  {:garden-gnomes 3, :tree-saplings 3, :garden-furniture 2}
+  {:donuts 7, :coffee 2, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 9}
+  {:seeds 8}
+  {:wood 6}
+  {:textiles 5}
+  {:chemicals 5}
+  {:glass 3}
+  {:minerals 3}
+  {:plastic 3}
+  {:sugar-and-spices 2}
+  {:electrical-components 1}
+  {:animal-feed 1})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 10, :glue 7, :cement 6, :nails 5, :paint 3}
+  {:hammer 5, :shovel 3, :measuring-tape 2}
+  {:shoes 1}
+  {:chairs 5, :cupboard 3}
+  {:flour-bag 12, :fruit-and-berries 3, :cream 2, :vegetables 2}
+  {:garden-gnomes 3, :tree-saplings 3, :garden-furniture 2}
+  {:donuts 7, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 9}
+  {:seeds 7}
+  {:wood 6}
+  {:textiles 5}
+  {:chemicals 5}
+  {:glass 3}
+  {:minerals 3}
+  {:plastic 3}
+  {:electrical-components 1}
+  {:sugar-and-spices 1}
+  {:animal-feed 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 10, :glue 7, :cement 6, :nails 5, :paint 3}
+  {:hammer 5, :shovel 3, :measuring-tape 2}
+  {:shoes 1}
+  {:chairs 5, :cupboard 3}
+  {:flour-bag 12, :fruit-and-berries 3, :cream 2, :vegetables 2}
+  {:garden-gnomes 3, :tree-saplings 3, :garden-furniture 2}
+  {:donuts 7, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 9}
+  {:seeds 7}
+  {:wood 6}
+  {:textiles 5}
+  {:chemicals 5}
+  {:glass 3}
+  {:minerals 3}
+  {:plastic 3}
+  {:electrical-components 1}
+  {:sugar-and-spices 1}
+  {:animal-feed 0})}
+nil
+clj꞉sim꞉> 
+; Evaluating file: sim.clj
+{:stores
+ ({:planks 10, :glue 7, :cement 6, :paint 3, :nails 3}
+  {:shovel 3, :hammer 3, :measuring-tape 2}
+  {:shoes 1}
+  {:cupboard 3, :chairs 3}
+  {:flour-bag 12, :fruit-and-berries 3, :cream 2, :vegetables 2}
+  {:garden-gnomes 3, :tree-saplings 3, :garden-furniture 2}
+  {:donuts 7, :bread-roll 2, :green-smoothie 2}
+  {}
+  {:microwave-oven 7}),
+ :factories
+ ({:metal 8}
+  {:seeds 7}
+  {:textiles 5}
+  {:chemicals 5}
+  {:wood 4}
+  {:glass 3}
+  {:minerals 3}
+  {:plastic 3}
+  {:electrical-components 1}
+  {:sugar-and-spices 1}
+  {:animal-feed 0})}
+nil
+clj꞉sim꞉> 
+571.4285714285714
+clj꞉sim꞉> 
+428.57142857142856
+clj꞉sim꞉> 
+636.3636363636364
+clj꞉sim꞉> 
+571.4285714285714
+clj꞉sim꞉> 
+428.57142857142856
 clj꞉sim꞉> 

@@ -303,33 +303,56 @@
 
 (def upgrades
   [;{:watch 5 :donuts 5 :chairs 5 :garden-furniture 5} ;cash
-   {:tables 1}
-   {:ladder 1} ;metal 20
-   {:cap 1} ;metal 1 wood 1 chem 1
-   {:corn 1 :chairs 1} ;seeds 1
-   {:chairs 1} ;sug 1
-   {:watch 2}
-   {:backpack 1 :chairs 1} ; min 1
-;omega
-   {:shovel 3 :ice-cream-sandwich 4}
-   {:bricks 1 :cheese 1 :green-smoothie 2}])
+    ;{:fire-pit 1 :cherry-cheesecake 1}
+   ;{:shovel 4 :tv 3}
+  
+   ;{:cherry-cheesecake 1 :green-smoothie 2}
+   {}
+   {:lighting-system 2 :couch 2} ; woood 10
+   {:cement 8 :measuring-tape 8 :backpack 8} ;sug 8
+   {:glue 3 :microwave-oven 2 :nails 6} ; minerals 3
+   {:donuts 3} ;ic 4 af 4
+    {:coffee 3 :frozen-yogurt 2 :bread-roll 2}
+   {:flour-bag 2 :drill 2 :pizza 1} ;chem 3
+   {}
+   {:microwave-oven 2 :garden-gnomes 2 :tree-saplings 2} ;sug 2
+   {:green-smoothie 2 :tables 2 :donuts 4 :cupboard 3 :garden-furniture 3}
+   {:microwave-oven 3 :bread-roll 4 :chairs 3 :watch 4} ; wood 13
+   {:shoes 1 :cooking-utensils 2 :hammer 1 :green-smoothie 1 :garden-gnomes 2}
+   {:fruit-and-berries 5} ;seeds 6 glass 5 wood 9
+   ])
 
 (def orders
   (apply merge-with + upgrades))
 
+(contains? (set (keys orders)) :ice-cream-sandwich)
+
+
 (def inventory
-  {:backpack          0   :beef              0   :bread-roll        0
-   :bricks            1
-   :cap               0   :chairs            0   :cheese            1
-   :cheese-fries      0
-   :coffee            0   :couch             0   :donuts            0
-   :flour-bag         0   :fruit-and-berries 0   :garden-furniture  0
-   :garden-gnomes     0   :glue              0   :green-smoothie    2
-   :hammer            0   :home-textiles     0   :ice-cream-sandwich 4
-   :ladder            0   :lemonade-bottle   0   :lighting-system   0
-   :microwave-oven    0   :nails             0   :paint             0
-   :pizza             0   :planks            0   :shovel            3
-   :tv                0   :watch             0})
+  {:backpack          8  :bbq-grill  1
+   :beef              1   :bread-roll        2
+   :bricks            1  :burgers          2   :business-suits   9
+   :cap               5   :cement         8
+   :chairs            2   :cherry-cheesecake  3
+   :cheese            1
+   :cheese-fries      6
+   :coffee            2  :cooking-utensils    5   :corn      2
+   :couch             3  :cream           2    :cupboard      0
+   :donuts            0  :drill            2
+   :fire-pit          2
+   :flour-bag         1   :frozen-yogurt 1
+   :fruit-and-berries 4   :garden-furniture  1
+   :garden-gnomes     1   :glue              0   :grass      1
+   :green-smoothie    1
+   :hammer            4   :home-textiles     0   :ice-cream-sandwich 0
+   :ladder            1   :lawn-mower        0
+   :lemonade-bottle   3   :lighting-system   2  :measuring-tape    6
+   :microwave-oven    0   :nails             7   :paint             0
+   :pizza             7   :planks            2  :popcorn          1
+   :refrigerator      1
+   :shovel            18  :tables             5
+   :tree-saplings     4   :tv                4   :vegetables      11
+   :watch             6})
 
 (def prod
   (flatten
@@ -360,13 +383,27 @@
     {m (n m prod)}))
 
 
+(pprint/pprint
+ {:stores
+  (for [store (map parts (map keys stores))]
+    (into {} (reverse (sort-by #(first (vals %))
+                               (remove #(zero? (first (vals %)))
+                                       store)))))
+  :factories
+  (reverse (sort-by #(first (vals %))
+                    (for [m materials]
+                      {m (Math/round (/ (n m prod)
+                                            5.0))})))})
 
-{:stores
- (for [store (map parts (map keys stores))]
-   (into {} (reverse (sort-by #(first (vals %))
-                              (remove #(zero? (first (vals %)))
-                                      store)))))
- :factories
- (reverse (sort-by #(first (vals %))
-                   (for [m materials]
-                     {m (n m prod)})))}
+(comment
+  
+;controlnet
+  (/ 10800 (* 6 6))
+  (/ 15000.0 (* 8 12))
+  (/ 37000.0 (* 16 14))
+
+  ;sewage
+  (/ 4000.0 7)
+(/ 12000.0 28)
+(/ 35000.0 55)
+  )
